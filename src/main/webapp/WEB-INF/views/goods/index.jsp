@@ -69,6 +69,7 @@
 	                    sortable : false,
 	                    formatter : function (value, options, row) {
 		                    var btn = "";
+							btn += '&nbsp;<a href="javascript:onPrint('  + value + ')" title="">打印</a>'
 		                    btn += '&nbsp;<a href="javascript:onSave('  + value + ')" title="">编辑</a>'
 		                    btn += '&nbsp;<a href="javascript:onDel(' + value + ')" title="">删除</a>&nbsp;'
 		                    return btn;
@@ -119,6 +120,25 @@
 	        content : 'goods/edit?id=' + id + '&goodTypeId=' + _ORGID + "&colSym=GDZC"//iframe的url
 	    });
     }
+	//打印
+	function onPrint (id) {
+		/*if(_ORGID <= 0){
+            alert("请选择固定资产分类！");
+            return;
+        }*/
+		id = id;
+		var title = "打印固定资产标签"
+		layer.open ({
+			type : 2,
+			title : title,
+			shadeClose : true,
+			shade : 0.8,
+			area : [
+				'90%', '90%'
+			],
+			content : 'goods/print?id=' + id + '&goodTypeId=' + _ORGID + "&colSym=GDZC"//iframe的url
+		});
+	}
     //添加完成后执行方法
     function onSaveOk (entity) {
 	    $ ("#grid").trigger ("reloadGrid");
