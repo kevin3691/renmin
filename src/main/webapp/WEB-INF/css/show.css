@@ -1,0 +1,129 @@
+/*-----------濉┖棰�----------------*/
+/*搴忓垪鍙�*/
+span.exam_core_questions_fillBlankAnswer-block_mode_options{ display:inline; list-style-type:none;}
+
+/*璇曢鍧�*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*棰樺共*/
+.exam_core_questions_fillBlankAnswer-text_border_stem{ display:inline; padding:5px 0;font-weight:bold; line-height:34px; font-size:14px; }
+.exam_core_questions_fillBlankAnswer-text_border_stem p{ display:inline;}
+
+/*濉┖ 绛旀鏍峰紡*/
+.exam_core_questions_fillBlankAnswer-text_border_synopsis{ display:block; padding:5px 0;}
+.exam_core_questions_fillBlankAnswer-form_border_option,
+.exam_core_questions_fillBlankAnswer-form_border_option:hover{ text-indent:10px; border-radius:3px; border: 1px solid #64b4ff;  padding: 5px 10px; margin:0 5px;color:#333;box-shadow:2px 3px 3px #f6f8f9 inset;-moz-box-shadow:2px 3px 3px #f6f8f9 inset;-webkit-box-shadow:2px 3px 3px #f6f8f9 inset;}
+.exam_core_questions_fillBlankAnswer-form_border_option:hover{border: 1px solid #589BC8;}
+.exam_core_questions_fillBlankAnswer-form_border_option input{ border:0; margin-top:5px; max-width:100px;}
+
+/*瑙ｆ瀽*/
+.exam_core_questions_fillBlankAnswer-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_fillBlankAnswer-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
+
+/* 閲嶇疆 chrome input鐒︾偣妗� */
+a:focus, *:focus {outline:none;}
+a:focus, *:focus {noFocusLine: expression(this.onFocus=this.blur());}
+
+
+
+/*-----------绠€绛旈----------------*/
+/*搴忓垪鍙�*/
+span.exam_core_questions_shortAnswer-block_mode_options{padding: 0px 0px 10px 20px;display: list-item; list-style-type:decimal;}
+.exam_core_questions_shortAnswer-text_border_stem textarea{ width: 100%;}
+
+/*璇曢鍧�*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*棰樺共*/
+.exam_core_questions_shortAnswer-text_border_stem{ float:left;display:block; padding:5px 0;font-weight:bold; line-height:24px; font-size:14px; }
+.exam_core_questions_shortAnswer-text_border_stem p{ display:block; padding:0; margin:0;}
+
+/*璇曢閫夐」 ul*/
+.exam_core_questions_shortAnswer-block_body_options{display: block;clear:both;border-top:1px solid #ccc;}
+.exam_core_questions_shortAnswer-form_border_option{display: block; cursor:pointer; }
+
+/*閽堝chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0){ 
+    .exam_core_questions_shortAnswer-form_border_option div{overflow: visible !important;}
+    .exam_core_questions_shortAnswer-form_border_option div.nicEdit-panelContain,
+    .exam_core_questions_shortAnswer-form_border_option div.nicEdit-panel,
+    .exam_core_questions_shortAnswer-form_border_option div.nicEdit-panel div{overflow:hidden !important;}
+    /* 寮哄埗淇敼绠€绛旈缂栬緫鍣ㄧ殑楂樺害涓烘渶灏� 61px */
+    #_Editer{ min-height: 61px !important;}
+}
+
+/*瑙ｆ瀽*/
+.exam_core_questions_shortAnswer-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_shortAnswer-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
+
+/*-----------鍗曢€夐----------------*/
+/*搴忓垪鍙�*/
+.exam_core_questions_binaryChoice-block_mode_options{ display: list-item; list-style-type:upper-alpha;}
+
+/*璇曢鍧�*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*棰樺共*/
+.exam_core_questions_binaryChoice-text_border_stem{ display:block; padding:5px 0; border-bottom:1px solid #ccc; font-weight:bold; line-height:24px; font-size:14px; }
+.exam_core_questions_binaryChoice-text_border_stem p{ display:block; padding:0; margin:0;}
+
+/*閫夐」*/
+.exam_core_questions_binaryChoice-block_mode_options{position:relative; padding:2px 5px 0 0; margin:0 0 10px 0; /*border:1px solid #ccc; */background:#fff;}
+.exam_core_questions_binaryChoice-block_mode_options:hover,.exam_core_questions_binaryChoice-block_mode_options_h{ background:#efefef;}
+.exam_core_questions_binaryChoice-form_border_option{  position:absolute; *position: relative; padding:7px 3px 0 2px;margin:0; display:inline;   }
+.exam_core_questions_binaryChoice-text_border_synopsis{ display:block; *display:inline; padding:5px 0; *line-height:30px; text-indent:30px; margin-top:2px;*margin-top:6px;}
+
+/*瑙ｆ瀽*/
+.exam_core_questions_binaryChoice-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_binaryChoice-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
+
+
+/*-----------澶氶€夐----------------*/
+/*搴忓垪鍙�*/
+.exam_core_questions_multipleChoice-block_mode_options{display: list-item; list-style-type: upper-alpha;}
+
+/*璇曢鍧�*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*棰樺共*/
+.exam_core_questions_multipleChoice-text_border_stem{ float:left;display:block; padding:5px 0;font-weight:bold; line-height:24px; font-size:14px; }
+.exam_core_questions_multipleChoice-text_border_stem p{ display:block; padding:0; margin:0;}
+
+/*閫夐」*/
+.exam_core_questions_multipleChoice-block_body_options{clear:both;border-top:1px solid #ccc;}
+.exam_core_questions_multipleChoice-block_mode_options{ cursor:pointer; position:relative; padding:2px 5px 0 0; margin:0 0 10px 0; /*border:1px solid #ccc; */background:#fff;}
+.exam_core_questions_multipleChoice-block_mode_options input[type="checkbox"]{ cursor:pointer;}
+.exam_core_questions_multipleChoice-block_mode_options:hover,.exam_core_questions_multipleChoice-block_mode_options_h{  background:#efefef;}
+.exam_core_questions_multipleChoice-form_border_option{ position:absolute; padding:7px 3px 0 2px;margin:0; display:inline; cursor:pointer;   }
+.exam_core_questions_multipleChoice-text_border_synopsis{ display:block; padding:5px 0 5px 25px;}
+.exam_core_questions_multipleChoice-text_border_synopsis p{padding:0 0 0 0px;  margin:0; line-height:24px; font-size:14px; }
+
+/*瑙ｆ瀽*/
+.exam_core_questions_multipleChoice-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_multipleChoice-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
+
+
+
+/*-----------鍗曢€夐----------------*/
+/*搴忓垪鍙�*/
+.exam_core_questions_singleAnswer-block_mode_options{display: list-item; list-style-type: upper-alpha;}
+
+/*璇曢鍧�*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*棰樺共*/
+.exam_core_questions_singleAnswer-text_border_stem{ float:left;display:block; padding:5px 0;font-weight:bold; line-height:24px; font-size:14px; }
+.exam_core_questions_singleAnswer-text_border_stem p{ display:block; padding:0; margin:0;}
+
+/*閫夐」*/
+.exam_core_questions_singleAnswer-block_body_options{clear:both;border-top:1px solid #ccc;}
+.exam_core_questions_singleAnswer-block_mode_options{ cursor:pointer; position:relative;padding:2px 5px 0 0; margin:0 0 10px 0; /*border:1px solid #ccc;*/ background:#fff;}
+.exam_core_questions_singleAnswer-block_mode_options input[type="radio"]{ cursor:pointer;}
+.exam_core_questions_singleAnswer-block_mode_options:hover,.exam_core_questions_singleAnswer-block_mode_options_h{ background:#efefef;}
+.exam_core_questions_singleAnswer-form_border_option{ position:absolute; padding:7px 3px 0 2px;margin:0; display:inline;   }
+.exam_core_questions_singleAnswer-text_border_synopsis{ display:block; padding:5px 0 5px 25px;}
+.exam_core_questions_singleAnswer-text_border_synopsis p{padding:0 0 0 0px;  margin:0; line-height:24px; font-size:14px; }
+
+/*瑙ｆ瀽*/
+.exam_core_questions_singleAnswer-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_singleAnswer-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}

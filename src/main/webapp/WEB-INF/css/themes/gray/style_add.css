@@ -1,0 +1,55 @@
+﻿.dzjj-header-td1 {
+ width: 33%;
+ padding: 0;
+ margin: 0;
+ height:26px;
+ background: url(images/dzjj_header_bg.gif);
+}
+.dzjj-header-td2 {
+ width: 100%;
+ padding: 0;
+ margin: 0;
+ height:2px;
+ background: #ffffff;
+}
+.dzjj-header-td3 {
+ width: 100%;
+ padding: 0;
+ margin: 0;
+ height:2px;
+ background: #d10000;
+}
+.dzjj-header-txt13 {
+	color: #333333;
+	font-size: 13px;
+}
+.dzjj-header-txtgreen {
+    color: #009900;
+	font-weight: bold;
+}
+.dzjj-header-black13 {
+    color: #000000;
+	font-size: 13px;
+}
+.dzjj-header-white13 {
+    color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+}
+.dzjj-header-txtred {
+    color: #FF0000;
+	font-weight: bold;
+}
+.dzjj-header-txtred16 {
+	color: #FF0000;
+	font-size: 16px;
+	font-weight: bold;
+}
+.dzjj-header-txtred216 {
+	color: #f60000;
+	font-size: 16px;
+	font-weight: bold;
+}
+.dzjj-table-td1 {
+BORDER-BOTTOM: #333333 1px solid;BORDER-top: #333333 1px solid;  BORDER-LEFT: #333333 1px solid; BORDER-RIGHT: #333333 1px solid
+}

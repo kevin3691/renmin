@@ -1,0 +1,20 @@
+/*-----------单选题----------------*/
+/*序列号*/
+.exam_core_questions_binaryChoice-block_mode_options{ display: list-item; list-style-type:upper-alpha;}
+
+/*试题块*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*题干*/
+.exam_core_questions_binaryChoice-text_border_stem{ display:block; padding:5px 0; border-bottom:1px solid #ccc; font-weight:bold; line-height:24px; font-size:14px; }
+.exam_core_questions_binaryChoice-text_border_stem p{ display:block; padding:0; margin:0;}
+
+/*选项*/
+.exam_core_questions_binaryChoice-block_mode_options{position:relative; padding:2px 5px 0 0; margin:0 0 10px 0; /*border:1px solid #ccc; */background:#fff;}
+.exam_core_questions_binaryChoice-block_mode_options:hover,.exam_core_questions_binaryChoice-block_mode_options_h{ background:#efefef;}
+.exam_core_questions_binaryChoice-form_border_option{  position:absolute; *position: relative; padding:7px 3px 0 2px;margin:0; display:inline;   }
+.exam_core_questions_binaryChoice-text_border_synopsis{ display:block; *display:inline; padding:5px 0; *line-height:30px; text-indent:30px; margin-top:2px;*margin-top:6px;}
+
+/*解析*/
+.exam_core_questions_binaryChoice-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_binaryChoice-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
