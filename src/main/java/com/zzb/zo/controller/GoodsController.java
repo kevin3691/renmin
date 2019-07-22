@@ -133,6 +133,46 @@ public class GoodsController extends BaseController {
 		return "/goods/edit";
 	}
 
+	/**
+	 * View 打印页 print
+	 *
+	 * @param request
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/print")
+	//@RequiresPermissions("BASE_PERSON:RW")
+	public String print(HttpServletRequest request, ModelMap model) {
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		/*
+		String colSym = request.getParameter("colSym") != null ? String.valueOf(request
+				.getParameter("colSym")) : "";
+		String colTitle = request.getParameter("colTitle") != null ? String.valueOf(request
+				.getParameter("colTitle")) : "";
+		int goodTypeId = request.getParameter("goodTypeId") != null ? Integer.valueOf(request
+				.getParameter("goodTypeId")) : 0;
+		*/
+		Goods goods = new Goods();
+		if (id > 0) {
+			goods = goodsService.dtl(id);
+		}
+		model.addAttribute("o", goods);
+		return "/goods/print";
+	}
+
+	@RequestMapping(value = "/erWeiMa")
+	//@RequiresPermissions("BASE_PERSON:RW")
+	public String erWeiMa(HttpServletRequest request, ModelMap model) {
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		Goods goods = new Goods();
+		if (id > 0) {
+			goods = goodsService.dtl(id);
+		}
+		model.addAttribute("o", goods);
+		return "/goods/erWeiMa";
+	}
 
 	@RequestMapping(value = "/edit4")
 	//@RequiresPermissions("BASE_PERSON:RW")

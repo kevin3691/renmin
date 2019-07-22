@@ -135,6 +135,7 @@
 				/browser.html=anon
 				/html/**=anon
 				/web/**=anon
+                /goods/erWeiMa=anon
 				/home/login=anon
 				/home/register=anon
 				/home/index=anon

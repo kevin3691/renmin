@@ -11,11 +11,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.util.*;
 
 @Transactional
 @Service("goodsService")
@@ -195,5 +195,7 @@ public QueryResult<Goods> getTopPerson(int num, String sym) {
 	public void sort(int id, String order) {
 		goodsDao.sort(id, order);
 	}
+
+
 
 }
