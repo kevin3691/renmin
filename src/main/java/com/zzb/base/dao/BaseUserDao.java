@@ -7,11 +7,10 @@ import com.zzb.core.baseclass.BaseDao;
 
 @Repository("baseUserDao")
 public class BaseUserDao extends BaseDao<BaseUser> {
-
 	/**
 	 * 
 	 */
-	public BaseUserDao() {
+        public BaseUserDao() {
 		// TODO Auto-generated constructor stub
 	}
 

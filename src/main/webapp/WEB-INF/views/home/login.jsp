@@ -55,8 +55,6 @@
         }
         $ (function () {
             $("#p").attr("type","password");
-	        
-	       
 	        //回车提交
 	        document.onkeydown = function (e) {
 		        $ (".alert").hide ();

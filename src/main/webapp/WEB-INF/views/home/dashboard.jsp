@@ -511,8 +511,6 @@ function OpenCalendar(id) {
         $("#round").val(plan.round);
         $("#level").val(plan.level);
         $("#type").val(plan.type);
-
-
         $('#newcal').modal('show');
 
         });
@@ -597,6 +595,11 @@ function onDel() {
         init()
         workplan()
     });
+
+
+
+
+
 </script>
 <style>
 
@@ -607,6 +610,20 @@ function onDel() {
 	<div class="container-fluid">
 		<div>&nbsp;</div>
         <div class="row">
+            <div class="date">
+                <span>
+                    <script type="text/javascript">
+                         document.write('星期'+'日一二三四五六'.charAt(new Date().getDay()))
+                    </script>
+                 </span>
+                <!----><iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=10" width="300" height="25" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+                <span>
+                 <script type="text/javascript">document.write(new Date().getFullYear()+'年'+(new Date().getMonth()+1)+'月'+new Date().getDate()+'日')
+                </script>
+                </span>
+            </div>
+
+            <%--
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
                 <div class="small-box bg-aqua">
@@ -667,8 +684,8 @@ function onDel() {
                 </div>
             </div>
             <!-- ./col -->
-        </div>
-        <div class="col-md-6 col-sm-6">
+        --%></div>
+        <div class="col-md-5 col-sm-5">
             <div class="box box-default box-solid">
                 <div class="box-header with-border">
                     <h3 class="box-title">领导工作计划</h3>
@@ -683,7 +700,22 @@ function onDel() {
             </div>
         </div>
 
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-5 col-sm-5">
+            <div class="box box-default box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">领导工作计划</h3>
+
+                    <div class="box-tools pull-right">
+                        <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
+                    </div>
+                </div>
+                <div class="box-body" id="">
+
+                </div>
+            </div>
+        </div>
+
+  <%--      <div class="col-md-6 col-sm-6">
             <div class="box box-default box-solid">
                 <div class="box-header with-border">
                     <h3 class="box-title">待办公文列表</h3>
@@ -696,9 +728,9 @@ function onDel() {
                     <table id="grid_dbgw"></table>
                 </div>
             </div>
-        </div>
+        </div>--%>
 
-        <div class="col-md-6 col-sm-6">
+<%--        <div class="col-md-6 col-sm-6">
             <div class="box box-default box-solid">
                 <div class="box-header with-border">
                     <h3 class="box-title">督办超时列表</h3>
@@ -711,9 +743,9 @@ function onDel() {
                     <table id="grid_chaoshi"></table>
                 </div>
             </div>
-        </div>
+        </div>--%>
 
-		<div class="col-md-6 col-sm-6">
+	<%--	<div class="col-md-6 col-sm-6">
 			<div class="box box-default box-solid">
             <div class="box-header with-border">
               <h3 class="box-title">督办列表</h3>
@@ -726,7 +758,7 @@ function onDel() {
               <table id="grid_duban"></table>
             </div>
           </div>
-		</div>
+		</div>--%>
 
 
 		<%--<div class="col-md-6 col-sm-6">--%>

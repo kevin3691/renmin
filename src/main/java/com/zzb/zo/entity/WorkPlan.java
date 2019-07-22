@@ -9,7 +9,6 @@ import java.util.Date;
 
 @Entity
 public class WorkPlan extends BaseEntity<WorkPlan> {
-
 	private int personId;
 	private String person;
 	private int orgId;
@@ -25,9 +24,7 @@ public class WorkPlan extends BaseEntity<WorkPlan> {
 	private Date finishtime;
 	private String category;
 	private String colSym;
-
 	private String content;
-
 	private int isActive;
 	private String descr;// 备注
 	private int lineNo;// 排序号
