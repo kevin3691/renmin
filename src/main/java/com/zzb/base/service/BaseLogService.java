@@ -7,6 +7,7 @@ import java.util.List;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
+import com.zzb.base.entity.BaseUser;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -72,6 +73,19 @@ public class BaseLogService extends BaseService<BaseLog> {
 		qp.setArgs(args);
 		return baseLogDao.list(qp);
 	}
+
+
+/*
+	public QueryResult<BaseLog> list1(HttpServletRequest request) {
+		System.err.println((BaseUser)request.getSession().getAttribute("user"));
+		QueryPara qp = new QueryPara(request);
+		List<Object> args = new ArrayList<Object>();
+		String hql = "FROM BaseLog WHERE 1=1";
+		qp.setHql(hql);
+		qp.setArgs(args);
+		return baseLogDao.list(qp);
+	}
+*/
 
 	public BaseLog save(BaseLog log, HttpServletRequest request) {
 		log.setRecordInfo(super.GenRecordInfo(log.getRecordInfo(), request));

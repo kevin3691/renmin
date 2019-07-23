@@ -26,7 +26,6 @@ public class WorkPlanList extends BaseEntity<WorkPlanList> {
 	private int level;
 	private String type;
 	private String content;
-
 	private String descr;// 备注
 
 	public Date getStartdate() {

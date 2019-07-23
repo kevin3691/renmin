@@ -8,8 +8,6 @@
 		var OBJ;
         function onModify(){
             var title = "修改密码"
-
-
             var url = 'home/modifyPwd?id=${baseUser}'
             window.top.document.getElementById("ifrmDtl").src = url;
             window.top.$('#winDtl').dialog({
@@ -20,7 +18,6 @@
                 modal:true,
                 title:title
             });
-
             window.top.$('#winDtl').dialog("open");
         }
 
@@ -76,10 +73,8 @@
 			</div>
 			<h4 class="pf-user-name ellipsis">${baseUser.basePersonName}</h4>
 			<i class="iconfont xiala">&#xe607;</i>
-
 			<div class="pf-user-panel">
 				<ul class="pf-user-opt">
-
 					<li class="pf-modify-pwd">
 						<a href="javascript:onModify()">
 							<i class="iconfont">&#xe634;</i>
@@ -293,7 +288,6 @@
     })*/
 
     $.each (_Menus, function (i, v) {
-
         if(v.baseTree.parentId == 0){
             index++
             var obj = new Object()

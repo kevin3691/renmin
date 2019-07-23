@@ -115,7 +115,6 @@ public class WorkPlanListController extends BaseController {
 	@RequestMapping(value = "/list")
 	public QueryResult<WorkPlanList> list(HttpServletRequest request) {
 		QueryResult<WorkPlanList> rslt = workPlanListService.list(request);
-
 		return rslt;
 	}
 
@@ -138,8 +137,7 @@ public class WorkPlanListController extends BaseController {
 	 */
 	@ResponseBody
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
-	public Map<String, Object> save(WorkPlanList doc, CashList cashList,
-									HttpServletRequest request) {
+	public Map<String, Object> save(WorkPlanList doc, CashList cashList, HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		doc.setMakeday(new Date());
 		doc = workPlanListService.save(doc, request);
@@ -173,7 +171,6 @@ public class WorkPlanListController extends BaseController {
 		int id = Integer.valueOf(request.getParameter("id"));
 		WorkPlanList plan = workPlanListService.dtl(id);
 		map.put("entity", plan);
-
 		return map;
 	}
 
