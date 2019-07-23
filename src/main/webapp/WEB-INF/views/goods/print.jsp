@@ -92,36 +92,126 @@
         $("#author").val("${baseUser.basePersonName}")
     })
 </script>
-	<style>
+	<%--<style>
 		table {
-			margin-top:20px;
+			margin:6px 0px 0px;
 			padding: 0px ;
 		}
 		table tr td{
+
+			padding: 4px 0px !important;
+			border: none !important;
 			margin: 0px ;
+			width: 25%;
+			font-size: 5px;
 		}
+		ul{
+			margin: 0px ;
+			padding: 0px;
+			list-style: none;
+		}
+		li{
+			display: inline-block;
+			width: 48%;
+			line-height: 30px;
+		}
+		table tr:first-child td{
+			border: none;
+		}
+	</style>--%>
+
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		ul, li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.box {
+			width: 300px;
+			height: 180px;
+			border: 2px solid #000000;
+			padding:8px;
+			margin: auto;
+			position: relative;
+		}
+		.top{ width:280px; height:56px; border-bottom:1px solid #000;}
+		.logo{ width:246px; float:left; height:56px; font:16px/24px 微软雅黑; color:#330; margin-left: 4px}
+		.img_box{ float:right; width:40px; height:40px; margin-top:4px;}
+		.img_box img{ width:100%; height:100%;}
+		.test_box{ width:288px; height:104px; margin-top:3px;}
+		.test_box ul li{ float:left; height:26px;}
+		.test_box_tit{ width:57px; font:12px/26px 黑体; color:#000;}
+		.test_box_text{ width:87px; font:11px/26px 宋体; color:#000;}
 	</style>
 </head>
 
 <body>
+<div style="height: 30px"></div>
+<div class="box">
+	<div class="top">
+		<div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
+		<div class="img_box" id="qrcode" style="position: absolute;right: 18px;"></div>
+	</div>
+	<div class="test_box">
+		<ul>
+			<li class="test_box_tit">ID</li>
+			<li class="test_box_text">${o.id}</li>
+			<li class="test_box_tit">设备名称</li>
+			<li class="test_box_text">${o.name}</li>
+			<li class="test_box_tit">设备编号</li>
+			<li class="test_box_text">${o.sn}</li>
+			<li class="test_box_tit">领用人</li>
+			<li class="test_box_text">${o.keeper}</li>
+			<li class="test_box_tit">单位</li>
+			<li class="test_box_text">${o.unit}</li>
+			<li class="test_box_tit">类别</li>
+			<li class="test_box_text">${o.type}</li>
+			<li class="test_box_tit">规格型号</li>
+			<li class="test_box_text">${o.spec}</li>
+			<li class="test_box_tit">购买日期</li>
+			<li class="test_box_text" id="date">服务器</li>
+		</ul>
+	</div>
+</div>
+<div style="height: 30px"></div>
 	<div class="container-fluid">
-		<div style="width: 50%;margin: auto">
+		<%--<div style="width: 62mm;overflow: hidden;margin: auto;padding:10px;border: 1px solid #000;">
+			<div style="border-bottom: 1px solid #000;overflow: hidden;padding: 0px 10px 5px">
+				<p style="float:left;margin:3px 0px 0;font-size: 5px">中共邯郸市委组织部<br/>固定资源标签</p>
+				<div style="float: right;margin:0" id="qrcode"></div>
+			</div>
+			<div style="width:100%;float: left;padding: 0px 0px 0;font-size: 20px">
+				<table class="table" style="margin-bottom: 0px"  cellpadding="0" >
+					<tr style="border: none;">
+						<td>ID</td><td>${o.id}</td><td>编号</td><td >${o.sn}</td>
+					</tr>
+					<tr>
+						<td>名称</td><td>${o.name}</td><td>领用人</td><td  >${o.keeper}</td>
+					</tr>
+					<tr>
+						<td>单位</td><td>${o.unit}</td><td>类别</td><td >${o.type}</td>
+					</tr>
+					<tr>
+						<td>规格型号</td><td>${o.spec}</td><td>购买日期</td><td id="date"></td>
+					</tr>
+				</table>
+				<script>
+					var date ="${o.invoicedt}";
+					$("#date").html(date.substring(0,10));
+					//jsonDateTimeFormatter(date, 0)
+				</script>
+			</div>
+		</div>--%>
 
-			<table class="table table-bordered"  cellpadding="0" >
-				<tr style="">
-					<td>ID</td><td>${o.id}</td><td>编号</td><td >${o.sn}</td><td rowspan="3"><div style="width:100px;margin: auto;" id="qrcode"></div></td>
-				</tr>
-				<tr>
-					<td>名称</td><td>${o.name}</td><td>领用人</td><td  >${o.keeper}</td>
-				</tr>
-				<tr>
-					<td>单位</td><td>${o.unit}</td><td>类别</td><td >${o.type}</td>
-				</tr>
-				<tr>
-					<td>规格型号</td><td>${o.spec}</td><td>购买日期</td><td>${o.invoicedt}</td><td></td>
-				</tr>
-			</table>
-		</div>
+			<script>
+				var date ="${o.invoicedt}";
+				$("#date").html(date.substring(0,10));
+				//jsonDateTimeFormatter(date, 0)
+			</script>
 		<div class="form-group controls" style="text-align:center">
 			<button type="button" class="btn btn-info" onclick="DoPrint()">打印</button>
 			&nbsp;&nbsp;
@@ -130,29 +220,14 @@
 	</div>
 </body>
 </html>
-<%
-	String path = request.getContextPath();
-//	String basePath = request.getScheme() + "://"
-//			+ request.getServerName() + ":" + request.getServerPort()
-//			+ path + "/";
-	String basePath = path + "/";
-
-
-	String bp = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
-
-%>
 <script>
-	jQuery(function(){
+
 		$("#qrcode").qrcode({
-			width:100,
-			height:100,
-			//text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
-			text:"http://www.hdswzzb${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
+			width:50,
+			height:50,
+			text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
+			//text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
 		})
-		//encodeURI("
-	})
 </script>
 <SCRIPT LANGUAGE="VBScript">
 Sub DoPrint()

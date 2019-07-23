@@ -93,34 +93,75 @@
         })
     </script>
     <style>
-        table {
-            margin-top:20px;
-            padding: 0px ;
+        html, body {
+            margin: 0;
+            padding: 0;
         }
-        table tr td{
-            margin: 0px ;
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
+        .box {
+            width: 300px;
+            height: 180px;
+            border: 2px solid #000000;
+            padding:8px;
+            margin: auto;
+            position: relative;
+        }
+        .top{ width:280px; height:56px; border-bottom:1px solid #000;}
+        .logo{ width:246px; float:left; height:56px; font:16px/24px 微软雅黑; color:#330; margin-left: 4px}
+        .img_box{ float:right; width:40px; height:40px; margin-top:4px;}
+        .img_box img{ width:100%; height:100%;}
+        .test_box{ width:288px; height:104px; margin-top:3px;}
+        .test_box ul li{ float:left; height:26px;}
+        .test_box_tit{ width:57px; font:12px/26px 黑体; color:#000;}
+        .test_box_text{ width:87px; font:11px/26px 宋体; color:#000;}
     </style>
 </head>
 
 <body>
-<div class="container-fluid">
-    <div style="width: 50%;margin: auto">
-        <table class="table table-bordered"  cellpadding="0" >
-            <tr style="">
-                <td>ID</td><td>${o.id}</td><td>编号</td><td >${o.sn}</td>
-            </tr>
-            <tr>
-                <td>名称</td><td>${o.name}</td><td>领用人</td><td  >${o.keeper}</td>
-            </tr>
-            <tr>
-                <td>单位</td><td>${o.unit}</td><td>类别</td><td >${o.type}</td>
-            </tr>
-            <tr>
-                <td>规格型号</td><td>${o.spec}</td><td>购买日期</td><td>${o.invoicedt}</td>
-            </tr>
-        </table>
+<div style="height: 30px"></div>
+<div class="box">
+    <div class="top">
+        <div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
+        <div class="img_box" id="qrcode" style="position: absolute;right: 18px;"></div>
+    </div>
+    <div class="test_box">
+        <ul>
+            <li class="test_box_tit">ID</li>
+            <li class="test_box_text">${o.id}</li>
+            <li class="test_box_tit">设备名称</li>
+            <li class="test_box_text">${o.name}</li>
+            <li class="test_box_tit">设备编号</li>
+            <li class="test_box_text">${o.sn}</li>
+            <li class="test_box_tit">领用人</li>
+            <li class="test_box_text">${o.keeper}</li>
+            <li class="test_box_tit">单位</li>
+            <li class="test_box_text">${o.unit}</li>
+            <li class="test_box_tit">类别</li>
+            <li class="test_box_text">${o.type}</li>
+            <li class="test_box_tit">规格型号</li>
+            <li class="test_box_text">${o.spec}</li>
+            <li class="test_box_tit">购买日期</li>
+            <li class="test_box_text" id="date">服务器</li>
+        </ul>
     </div>
 </div>
+<script>
+    var date ="${o.invoicedt}";
+    $("#date").html(date.substring(0,10));
+    //购买日期
+</script>
 </body>
 </html>
+
+<script>
+    $("#qrcode").qrcode({
+        width:50,
+        height:50,
+        //text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
+        text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
+    })
+</script>
