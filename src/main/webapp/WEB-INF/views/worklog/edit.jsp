@@ -31,7 +31,7 @@
             window.parent.location.href=window.parent.location.href;
         }
 	</script>
-</head>
+</head>   
 <body>
 <div class="container-fluid">
 	<div class="breadcrumb content-header form-inline"
