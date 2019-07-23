@@ -16,8 +16,8 @@
 	    $ ("#grid").jqGrid ({
 	        url : "workPlan/list",
 			postData:{
-	          category:'LINGDAO'
-			},
+                category:'LINGDAO'
+            },
 	        height : document.body.clientHeight - 130,
 	        rownumbers : true,
 	        colModel : [
@@ -88,7 +88,6 @@
     }
     //保存
     function onSave (orgid,id) {
-
 	    id = id || 0;
 	    var title = "添加工作计划"
 	    if (id > 0){

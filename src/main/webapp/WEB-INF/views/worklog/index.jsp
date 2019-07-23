@@ -38,6 +38,7 @@
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <link href="css/master.css" rel="stylesheet" type="text/css">
+	<jsp:include page="/WEB-INF/views/include/head4.jsp" />
 </head>
 <script type="text/javascript">
     //初始化
@@ -45,33 +46,35 @@
         loadGrid();
     })
     //加载表格
-    function loadGrid(){
+    function loadGrid() {
         $("#grid").jqGrid({
-            url : "worklog/list",
-            colModel : [
+            url: "worklog/list",
+            postData:{
+                category:'LINGDAO'
+            },
+            colModel: [
                 {
-                    label : '开始日期',
-                    name : 'startdatei',
-                    index : 'startdatei'
-                },  {
-                    label : '结束日期',
-                    name : 'finishdatei',
-                    index : 'finishdatei'
-
-                },  {
-                    label : '标题',
-                    name : 'titlei',
-                    index : 'titlei'
-                },  {
-                    label : '内容',
-                    name : 'contenti',
-                    index : 'contenti'
-                },{
-                    label : ' ',
-                    name : 'id',
-                    align : 'center',
-                    sortable : false,
-                    formatter : function (value, options, row) {
+                    label: '开始日期',
+                    name: 'startdatei',
+                    index: 'startdatei'
+                }, {
+                    label: '结束日期',
+                    name: 'finishdatei',
+                    index: 'finishdatei'
+                }, {
+                    label: '标题',
+                    name: 'titlei',
+                    index: 'titlei'
+                }, {
+                    label: '内容',
+                    name: 'contenti',
+                    index: 'contenti'
+                }, {
+                    label: ' ',
+                    name: 'id',
+                    align: 'center',
+                    sortable: false,
+                    formatter: function (value, options, row) {
                         var btn = "";
                         btn += '&nbsp;<a href="javascript:onSave(' + value + ')" title="">编辑</a>'
                         btn += '&nbsp;<a href="javascript:onDel(' + value + ')" title="">删除</a>'
@@ -79,21 +82,34 @@
                     }
                 }
             ],
-            rowNum : 20,
-            rowList : [
+            rowNum: 20,
+            rowList: [
                 20, 50, 100
             ],
-            pager : '#pager',
-            sortname : 'id',
-            sortorder : "asc"
+            pager: '#pager',
+            sortname: 'id',
+            sortorder: "asc"
         });
     }
-    //执行添加方法
+    //保存
     function onSave (id) {
-        id = id || 0;
-        document.location = _BasePath + 'worklog/edit?id='+id;
-    }
 
+        id = id || 0;
+        var title = "添加工作日志"
+        if (id > 0){
+            title = "编辑工作日志"
+        }
+        layer.open ({
+            type : 2,
+            title : title,
+            shadeClose : true,
+            shade : 0.8,
+            area : [
+                '90%', '90%'
+            ],
+            content : 'worklog/edit?id=' + id //iframe的url
+        });
+    }
     function onDel(id) {
         layer.confirm ('确定要删除该记录？', {
             btn : [
@@ -113,7 +129,7 @@
     //查询
     function onQ () {
         var para = {
-            name : $ ("#titlei").val (),
+            titlei : $ ("#titlei").val (),
         };
         $ ("#grid").jqGrid ("setGridParam", {
             postData : para
@@ -126,6 +142,7 @@
     }
 </script>
 <body>
+
 <div class="container-fluid">
 	<div class="breadcrumb content-header form-inline"
 		 style="padding:8px;">
@@ -145,9 +162,10 @@
 					onclick="onSave()">添加</button>
 		</div>
 	</div>
-	<table id="grid"></table>
+
 	<div id="pager" style="height:35px;"></div>
 </div>
 
+<table id="grid"></table>
 </body>
 </html>

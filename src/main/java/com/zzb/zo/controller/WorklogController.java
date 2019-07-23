@@ -76,6 +76,7 @@ public class WorklogController extends BaseController {
     @RequestMapping(value = "/edit")
     public String edit(HttpServletRequest request, ModelMap map){
         int id = request.getParameter("id") != null ? Integer.valueOf(request.getParameter("id")) : 0;
+        System.out.println(id);
         Worklog worklog = new Worklog();
         if(id>0){
             worklog = worklogService.dtl(id);

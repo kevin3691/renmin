@@ -5,14 +5,14 @@
 <head>
 
 	<title>日志 - 编辑</title>
-	<jsp:include page="/WEB-INF/views/include/head.jsp" />
-	<script type="text/javascript" charset="utf-8" src="upload/u000e/config.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="upload/u000e/all.min.js"></script>
+	<jsp:include page="/WEB-INF/views/include/head4.jsp" />
 	<link rel="stylesheet" type="text/css"
 		  href="jslib/webuploader/webuploader.min.css">
 	<script type="text/javascript"
 			src="jslib/webuploader/webuploader.min.js"></script>
 	<script type="text/javascript" src="jslib/webuploader/uploader.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="u000e/config.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="u000e/all.min.js"></script>
 	<script type="text/javascript">
         //保存
         function onSave () {
@@ -28,12 +28,7 @@
         }
         //返回
         function onCancel () {
-            if ("${returnUrl}" != ""){
-                window.location = _BasePath + "${returnUrl}?colSym=${colSym}&colTitle=" + encodeURI ("${colTitle}");
-            }
-            else{
-                window.location = _BasePath + "/worklog/index?colSym=${colSym}&colTitle=" + encodeURI ("${colTitle}");
-            }
+            window.parent.location.href=window.parent.location.href;
         }
 	</script>
 </head>
@@ -43,13 +38,10 @@
 		 style="padding:8px;">
 		<div class="form-group">
 			<button type="button" class="btn btn-info" onclick="onSave()">保存</button>
-			&nbsp;
-			<button type="button" class="btn btn-danger" onclick="onCancel()">返回</button>
 		</div>
 	</div>
 	<form id="mainForm" class="form-horizontal">
 		<input type="hidden" id="id" name="id" value="${o.id}" />
-
 		<div class="row">
 			<div class="col-lg-9 col-sm-8">
 				<div class="form-group">
@@ -75,14 +67,12 @@
 				<div class="form-group">
 					<label class="col-lg-1 col-sm-2 control-label" for="titlei">标题</label>
 					<div class="col-lg-5 col-sm-4">
-						<div class="col-lg-5 col-sm-4">
-							<input class="form-control" id="titlei" name="titlei"
-								   value="${o.titlei}" type="text" maxlength=60 />
-						</div>
+							<input class="form-control" id="titlei" name="titlei" value="${o.titlei}" type="text" maxlength=60 />
 					</div>
 					<label class="col-lg-1 col-sm-2 control-label" for="contenti">内容</label>
 					<div class="col-lg-5 col-sm-4">
 						<input class="form-control" id="contenti" name="contenti" value="${o.contenti}" type="text" maxlength=60 />
+
 					</div>
 				</div>
 			</div>
