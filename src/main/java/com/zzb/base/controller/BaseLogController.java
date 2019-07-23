@@ -108,6 +108,12 @@ public class BaseLogController extends BaseController {
 		return baseLogService.list(request);
 	}
 
+/*	@ResponseBody
+	@RequestMapping(value = "/list1")
+	public QueryResult<BaseLog> list1(BaseLog log, HttpServletRequest request) {
+		return baseLogService.list1(request);
+	}*/
+
 	@ResponseBody
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public Map<String, Object> save(BaseLog log, HttpServletRequest request) {

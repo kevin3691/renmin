@@ -244,7 +244,6 @@ public class FinanceCashController extends BaseController {
 	@RequestMapping(value = "/list")
 	public QueryResult<FinanceCash> list(HttpServletRequest request) {
 		QueryResult<FinanceCash> rslt = financeCashService.list(request);
-
 		return rslt;
 	}
 

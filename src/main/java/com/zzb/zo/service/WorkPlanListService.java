@@ -88,9 +88,6 @@ public class WorkPlanListService extends BaseService<WorkPlanList> {
 			hql += " AND category LIKE ?";
 			args.add('%' + category + '%');
 		}
-
-
-
 		qp.setArgs(args);
 		qp.setHql(hql);
 		QueryResult<WorkPlanList> qr = workPlanListDao.list(qp);

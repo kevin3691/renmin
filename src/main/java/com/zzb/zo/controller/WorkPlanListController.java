@@ -115,7 +115,6 @@ public class WorkPlanListController extends BaseController {
 	@RequestMapping(value = "/list")
 	public QueryResult<WorkPlanList> list(HttpServletRequest request) {
 		QueryResult<WorkPlanList> rslt = workPlanListService.list(request);
-
 		return rslt;
 	}
 
@@ -172,7 +171,6 @@ public class WorkPlanListController extends BaseController {
 		int id = Integer.valueOf(request.getParameter("id"));
 		WorkPlanList plan = workPlanListService.dtl(id);
 		map.put("entity", plan);
-
 		return map;
 	}
 

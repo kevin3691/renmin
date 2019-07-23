@@ -451,6 +451,169 @@ function onPi(id,insId){
         });
     }
 
+
+
+
+function log(){
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+    $('#work').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            //right: 'month,agendaWeek,agendaDay,listMonth'
+            right: 'month,listMonth'
+        },
+        editable: false,
+        locale : "zh-cn",
+        timezone:"local",
+        dayClick: function (date, allDay, jsEvent, view) {
+            tian(date.format("YYYY-MM-DD HH:mm"));
+        },
+        eventMouseover: function (calEvent, jsEvent, view) {
+            var fstart = calEvent.start.format("YYYY-MM-DD HH:mm");
+            var fend = calEvent.end.format("YYYY-MM-DD HH:mm");
+            $(this).attr('title', fstart + " - " + fend + " " + "标题" + " : " + calEvent.title);
+            $(this).css('font-weight', 'normal');
+        },
+        eventClick: function (event) {
+            update(event.id);
+        },
+        events: function (start, end, timezone,callback) {
+            var datestarti = start.format("YYYY-MM-DD");
+            var dateendi = end.format("YYYY-MM-DD");
+            $.ajax({
+                url: 'worklog/list',
+                dataType: 'json',
+                cache: false,
+                data: {
+                    startdatei: datestarti,
+                    finishdatei: dateendi
+                },
+                success: function (result) {
+                    var events = [];
+                    for (var i = 0; i < result.rows.length; i++) {
+                        events.push({
+                            title: result.rows[i].titlei,
+                            start:jsonDateTimeFormatter(result.rows[i].startdatei,1),
+                            end: jsonDateTimeFormatter(result.rows[i].finishdatei,1),
+                            id: result.rows[i].id
+                        });
+                    }
+                    callback(events);
+                }
+            });
+        }
+    });
+}
+//打开窗口
+function tian(pDate) {
+    $("#btnDeli").hide(); //删除
+    //$('#newcal').find('form').form('clear');
+    $("#startdatei").val(pDate.toString());
+    $("#finishdatei").val(pDate.toString());
+    // $("#startdate").datetimepicker('setValue', pDate.toString());
+    // $("#finishdate").datetimepicker('setValue', pDate.toString());
+    $("#titlei").val("");
+    $("#contenti").val("");
+    $("#orgIdi").val("${baseUser.baseOrgId}");
+    $("#orgi").val("${baseUser.baseOrgName}");
+    $("#personIdi").val("${baseUser.basePersonId}");
+    $("#personi").val("${baseUser.basePersonName}");
+    $("#makedayi").val("");
+    $("#statusi").val(0);
+    $("#repeateri").val(0);
+    $("#roundi").val(0);
+    $("#leveli").val(0);
+    $("#typei").val("");
+    $('#newca2').modal('show');
+    // $("#btn_DlgAdd").show(); //添加保存
+    // $("#btn_DlgCancle").show(); //清空
+    // $("#btn_DlgEdit").hide(); //编辑保存
+    // $("#btn_DlgDel").hide(); //删除
+    // dlg_All.dialog({
+    //     iconCls: 'icon-add',
+    //     title: '添加信息'
+    // });
+    // dlg_All.find('form').form('clear');
+    // $("#Start_Date").datebox('setValue', pDate.toString());
+    // $('#Start_Time').timespinner('setValue', '00:00');
+    // $("#End_Date").datebox('setValue', pDate.toString());
+    // $('#End_Time').timespinner('setValue', '23:59');
+    // $('#dlg_ff').form('validate')
+    // dlg_All.dialog('open');
+}
+//添加
+function tianjia() {
+    if (!$ ('#mainFormi').validate ().form ()){
+        return false;
+    }
+    if ($("#startdatei").val() > $("#finishdatei").val()) {
+        alert("【开始日期】不能大于【结束日期】！");
+        return false;
+    }
+    var para = $ ("#mainFormi").serialize ();
+    $.post ('worklog/save', $ ("#mainFormi").serialize (), function (result, status) {
+            $("#work").fullCalendar('refetchEvents');
+            rest()
+            $('#newca2').modal('hide');
+        }
+    );
+}
+//初始化
+function rest() {
+    $("#idi").val(0);
+    // $("#startdate").val("");
+    // $("#finishdate").val("");
+    $("#titlei").val("");
+    $("#contenti").val("");
+    $("#orgIdi").val("");
+    $("#orgi").val("");
+    $("#personIdi").val("");
+    $("#personi").val("");
+    $("#makedayi").val("");
+    $("#statusi").val(0);
+    $("#repeateri").val(0);
+    $("#roundi").val(0);
+    $("#leveli").val(0);
+    $("#typei").val("");
+}
+//修改
+function update(id) {
+    $("#btnDeli").show()
+    $("#idi").val(id);
+    $("#mtitle").html("编辑日程")
+    $.post ('worklog/dtl', {id:id}, function (result, status) {
+        var plan = result.entity
+        $("#startdatei").val(jsonDateTimeFormatter(plan.startdatei,1));
+        $("#finishdatei").val(jsonDateTimeFormatter(plan.finishdatei,1));
+        $("#titlei").val(plan.titlei);
+        $("#contenti").val(plan.contenti);
+        $("#orgIdi").val(plan.orgIdi);
+        $("#orgi").val(plan.orgi);
+        $("#personIdi").val(plan.personIdi);
+        $("#personi").val(plan.personi);
+        $("#makedayi").val(plan.makedayi);
+        $("#statusi").val(plan.statusi);
+        $("#repeateri").val(plan.repeateri);
+        $("#roundi").val(plan.roundi);
+        $("#leveli").val(plan.leveli);
+        $("#typei").val(plan.typei);
+        $('#newca2').modal('show');
+    });
+}
+//删除
+function Del() {
+    $.post ("worklog/del", {
+        id : $("#idi").val()
+    }, function () {
+        $("#work").fullCalendar('refetchEvents');
+        $('#newca2').modal('hide');
+    });
+};
+
 function AddCalendar(pDate) {
     $("#btnDel").hide(); //删除
     //$('#newcal').find('form').form('clear');
@@ -512,10 +675,7 @@ function OpenCalendar(id) {
         $("#level").val(plan.level);
         $("#type").val(plan.type);
         $('#newcal').modal('show');
-
         });
-
-
 }
 
 function onReset() {
@@ -553,10 +713,10 @@ function onSave() {
         onReset()
         $('#newcal').modal('hide');
         }
-
     );
-
 }
+
+
 
 
 function onDel() {
@@ -594,7 +754,9 @@ function onDel() {
         loadGrid_dbgw ();
         init()
         workplan()
+        log();
     });
+
 
 
 
@@ -610,19 +772,7 @@ function onDel() {
 	<div class="container-fluid">
 		<div>&nbsp;</div>
         <div class="row">
-            <div class="date">
-                <span>
-                    <script type="text/javascript">
-                         document.write('星期'+'日一二三四五六'.charAt(new Date().getDay()))
-                    </script>
-                 </span>
-                <!----><iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=10" width="300" height="25" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
-                <span>
-                 <script type="text/javascript">document.write(new Date().getFullYear()+'年'+(new Date().getMonth()+1)+'月'+new Date().getDate()+'日')
-                </script>
-                </span>
-            </div>
-
+            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tg&skin=pitaya" frameborder="0" width="470" height="60" allowtransparency="true"></iframe>
             <%--
             <div class="col-lg-3 col-xs-6">
                 <!-- small box -->
@@ -689,7 +839,6 @@ function onDel() {
             <div class="box box-default box-solid">
                 <div class="box-header with-border">
                     <h3 class="box-title">领导工作计划</h3>
-
                     <div class="box-tools pull-right">
                         <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
                     </div>
@@ -703,14 +852,14 @@ function onDel() {
         <div class="col-md-5 col-sm-5">
             <div class="box box-default box-solid">
                 <div class="box-header with-border">
-                    <h3 class="box-title">领导工作计划</h3>
-
+                    <h3 class="box-title">工作日志</h3>
                     <div class="box-tools pull-right">
+
                         <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
                     </div>
                 </div>
-                <div class="box-body" id="">
-
+                <div class="box-body" id="work">
+                    <%--<table id="grid"></table>--%>
                 </div>
             </div>
         </div>
@@ -802,7 +951,6 @@ function onDel() {
             <%--</div>--%>
           <%--</div>--%>
 		<%--</div>--%>
-
 	</div>
 
     <div class="modal" id="newcal">
@@ -811,7 +959,7 @@ function onDel() {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="mtitle">新建日程</h4>
+                    <h4 class="modal-title" id="mtitlei">新建日程</h4>
                 </div>
                 <div class="modal-body">
                     <form id="mainForm" class="form-horizontal" >
@@ -897,5 +1045,88 @@ function onDel() {
         <!-- /.modal-dialog -->
     </div>
 
+
+
+
+
+    <div class="modal" id="newca2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="mtitle">新建日志</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="mainFormi" class="form-horizontal" >
+                        <input type="hidden" id="idi" name="id"/>
+                        <input type="hidden" id="personIdi" name="personIdi" />
+                        <input type="hidden" id="personi" name="personi" />
+                        <input type="hidden" id="orgIdi" name="orgIdi" />
+                        <input type="hidden" id="orgi" name="orgi"  />
+                        <input type="hidden" id="makedayi" name="makedayi"  />
+                        <input type="hidden" id="statusi" name="statusi"  />
+                        <input type="hidden" id="descri" name="descri"  />
+                        <input type="hidden" id="starttimei" name="starttimei"  />
+                        <input type="hidden" id="finishtimei" name="finishtimei"  />
+
+                        <input type="hidden" id="repeateri" name="repeateri"  />
+                        <input type="hidden" id="roundi" name="roundi"  />
+                        <input type="hidden" id="leveli" name="leveli" />
+                        <input type="hidden" id="typei" name="typei" />
+                        <div>&nbsp;</div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="startdate">开始日期</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input class="form-control" id="startdatei" name="startdatei"
+                                           type="text" />
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"
+                                           onclick="$('#startdate').datetimepicker('show');"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="finishdate">结束日期</label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <input class="form-control" id="finishdatei" name="finishdatei"
+                                           type="text" />
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"
+                                           onclick="$('#finishdate').datetimepicker('show');"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="title">标题</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="titlei" name="titlei"
+                                       value="" type="text"  />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="content">内容</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="contenti" name="contenti" rows=3></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-danger" id="btnDeli" onclick="Del()">删除</button>
+                    <button type="button" class="btn btn-primary" id="btnShowi" onclick="rest()">清空</button>
+                    <button type="button" class="btn btn-primary" id="btnSavei" onclick="tianjia()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
