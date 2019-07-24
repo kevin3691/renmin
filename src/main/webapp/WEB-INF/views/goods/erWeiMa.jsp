@@ -142,14 +142,14 @@
             <li class="test_box_text">${o.sn}</li>
 
             <li class="test_box_tit">使用部门</li>
-            <li class="test_box_text">${o.location}</li>
+            <li class="test_box_text">${o.org}</li>
             <li class="test_box_tit">管理者</li>
             <li class="test_box_text">${o.keeper}</li>
 
             <li class="test_box_tit">启用时间</li>
             <li class="test_box_text" id="date">服务器</li>
             <li class="test_box_tit">所在地点</li>
-            <li class="test_box_text">${o.org}</li>
+            <li class="test_box_text">${o.location}</lo
         </ul>
     </div>
 </div>
