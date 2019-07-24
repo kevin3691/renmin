@@ -23,6 +23,8 @@ public class GoodsController extends BaseController {
 	private GoodsService goodsService;
 
 	@Resource
+	private GoodsRecordService goodsRecordService;
+	@Resource
 	private GoodTypeService goodTypeService;
 
 	@Resource
@@ -57,6 +59,12 @@ public class GoodsController extends BaseController {
 	//@RequiresPermissions("BASE_PERSON:RO")
 	public String index(ModelMap map) {
 		return "/goods/index";
+	}
+
+	@RequestMapping(value = "/record")
+	//@RequiresPermissions("BASE_PERSON:RO")
+	public String record(ModelMap map) {
+		return "/goods/record";
 	}
 
 
@@ -260,6 +268,19 @@ public class GoodsController extends BaseController {
 		return rslt;
 	}
 
+	/**
+	 * 获取领用记录列表数据 list
+	 *
+	 * @param
+	 * @param
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value = "/recordList")
+	public QueryResult<GoodsRecord> recordList(HttpServletRequest request) {
+		QueryResult<GoodsRecord> rslt = goodsRecordService.list(request);
+		return rslt;
+	}
 
 	@ResponseBody
 	@RequestMapping(value = "/getInfo")
@@ -289,7 +310,30 @@ public class GoodsController extends BaseController {
 			HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		goods = goodsService.save(goods, request);
+		if(goods.getStatus().equals("领出")){
+			GoodsRecord goodsRecord = new GoodsRecord(goods.getId(),goods.getName(),goods.getSpec(),goods.getType(),goods.getTypeId(),goods.getSn(),
+					goods.getUnit(),goods.getKeeper(),goods.getKeeperId(),goods.getLocation(),goods.getPrice(),goods.getOrg(),goods.getOrgId(),
+					goods.getCategory(),goods.getCategoryId(),goods.getStartdt());
+			saveRecord(goodsRecord,request);
+		}
 		map.put("entity", goods);
+		return map;
+	}
+
+	/**
+	 * 保存数据（添加、编辑）方法
+	 *
+	 * @param goodsRecord
+	 * @param request
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value = "/saveRecord", method = RequestMethod.POST)
+	public Map<String, Object> saveRecord(GoodsRecord goodsRecord,
+									HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		goodsRecord = goodsRecordService.save(goodsRecord, request);
+		map.put("entity", goodsRecord);
 		return map;
 	}
 
