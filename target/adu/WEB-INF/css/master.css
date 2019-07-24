@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ margin:0; padding:0; width:100%; height:100%;}
+ul,li{ margin:0; padding:0;  list-style:none;}
+a{ text-decoration:none;}
+.loginbg{ width:100%; height:100%; background:url(../images/loginbg.jpg); background-size:100% 100%;}
+.login_box{ position:absolute; left:50%; top:50%; width:946px; height:481px; background:url(../images/loginbox.png); margin-left:-473px; margin-top:-350px;}
+.login_box ul{ margin-left:657px; margin-top:250px;}
+.login_box ul li{ height:66px;}
+.login_box ul li button{ width:260px; height:38px; border-radius:5px; background:url(../images/btn.gif); border:none; font:16px 微软雅黑; color:#FFF;}
+.login_box_user{ width:215px; height:40px; background:url(../images/userbg.gif) no-repeat; padding-left:45px; border:none; font:14px 微软雅黑; color:#333;}
+.login_box_key{ width:215px; height:40px; background:url(../images/key.gif) no-repeat; padding-left:45px; border:none; font:14px 微软雅黑; color:#333; }
+.bot{ position:absolute; left:0; bottom:0; width:100%; height:150px; background:#da1310; font:14px/150px 微软雅黑; color:#FFF; text-align:center;}
+
+
+
+/*top*/
+.top{ width:100%; height:91px; background:url(../images/topbg.gif);}
+.logo{ float:left; width:327px; height:91px; margin-left:30px; background: url(../images/logo.png) left center no-repeat;}
+.top_icon{ float:right; margin-right:30px;}
+.top_icon a{ float:left; display:block; width:100px; height:91px;  text-align:center; font:16px 微软雅黑; color:#FFF;}
+.top_icon a div{ width:100px; height:58px;}
+.top_icon a div img{ margin-top:17px}
+.top_icon a:hover{ text-decoration:underline;}
+
+
+/*left*/
+.leftbg{ width:246px; height:100%; border-right:1px solid #c9c9c9; background:#eeeeee;}
+.subNavBox{width:246px;}
+.subNav{border-bottom:solid 1px #c9c9c9;cursor:pointer;font:18px/49px 微软雅黑;color:#555555;padding-left:10px; background:url(../images/navbg.gif); }
+.subNav img{ float:left; margin-left:15px; margin-top:10px; margin-right:14px;}
+.subNav:hover{color:#000;}
+.currentDd{color:#000;}
+
+.navContent{display: none;border-bottom:solid 1px #c9c9c9; background:#FFF;}
+.navContent li a{display:block; width:171px;font-size:16px;line-height:40px;color:#333; background:url(../images/icon7.png) 55px center no-repeat; padding-left:75px;}
+.navContent li a:hover{color:red; background:url(../images/icon7_1.png) 55px center no-repeat;}
+
+/*bot*/
+.bot{ width:100%; height:50px; background:url(../images/botbg.gif); font:16px/50px 微软雅黑; color:#FFF; text-align:center; }
+
+
+/*list*/
+.weizhi{ width:100%; height:50px; border-bottom:1px solid #b9b8b8; background:#e5e4e4;}
+.weizhi div{ float:left;}
+.weizhi div a{ display:block; width:130px; height:50px; float:left; font:16px/50px 微软雅黑; color:#666; border-right:1px solid #b9b8b8; text-align:center;}
+.weizhi div a:hover{ display:block; width:130px; height:51px; background:#FFF; color:#000;}
+.weizhi ul{ float:right; margin-right:20px;}
+.weizhi ul li{ float:left; font:14px/50px 微软雅黑; color:#333; margin-right:5px;}
+.weizhi ul li img{ float:left; margin-top:13px;}
+.weizhi ul li a{  font:14px/50px 微软雅黑; color:#333; margin-right:5px;}
+.weizhi ul li a:hover{ color:red;}
+
+.serbox{ width:100%; height:65px;}
+.serbox ul{ margin-left:10px;}
+.serbox ul li{ float:left; margin-right:40px; font:14px 微软雅黑; color:#000;}
+.serbox ul li input{ width:184px; height:31px; border:none; background:url(../images/ser.gif) no-repeat; font:14px 宋体;}
+.serbox ul li button{ width:80px; height:31px; background:url(../images/btn.gif); border-radius:5px; border:0; font:14px 微软雅黑; color:#FFF; cursor:pointer;}
+.serbox ul li button:hover{ text-decoration:underline;}
+.ser_btn{ float:right; margin-right:30px; width:110px; height:31px; border-radius:5px; border:1px solid red; font:14px 微软雅黑; color:red; text-align:center; background:url(../images/icon9.png) 17px center no-repeat;}
+.ser_btn:hover{ background: url(../images/icon9_1.png) 17px center no-repeat red; color:#FFF;}
+
+.table_box{ position:absolute; top:85px; left:20px; right:20px; bottom:20px; }
+.table_tit{ background:url(../images/tabletit.gif) left bottom repeat-x; font:16px/45px 微软雅黑; color:#313131; text-align:center; }
+.table_text{font:14px/35px 微软雅黑; color:#666; text-align:center; }

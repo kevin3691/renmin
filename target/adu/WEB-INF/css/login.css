@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ margin:0; padding:0; width:100%; height:100%;}
+ul,li{ margin:0; padding:0; list-style:none;}
+a{ text-decoration:none;}
+.bg{ width:100%; height:100%; background:url(../images/loginbg.gif); background-size:100% 100%;}
+.login_box{ width:599px; height:468px; background:url(../images/loginbox.png); position:absolute; left:50%; top:50%; margin-left:-300px; margin-top:-270px;}
+.login_box ul{ margin-left:152px; margin-top:230px;}
+.login_box ul li{ height:70px;}
+.user{ width:240px; height:38px; background: url(../images/user.gif) no-repeat; border:0; padding-left:48px; font:14px 微软雅黑; color:#666;}
+.key{ width:240px; height:38px; background:url(../images/key.gif) no-repeat; border:0; padding-left:48px;  font:14px 微软雅黑; color:#666;}
+/*.login_box ul li input{ width:288px; height:38px; background:url(../images/btn.gif); border-radius:5px; border:0;  font:16px 微软雅黑; color:#ffffff; cursor:pointer;}*/
+/*.login_box ul li input:hover{ background:#a70101;}*/
+.login_button{width:288px; height:38px; background:url(../images/btn.gif); border-radius:5px; border:0;  font:16px 微软雅黑; color:#ffffff; cursor:pointer;}

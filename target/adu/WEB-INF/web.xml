@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0" id="WebApp_1472700091199">
+	<display-name>在线竞赛系统</display-name>
+
+	<!-- Web容器加载顺序ServletContext->context-param>-listener>-filter>-servlet -->
+
+	<!-- 指定Spring的配置文件 -->
+	<!-- 否则Spring会默认从WEB-INF下寻找配置文件,contextConfigLocation属性是Spring内部固定的 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring.xml,classpath:spring-hibernate.xml,classpath:spring-shiro.xml</param-value>
+	</context-param>
+
+	<!-- 防止发生java.beans.Introspector内存泄露,应将它配置在ContextLoaderListener的前面 -->
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+	<!-- 实例化Spring容器 -->
+	<!-- 应用启动时,该监听器被执行,它会读取Spring相关配置文件,其默认会到WEB-INF中查找applicationContext.xml -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- 解决乱码问题 -->
+	<!-- forceEncoding默认为false,此时效果可大致理解为request.setCharacterEncoding("UTF-8") -->
+	<!-- forceEncoding=true后,可大致理解为request.setCharacterEncoding("UTF-8")和response.setCharacterEncoding("UTF-8") -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- openSessionInView配置 -->
+	<filter>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+		<init-param>
+			<param-name>singleSession</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 配置Shiro过滤器,先让Shiro过滤系统接收到的请求 -->
+	<!-- 这里filter-name必须对应spring-shiro.xml中定义的<bean id="shiroFilter"/> -->
+	<!-- 使用[/*]匹配所有请求,保证所有的可控请求都经过Shiro的过滤 -->
+	<!-- 通常会将此filter-mapping放置到最前面(即其他filter-mapping前面),以保证它是过滤器链中第一个起作用的 -->
+	<filter>
+		<filter-name>shiroFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<async-supported>true</async-supported>
+		<init-param>
+			<!-- 该值缺省为false,表示生命周期由SpringApplicationContext管理,设置为true则表示由ServletContainer管理 -->
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>shiroFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+
+
+	<!-- 配置Druid监控 WebStatFilter用于采集web-jdbc关联监控的数据 使用Web应用、URI监控、Session监控等功能 -->
+	<filter>
+		<filter-name>DruidWebStatFilter</filter-name>
+		<filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+		<init-param>
+			<param-name>exclusions</param-name>
+			<param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
+		</init-param>
+		<init-param>
+			<param-name>profileEnable</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>principalCookieName</param-name>
+			<param-value>USER_COOKIE</param-value>
+		</init-param>
+		<init-param>
+			<param-name>principalSessionName</param-name>
+			<param-value>USER_SESSION</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>DruidWebStatFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!--spring mvc 配置 -->
+	<servlet>
+		<servlet-name>springMVC</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup> <!-- 是启动顺序，让这个Servlet随Servletp容器一起启动。 -->
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springMVC</servlet-name>
+		<url-pattern>/</url-pattern> <!-- 会拦截/的请求。 -->
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>springMVC</servlet-name>
+		<url-pattern>/service/*</url-pattern> <!-- 会拦截/的请求。 -->
+	</servlet-mapping>
+
+	<!-- 配置Druid监控 Web应用配置 配置后可以通过/druid/index.html打开监控页面，暂关闭 <servlet> <servlet-name>DruidStatView</servlet-name> 
+		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class> 
+		<init-param> <param-name>loginUsername</param-name> <param-value>admin</param-value> 
+		</init-param> <init-param> <param-name>loginPassword</param-name> <param-value>admin</param-value> 
+		</init-param> </servlet> <servlet-mapping> <servlet-name>DruidStatView</servlet-name> 
+		<url-pattern>/druid/*</url-pattern> </servlet-mapping> -->
+
+	<!-- Session超时30分钟(零或负数表示会话永不超时) -->
+	<!-- <session-config> <session-timeout>30</session-timeout> </session-config> -->
+
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/views/home/login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/views/error/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>405</error-code>
+		<location>/WEB-INF/views/error/405.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/views/error/500.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/WEB-INF/views/error/500.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/WEB-INF/views/error/500.jsp</location>
+	</error-page>
+
+	<!--以下为安全配置 -->
+	<!--Tomcat安全过滤器,需复制tomcat-catalina-9.0.0.M9.jar到Tomcat 8.0\lib下 -->
+	<!-- http://tomcat.apache.org/tomcat-8.0-doc/config/filter.html#HTTP_Header_Security_Filter -->
+	<!-- 跨域请求配置 <filter> <filter-name>CorsFilter</filter-name> <filter-class>org.apache.catalina.filters.CorsFilter</filter-class> 
+		<init-param> <param-name>cors.allowed.origins</param-name> <param-value>*</param-value> 
+		</init-param> <init-param> <param-name>cors.allowed.methods</param-name> 
+		<param-value>GET,POST,HEAD,OPTIONS,PUT</param-value> </init-param> <init-param> 
+		<param-name>cors.allowed.headers</param-name> <param-value>Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value> 
+		</init-param> <init-param> <param-name>cors.exposed.headers</param-name> 
+		<param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value> 
+		</init-param> <init-param> <param-name>cors.support.credentials</param-name> 
+		<param-value>true</param-value> </init-param> <init-param> <param-name>cors.preflight.maxage</param-name> 
+		<param-value>10</param-value> </init-param> </filter> <filter-mapping> <filter-name>CorsFilter</filter-name> 
+		<url-pattern>/*</url-pattern> </filter-mapping> -->
+	<!-- Header设置 -->
+	<filter>
+		<filter-name>HeaderFilter</filter-name>
+		<filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
+		<async-supported>true</async-supported>
+		<!-- 打开HSTS,强制客户端（如浏览器）使用HTTPS与服务器创建连接 -->
+		<init-param>
+			<param-name>hstsEnabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<!-- 最大连接时间 -->
+		<init-param>
+			<param-name>hstsMaxAgeSeconds</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<!-- HSTS报头参数 -->
+		<init-param>
+			<param-name>hstsIncludeSubDomains</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<!-- 打开点击劫持防御 -->
+		<init-param>
+			<param-name>antiClickJackingEnabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<!-- X-Frame-Options Header漏洞防御，该设置iframe启用模式 DENY, SAMEORIGIN, ALLOW-FROM -->
+		<init-param>
+			<param-name>antiClickJackingOption</param-name>
+			<param-value>SAMEORIGIN</param-value>
+		</init-param>
+		<!-- 如果Option设置为ALLOW-FROM 则指定允许显示的iframe,Uri地址 -->
+		<init-param>
+			<param-name>antiClickJackingUri</param-name>
+			<param-value></param-value>
+		</init-param>
+		<!-- X-Content-Type-Options -->
+		<init-param>
+			<param-name>blockContentTypeSniffingEnabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<!-- XSS防御 -->
+		<init-param>
+			<param-name>xssProtectionEnabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>HeaderFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 目录遍历漏洞 -->
+	<servlet>
+		<servlet-name>default</servlet-name>
+		<servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>0</param-value>
+		</init-param>
+		<init-param>
+			<param-name>listings</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<!-- 基于owasp XSSSQL防护 -->
+	<filter>
+		<filter-name>XssSqlFilter</filter-name>
+		<filter-class>com.zzb.core.security.XssSqlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>XssSqlFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- owasp CSRF防护 -->
+	<listener>
+		<listener-class>org.owasp.csrfguard.CsrfGuardServletContextListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.owasp.csrfguard.CsrfGuardHttpSessionListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>CSRFGuard</filter-name>
+		<filter-class>org.owasp.csrfguard.CsrfGuardFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CSRFGuard</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>JavaScriptServlet</servlet-name>
+		<servlet-class>org.owasp.csrfguard.servlet.JavaScriptServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JavaScriptServlet</servlet-name>
+		<url-pattern>/JavaScriptServlet</url-pattern>
+	</servlet-mapping>
+	<!--OPTIONS Method Enabled 漏洞防护 -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>restricted methods</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method>PUT</http-method>
+			<!-- <http-method>POST</http-method> -->
+			<http-method>DELETE</http-method>
+			<http-method>OPTIONS</http-method>
+			<http-method>TRACE</http-method>
+		</web-resource-collection>
+		<auth-constraint />
+	</security-constraint>
+</web-app>
+<!-- icon?,display-name?,description?,distributable?,context- param*,filter*,filter-mapping*,listener*,servlet*,servlet-mapping*,session-config?,mime-mapping*,welcome-file- 
+	list?,error-page*,taglib*,resource-env-ref*,resource-ref*,security-constraint*,login-config?,security-role*,env- 
+	entry*,ejb-ref*,ejb-local-ref* -->

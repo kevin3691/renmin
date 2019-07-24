@@ -1,0 +1,25 @@
+/*-----------填空题----------------*/
+/*序列号*/
+span.exam_core_questions_fillBlankAnswer-block_mode_options{ display:inline; list-style-type:none;}
+
+/*试题块*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*题干*/
+.exam_core_questions_fillBlankAnswer-text_border_stem{ display:inline; padding:5px 0;font-weight:bold; line-height:34px; font-size:14px; }
+.exam_core_questions_fillBlankAnswer-text_border_stem p{ display:inline;}
+
+/*填空 答案样式*/
+.exam_core_questions_fillBlankAnswer-text_border_synopsis{ display:block; padding:5px 0;}
+.exam_core_questions_fillBlankAnswer-form_border_option,
+.exam_core_questions_fillBlankAnswer-form_border_option:hover{ text-indent:10px; border-radius:3px; border: 1px solid #64b4ff;  padding: 5px 10px; margin:0 5px;color:#333;box-shadow:2px 3px 3px #f6f8f9 inset;-moz-box-shadow:2px 3px 3px #f6f8f9 inset;-webkit-box-shadow:2px 3px 3px #f6f8f9 inset;}
+.exam_core_questions_fillBlankAnswer-form_border_option:hover{border: 1px solid #589BC8;}
+.exam_core_questions_fillBlankAnswer-form_border_option input{ border:0; margin-top:5px; max-width:100px;}
+
+/*解析*/
+.exam_core_questions_fillBlankAnswer-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_fillBlankAnswer-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
+
+/* 重置 chrome input焦点框 */
+a:focus, *:focus {outline:none;}
+a:focus, *:focus {noFocusLine: expression(this.onFocus=this.blur());}

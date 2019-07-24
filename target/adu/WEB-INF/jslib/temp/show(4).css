@@ -1,0 +1,30 @@
+/*-----------简答题----------------*/
+/*序列号*/
+span.exam_core_questions_shortAnswer-block_mode_options{padding: 0px 0px 10px 20px;display: list-item; list-style-type:decimal;}
+.exam_core_questions_shortAnswer-text_border_stem textarea{ width: 100%;}
+
+/*试题块*/
+#examCoreQuestionsRootBlock{ width:100%; padding:5px 0;}
+
+/*题干*/
+.exam_core_questions_shortAnswer-text_border_stem{ float:left;display:block; padding:5px 0;font-weight:bold; line-height:24px; font-size:14px; }
+.exam_core_questions_shortAnswer-text_border_stem p{ display:block; padding:0; margin:0;}
+
+/*试题选项 ul*/
+.exam_core_questions_shortAnswer-block_body_options{display: block;clear:both;border-top:1px solid #ccc;}
+.exam_core_questions_shortAnswer-form_border_option{display: block; cursor:pointer; }
+
+/*针对chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0){ 
+    .exam_core_questions_shortAnswer-form_border_option div{overflow: visible !important;}
+    .exam_core_questions_shortAnswer-form_border_option div.nicEdit-panelContain,
+    .exam_core_questions_shortAnswer-form_border_option div.nicEdit-panel,
+    .exam_core_questions_shortAnswer-form_border_option div.nicEdit-panel div{overflow:hidden !important;}
+    /* 强制修改简答题编辑器的高度为最小 61px */
+    #_Editer{ min-height: 61px !important;}
+}
+
+/*解析*/
+.exam_core_questions_shortAnswer-text_border_analyticalTitle{ display: block; border-bottom:1px solid #ccc; font-weight:bold; padding:20px 0 5px;}
+.exam_core_questions_shortAnswer-form_border_analytical{ display: block; padding-left: 2em; background:#efefef; padding:15px;}
+
