@@ -92,33 +92,6 @@
         $("#author").val("${baseUser.basePersonName}")
     })
 </script>
-	<%--<style>
-		table {
-			margin:6px 0px 0px;
-			padding: 0px ;
-		}
-		table tr td{
-
-			padding: 4px 0px !important;
-			border: none !important;
-			margin: 0px ;
-			width: 25%;
-			font-size: 5px;
-		}
-		ul{
-			margin: 0px ;
-			padding: 0px;
-			list-style: none;
-		}
-		li{
-			display: inline-block;
-			width: 48%;
-			line-height: 30px;
-		}
-		table tr:first-child td{
-			border: none;
-		}
-	</style>--%>
 
 	<style>
 		html, body {
@@ -158,57 +131,33 @@
 	</div>
 	<div class="test_box">
 		<ul>
-			<li class="test_box_tit">ID</li>
-			<li class="test_box_text">${o.id}</li>
 			<li class="test_box_tit">设备名称</li>
 			<li class="test_box_text">${o.name}</li>
+			<li class="test_box_tit">资产类别</li>
+			<li class="test_box_text">${o.type}</li>
+
+			<li class="test_box_tit">设备型号</li>
+			<li class="test_box_text">${o.spec}</li>
 			<li class="test_box_tit">设备编号</li>
 			<li class="test_box_text">${o.sn}</li>
-			<li class="test_box_tit">领用人</li>
+
+			<li class="test_box_tit">使用部门</li>
+			<li class="test_box_text">${o.location}</li>
+			<li class="test_box_tit">管理者</li>
 			<li class="test_box_text">${o.keeper}</li>
-			<li class="test_box_tit">单位</li>
-			<li class="test_box_text">${o.unit}</li>
-			<li class="test_box_tit">类别</li>
-			<li class="test_box_text">${o.type}</li>
-			<li class="test_box_tit">规格型号</li>
-			<li class="test_box_text">${o.spec}</li>
-			<li class="test_box_tit">购买日期</li>
+
+			<li class="test_box_tit">启用时间</li>
 			<li class="test_box_text" id="date">服务器</li>
+			<li class="test_box_tit">所在地点</li>
+			<li class="test_box_text">${o.org}</li>
 		</ul>
 	</div>
 </div>
 <div style="height: 30px"></div>
 	<div class="container-fluid">
-		<%--<div style="width: 62mm;overflow: hidden;margin: auto;padding:10px;border: 1px solid #000;">
-			<div style="border-bottom: 1px solid #000;overflow: hidden;padding: 0px 10px 5px">
-				<p style="float:left;margin:3px 0px 0;font-size: 5px">中共邯郸市委组织部<br/>固定资源标签</p>
-				<div style="float: right;margin:0" id="qrcode"></div>
-			</div>
-			<div style="width:100%;float: left;padding: 0px 0px 0;font-size: 20px">
-				<table class="table" style="margin-bottom: 0px"  cellpadding="0" >
-					<tr style="border: none;">
-						<td>ID</td><td>${o.id}</td><td>编号</td><td >${o.sn}</td>
-					</tr>
-					<tr>
-						<td>名称</td><td>${o.name}</td><td>领用人</td><td  >${o.keeper}</td>
-					</tr>
-					<tr>
-						<td>单位</td><td>${o.unit}</td><td>类别</td><td >${o.type}</td>
-					</tr>
-					<tr>
-						<td>规格型号</td><td>${o.spec}</td><td>购买日期</td><td id="date"></td>
-					</tr>
-				</table>
-				<script>
-					var date ="${o.invoicedt}";
-					$("#date").html(date.substring(0,10));
-					//jsonDateTimeFormatter(date, 0)
-				</script>
-			</div>
-		</div>--%>
 
 			<script>
-				var date ="${o.invoicedt}";
+				var date ="${o.startdt}";
 				$("#date").html(date.substring(0,10));
 				//jsonDateTimeFormatter(date, 0)
 			</script>
@@ -229,46 +178,3 @@
 			text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
 		})
 </script>
-<SCRIPT LANGUAGE="VBScript">
-Sub DoPrint()
- Dim TheForm
- Set TheForm = Document.ValidForm
-
- 'Create b-PAC object
- Dim ObjDoc
- Set ObjDoc = CreateObject("bpac.Document")
-
- 'Open template file created with P-touch Editor
- 'Locate fixed asset name.lbx file at any place
- strDir = "Folder containing LBX file"
- bRet = ObjDoc.Open("E:\asset.lbx")
-
- If (bRet <> False) Then 'normally open?
-
-  'Set input data
-  'to text object of "Fixed asset name"
-  ObjDoc.GetObject("Name").Text = TheForm.FixedAsset.Value
-
-  'Set input data
-  'to text object of "Management section"
-  ObjDoc.GetObject("Section").Text = TheForm.SectionName.Value
-
-  'Set input data
-  'to text object of "Management No"
-  ObjDoc.GetObject("Number").Text = TheForm.SectionNo.Value
-
-  'Set input data
-  'to barcode object
-  ObjDoc.GetObject("QRCode1").Text = TheForm.SectionNo.Value
-
-  'Execute printing
-  ObjDoc.StartPrint "DocumentName", 0
-  ObjDoc.PrintOut 1, 0
-  ObjDoc.EndPrint
-  ObjDoc.Close
- End If
-
- 'Release b-PAC object
- Set ObjDoc = Nothing
-End Sub
-</SCRIPT>

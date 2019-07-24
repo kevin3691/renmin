@@ -128,29 +128,33 @@
         <div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
         <div class="img_box" id="qrcode" style="position: absolute;right: 18px;"></div>
     </div>
+    <input type="hidden" name="id" value="${o.id}">
     <div class="test_box">
         <ul>
-            <li class="test_box_tit">ID</li>
-            <li class="test_box_text">${o.id}</li>
             <li class="test_box_tit">设备名称</li>
             <li class="test_box_text">${o.name}</li>
+            <li class="test_box_tit">资产类别</li>
+            <li class="test_box_text">${o.type}</li>
+
+            <li class="test_box_tit">设备型号</li>
+            <li class="test_box_text">${o.spec}</li>
             <li class="test_box_tit">设备编号</li>
             <li class="test_box_text">${o.sn}</li>
-            <li class="test_box_tit">领用人</li>
+
+            <li class="test_box_tit">使用部门</li>
+            <li class="test_box_text">${o.location}</li>
+            <li class="test_box_tit">管理者</li>
             <li class="test_box_text">${o.keeper}</li>
-            <li class="test_box_tit">单位</li>
-            <li class="test_box_text">${o.unit}</li>
-            <li class="test_box_tit">类别</li>
-            <li class="test_box_text">${o.type}</li>
-            <li class="test_box_tit">规格型号</li>
-            <li class="test_box_text">${o.spec}</li>
-            <li class="test_box_tit">购买日期</li>
+
+            <li class="test_box_tit">启用时间</li>
             <li class="test_box_text" id="date">服务器</li>
+            <li class="test_box_tit">所在地点</li>
+            <li class="test_box_text">${o.org}</li>
         </ul>
     </div>
 </div>
 <script>
-    var date ="${o.invoicedt}";
+    var date ="${o.startdt}";
     $("#date").html(date.substring(0,10));
     //购买日期
 </script>
