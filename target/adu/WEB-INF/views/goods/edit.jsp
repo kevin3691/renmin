@@ -335,5 +335,6 @@
 			</div>
 		</form>
 	</div>
+	<iframe scrolling="no" src="goods/record"  width="100%" height="500px" style="padding: 20px;padding-bottom: 40px" frameborder="0"  allowtransparency="true"></iframe>
 </body>
 </html>

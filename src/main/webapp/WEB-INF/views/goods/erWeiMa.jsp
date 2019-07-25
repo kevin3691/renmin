@@ -96,6 +96,7 @@
         html, body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
         ul, li {
             margin: 0;
@@ -103,21 +104,22 @@
             list-style: none;
         }
         .box {
-            width: 300px;
-            height: 180px;
+            margin:auto;
+            margin-top: 8px;
+            width: 380px;
+            height: 210px;
             border: 2px solid #000000;
             padding:8px;
-            margin: auto;
-            position: relative;
         }
-        .top{ width:280px; height:56px; border-bottom:1px solid #000;}
-        .logo{ width:246px; float:left; height:56px; font:16px/24px 微软雅黑; color:#330; margin-left: 4px}
-        .img_box{ float:right; width:40px; height:40px; margin-top:4px;}
+        .top{ width:360px; height:70px; border-bottom:1px solid #000;}
+        .logo{ width:288px; float:left; height:65px; font:16px/24px 微软雅黑; color:#330; margin-top:2px;}
+        .img_box{ float:right; width:55px; height:55px;margin-top:2px;}
         .img_box img{ width:100%; height:100%;}
-        .test_box{ width:288px; height:104px; margin-top:3px;}
-        .test_box ul li{ float:left; height:26px;}
-        .test_box_tit{ width:57px; font:12px/26px 黑体; color:#000;}
-        .test_box_text{ width:87px; font:11px/26px 宋体; color:#000;}
+        .test_box{ width:350px; height:142px; margin-top:3px;}
+        .test_box ul li{ float:left; height:25px;}
+        .test_box_tit{ width:57px; font:12px/25px 黑体; color:#000;}
+        .test_box_text{ width:99px; font:11px/25px 宋体; color:#000;}
+        .test_box_text1{ width:293px; font:11px/25px 宋体; color:#000;}
     </style>
 </head>
 
@@ -142,15 +144,18 @@
             <li class="test_box_tit">设备编号</li>
             <li class="test_box_text">${o.sn}</li>
 
-            <li class="test_box_tit">使用部门</li>
-            <li class="test_box_text">${o.org}</li>
+
             <li class="test_box_tit">管理者</li>
             <li class="test_box_text">${o.keeper}</li>
 
             <li class="test_box_tit">启用时间</li>
             <li class="test_box_text" id="date">服务器</li>
+
+            <li class="test_box_tit">使用部门</li>
+            <li class="test_box_text1">${o.org}</li>
+
             <li class="test_box_tit">所在地点</li>
-            <li class="test_box_text">${o.location}</li>
+            <li class="test_box_text1">${o.location}</li>
         </ul>
     </div>
 </div>
@@ -171,5 +176,5 @@
         text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
     }).hide();
     var canvas=qrcode.find('canvas').get(0);
-    $('#imgOne').attr('src',canvas.toDataURL('image/jpg')) 
+    $('#imgOne').attr('src',canvas.toDataURL('image/jpg'))
 </script>
