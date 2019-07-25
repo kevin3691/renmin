@@ -127,6 +127,7 @@
     <div class="top">
         <div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
         <div class="img_box" id="qrcode" style="position: absolute;right: 18px;"></div>
+        <img id='imgOne'  style='position: absolute;right: 18px;'/>
     </div>
     <input type="hidden" name="id" value="${o.id}">
     <div class="test_box">
@@ -149,7 +150,7 @@
             <li class="test_box_tit">启用时间</li>
             <li class="test_box_text" id="date">服务器</li>
             <li class="test_box_tit">所在地点</li>
-            <li class="test_box_text">${o.location}</lo
+            <li class="test_box_text">${o.location}</li>
         </ul>
     </div>
 </div>
@@ -162,10 +163,13 @@
 </html>
 
 <script>
-    $("#qrcode").qrcode({
+    var qrcode = $("#qrcode").qrcode({
+        render:"canvas",
         width:50,
         height:50,
         //text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
         text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
-    })
+    }).hide();
+    var canvas=qrcode.find('canvas').get(0);
+    $('#imgOne').attr('src',canvas.toDataURL('image/jpg'))
 </script>

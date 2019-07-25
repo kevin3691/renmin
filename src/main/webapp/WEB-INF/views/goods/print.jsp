@@ -129,6 +129,7 @@
 		<div class="top">
 			<div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
 			<div class="img_box" id="qrcode" style="position: absolute;right: 18px;"></div>
+			<img id='imgOne'  style='position: absolute;right: 18px;'/>
 		</div>
 		<div class="test_box">
 			<ul>
@@ -189,10 +190,13 @@
 </html>
 <script>
 
-		$("#qrcode").qrcode({
+		var qrcode = $("#qrcode").qrcode({
+			render:"canvas",
 			width:50,
 			height:50,
-			//text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
-			text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
-		})
+			text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
+			//text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
+		}).hide();
+		var canvas=qrcode.find('canvas').get(0);
+		$('#imgOne').attr('src',canvas.toDataURL('image/jpg'))
 </script>
