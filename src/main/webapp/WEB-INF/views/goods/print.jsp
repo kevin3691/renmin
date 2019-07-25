@@ -194,8 +194,8 @@
 			render:"canvas",
 			width:50,
 			height:50,
-			text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
-			//text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
+			//text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
+			text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
 		}).hide();
 		var canvas=qrcode.find('canvas').get(0);
 		$('#imgOne').attr('src',canvas.toDataURL('image/jpg'))
