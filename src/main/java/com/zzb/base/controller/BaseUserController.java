@@ -84,6 +84,17 @@ public class BaseUserController extends BaseController {
 	public String index(ModelMap map) {
 		return "/base/user/index";
 	}
+
+	/**
+	 * View 列表页 index
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/index2")
+	//@RequiresPermissions("BASE_USER:RO")
+	public String index2(ModelMap map) {
+		return "/base/user/index2";
+	}
 	
 	
 	/**

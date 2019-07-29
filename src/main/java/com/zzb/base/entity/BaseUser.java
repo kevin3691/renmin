@@ -27,8 +27,17 @@ public class BaseUser extends BaseEntity<BaseUser> {
 	private String descr;// 备注
 	private int isActive;// 启用状态
 	private int lineNo;// 排序号
+	private int onLineState;//在线
 	private String keySN;// 加密锁ID
 	private RecordInfo recordInfo;
+
+	public int getOnLineState() {
+		return onLineState;
+	}
+
+	public void setOnLineState(int loginState) {
+		this.onLineState = loginState;
+	}
 
 	public int getBaseOrgId() {
 		return baseOrgId;

@@ -3,7 +3,13 @@
 <html>
 <head>
 	<title>${WorkplateTitle}</title>
+
+
 	<jsp:include page="/WEB-INF/views/include/ltehead.jsp" />
+	<script type="text/javascript" charset="utf-8"
+			src="jslib/layer/layer.min.js"></script>
+	<script type="text/javascript" charset="utf-8"
+			src="jslib/layer/extend/layer.ext.min.js"></script>
 	<script>
 		var OBJ;
         function onModify(){
@@ -41,10 +47,19 @@
                 // })
                 //initMenu (0);
             })
+		function showWs() {
+        	$("#newIcon i").remove();
+			$("#showWS").animate({right:10});
+		}
+		function closeWs() {
+        	var w = $("#showWS").width();
+        	console.log(w)
+			$("#showWS").animate({right:-1000});
+		}
 	</script>
 </head>
 <body>
-<div class="container">
+<div class="">
 	<div id="pf-hd">
 		<div class="pf-logo">
 			<img src="images/logo.png" alt="logo">
@@ -115,7 +130,531 @@
 		</div>
 	</div>
 </div>
+<div style="width: 45px ; height: 45px;position: absolute;right: 30px;top:150px;z-index:999;">
+	<button  type="button" onclick="showWs();"  style=" display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;color: #333;
+    background-color: #fff;
+    border-color: #ccc;position: relative;">&nbsp;&nbsp;消息
+		<b id="newIcon" style="position:absolute;top: 0px ;left: -0px">
 
+		</b>
+	</button>
+
+</div>
+<style>
+	.xiaoXi{position: fixed;right: -50%; top: 10%;height: 80%;width: 40%;
+		background-color: #fff;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+		box-shadow: 0 1px 1px rgba(0,0,0,.05);border-color: #ddd;z-index: 999;}
+	.xiaoXi_Top{
+		width: 100%;
+		border-radius: 4px 4px 0 0 ;
+		border-bottom:1px solid transparent;
+		background-color: #fff;
+		box-shadow: 0 1px 1px rgba(0,0,0,.05);
+		height: 40px;
+		line-height: 40px;
+		text-indent: 1em;
+		overflow: hidden;
+	}
+	.show_close{
+		-webkit-appearance: none;
+		padding: 0;
+		cursor: pointer;
+		background: 0 0;
+		border: 0;
+		margin-top: 5px;
+		margin-right: 5px;
+		font-size: 18px;
+	}
+</style>
+
+<style>
+	#user{
+		margin: 0px;
+		list-style: none;
+		height: 100%;
+		overflow-scrolling: auto;
+	}
+	.myIcon{
+		border: 1px solid red;
+		border-radius: 50%;
+		width: 15px;
+		height: 15px;
+		text-align: center;
+		line-height: 15px;
+		display: inline-block;
+		background: red;
+		color: #fff;
+		text-indent: 0;
+		float: right;
+		margin-top: 7px;
+		margin-right: 20px;
+		overflow: hidden;
+		font-size: 12px;
+	}
+	#user li{
+		background: #fff;
+		height: 31px;
+		border: 1px solid #00000054;
+		border-radius: 3px;
+		margin-bottom: 1px;
+		line-height: 31px;
+		position:relative;
+	}
+	#user li button{
+		display: none;
+		position: absolute;
+		top: 1px;
+		right: 0px;
+	}
+	#user li:hover button{
+		display: block;
+	}
+	#user li:hover{
+		background: #f5f4f485;
+		cursor: pointer ;
+	}
+	#liaoTianInfo {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	 section label {
+		background: #eee;
+		border: 1px solid #ddd;
+		padding: .7em 1em;
+		cursor: pointer;
+		z-index: 1;
+		margin-left: -1px;
+	}
+	 section label:first-of-type {
+		margin-left: 0;
+	}
+	 #liaoTianInfo>div {
+		width: 100%;height: 83%;
+		 max-height: 621px;
+		margin-top: -1px;
+		padding: 1em;
+		border-top: 1px solid #ddd;
+		 border-bottom: none;
+		-webkit-order: 1;
+		order: 1;
+		 overflow-y:scroll
+	}
+	section input[type=radio]{
+		display: none;
+	}
+	 .divHide{
+		 display: none;
+	 }
+	 section input[type=radio]:checked + label {
+		background: #fff;
+		border-bottom: 1px solid #fff;
+	}
+	 section input[type=radio]:checked + label + div {
+		display: block;
+	}
+	.divShow{
+		display: block;
+	}
+	.inputClass{
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		height: 30px;
+		padding: 5px 10px;
+		font-size: 12px;
+		line-height: 1.5;
+		border-radius: 0;
+		box-shadow: none;
+		display: inline-block;
+		width: auto;
+		vertical-align: middle;
+	}
+	.userName{
+		text-indent: 1em;
+		width: 100px;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.fasong{
+		display: inline-block;
+		height: 38px;
+		line-height: 38px;
+		padding: 0 18px;
+		background-color: #009688;
+		color: #fff;
+		white-space: nowrap;
+		text-align: center;
+		font-size: 14px;
+		border: none;
+		border-radius: 2px;
+		cursor: pointer;
+		border: 1px solid #e9e9e9;
+
+		background-color: #fff;
+		color: #555;
+	}
+	.mes{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 10px 10px;
+		list-style: none;
+		height: 84%;
+		min-height:420px;
+		max-height:420px;
+		overflow-y: scroll;
+	}
+	.mes li{
+		width: 100%;
+		border-top: 1px solid #E9E9E9;
+		margin-bottom: 5px;
+		padding-top: 10px;
+	}
+	.mes li:first-child{
+		border: none;
+	}
+	.mesInfo{
+		word-break: break-all;
+		white-space: pre-wrap;
+		line-height: 30px;
+		margin-top: 5px;
+		text-indent: 2em;
+	}
+</style>
+<script>
+	$(function(){
+		$("#liaoTianInfo input[type=radio]").bind("change",function(){
+			$("#liaoTianInfo label:eq(1) i").remove();
+			var $div = $("#liaoTianInfo>div");
+			console.log($div);
+			$div.css("display","none");
+			$div = $("#liaoTianInfo input[type=radio]:checked").next().next();
+			console.log($div);
+			$div.css("display","block");
+		})
+	})
+	function closeUserMes(ele) {
+		var id = $(ele).attr("data-id");
+		$(".mes[data-id="+id+"]").remove();
+		$(ele).parents("li").remove();
+		$("#userTitle").text("选择联系人");
+
+	}
+	function toSendMes(id,name,prName) {
+		var userLi = $("#user li[data-id="+id+"]");
+		if(userLi.length<1){
+			userLi = "<li onclick='toLiaoTian(this);' data-id="+id+" data-name='"+name+"' data-prName='"+prName+"'><span class=\"userName\">"+name+"</span>\n" +
+					"<button type=\"button\" class=\"show_close\" onclick=\"closeUserMes(this);\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n" +
+					"</li>"
+			$("#user").append(userLi);
+		}
+		var $userLi = $(userLi);
+		toLiaoTian($userLi)
+		$("#liaoTianInfo>input:eq(0)").prop("checked",false);
+		$("#liaoTianInfo>div").css("display","none");
+		var inputEle = $("#liaoTianInfo>input").eq(1);
+		inputEle.prop("checked",true);
+		var $div = inputEle.next().next();
+		console.log($div);
+		$div.css("display","block");
+	}
+	var sendToId = 0;
+	var sendToName = "暂无";
+	var sendToPrName = "暂无";
+	function toLiaoTian(ele) {
+		$(ele).find("i").remove();
+		var $this = $(ele);
+		sendToId = $this.attr("data-id");
+		sendToName = $this.attr("data-name");
+		sendToPrName = $this.attr("data-prName");
+		var liaoTianWin = $(".mes[data-id="+sendToId+"]");
+		$(".mes").css("display","none");
+		if(liaoTianWin.length<1){
+			var eleUl = "<ul class=\"mes\" data-id="+sendToId+" ></ul>";
+			$("#xiaoXi_right div:first-child").append(eleUl);
+			$(eleUl).css("display","block");
+
+		}else{
+			liaoTianWin.css("display","block");
+		}
+		$("#xiaoXi_right div:first-child h1").text(sendToName);
+		$(".fasong").val("");
+	}
+
+	function toSendMes1(id,name,prName) {
+		var userLi = $("#user li[data-id="+id+"]");
+		if(userLi.length<1){
+			userLi = "<li onclick='toLiaoTian(this);' data-id="+id+" data-name='"+name+"' data-prName='"+prName+"'><span class=\"userName\">"+name+"</span>\n" +
+					"<button type=\"button\" class=\"show_close\" onclick=\"closeUserMes(this);\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span></button>\n" +
+					"</li>"
+			$("#user").append(userLi);
+		}
+		var $userLi = $(userLi);
+		toLiaoTian1($userLi)
+	}
+	function toLiaoTian1(ele) {
+		var $this = $(ele);
+		sendToId = $this.attr("data-id");
+		sendToName = $this.attr("data-name");
+		sendToPrName = $this.attr("data-prName");
+		var liaoTianWin = $(".mes[data-id="+sendToId+"]");
+		if(liaoTianWin.length<1){
+			$(".mes").css("display","none");
+			var eleUl = "<ul class=\"mes\" data-id="+sendToId+" ></ul>";
+			$("#xiaoXi_right div:first-child").append(eleUl);
+			$(eleUl).css("display","block");
+
+		}else{
+
+		}
+		$("#xiaoXi_right div:first-child h1").text(sendToName);
+		$(".fasong").val("");
+	}
+	//消息记录
+	function chatList(){
+		if(sendToId.isNaN){
+			return;
+		}
+		if(sendToId<1){
+			return;
+		}
+		layer.open ({
+			type : 2,
+			title : '消息记录',
+			shadeClose : true,
+			shade : 0.8,
+			area : [
+				'50%', '70%'
+			],
+			content : 'chat/index?sendToId=' + sendToId+'&sendDoId=${sessionScope.baseUser.id}' //iframe的url
+		});
+	}
+</script>
+
+<div id="showWS" class="container xiaoXi" >
+ <div class="xiaoXi_Top">
+	 <span style="float: left">消息</span>
+	 <span style="float: right">
+		 <button type="button" class="show_close" onclick="closeWs();" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	 </span>
+ </div>
+	<div style="width: 100%;height:100%" class="container-fluid">
+		<section id="liaoTianInfo" >
+
+			<input id="tab-one" type="radio" name="grp" checked="checked">
+			<label for="tab-one">列表</label>
+			<div style="display: block" >
+				<iframe scrolling="no" id="ifrmOrg"
+						style="width: 100%; height: 1224px"scrolling="yes" frameborder="0"
+						src="base/user/index2"></iframe>
+			</div>
+
+			<input id="tab-two" type="radio" name="grp">
+			<label for="tab-two">消息</label>
+			<div class="divHide">
+				<div style="width: 100%;height: 100%;">
+					<div id="xiaoXi_left"style="width:20%;height: 100%;float: left">
+						<ul id="user">
+							<%-- <li><span class="userName">哈哈哈</span><i class="myIcon">1</i>
+								<button type="button" class="show_close" onclick="closeUserMes(this);" aria-label="Close"><span aria-hidden="true">×</span></button>
+							</li>--%>
+						</ul>
+					</div>
+					<div id="xiaoXi_right" style="width:80%;height: 100%;float: right;padding-left: 10px;box-sizing: border-box;">
+						<div style="width: 100%;height: 70%;border: 1px solid #e9e9e9;border-bottom: none;">
+							<h1 id="userTitle" style="width: 100%;background-color:#fff;float: left;height: 60px;line-height:60px;font-size:24px;border-bottom: 1px solid #e9e9e9;margin: 0 0 10px 0;text-align: center">
+								选择联系人</h1>
+							<ul class="mes" data-id="-1" style=""></ul>
+						</div>
+						<div style="width: 100%;height: 30%;min-height:120px;border: 1px solid #e9e9e9;position: relative">
+							<textarea id="mesText" style="width: 100%;height: 100%;min-height:120px;border:none"></textarea>
+							<div style="width: 100%;position:absolute;right: 0px;bottom: 0px;">
+								<button	style="float: right;" onclick="chatList();" class="fasong">记录</button><button style="float: right;" onclick="onSend();" class="fasong">发送</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	var lockReconnect = false;//避免重复连接
+	var wsUrl = "ws://192.168.10.119:8000${pageContext.request.contextPath}/ws/chat?${sessionScope.baseUser.id}";
+	var ws;
+	var tt;
+	function createWebSocket() {
+		try {
+			ws = new WebSocket(wsUrl);
+		} catch(e) {
+			console.log('catch');
+			reconnect(wsUrl);
+		}
+	}
+	createWebSocket();
+
+	//心跳检测
+	var heartCheck = {
+		timeout: 3000,
+		timeoutObj: null,
+		serverTimeoutObj: null,
+		start: function(){
+			console.log('start');
+			var self = this;
+			this.timeoutObj && clearTimeout(this.timeoutObj);
+			this.serverTimeoutObj && clearTimeout(this.serverTimeoutObj);
+			this.timeoutObj = setTimeout(function(){
+				//这里发送一个心跳，后端收到后，返回一个心跳消息，
+				console.log('心跳检测');
+				ws.send("心跳检测");
+				self.serverTimeoutObj = setTimeout(function() {
+					console.log("心跳检测");
+					console.log(ws);
+					// createWebSocket();
+				}, self.timeout);
+
+			}, this.timeout)
+		}
+	}
+
+	function reconnect(url) {
+		if(lockReconnect) {
+			return;
+		};
+		lockReconnect = true;
+		//没连接上会一直重连，设置延迟避免请求过多
+		tt && clearTimeout(tt);
+		tt = setTimeout(function () {
+			createWebSocket(url);
+			lockReconnect = false;
+		}, 4000);
+	}
+
+	function onSend(){
+		var htm = $("#mesText").val();
+		if(htm.length<1 || htm == ""){
+			return;
+		}
+		if(sendToId<1){
+			return;
+		}
+		doSend(htm);
+	}
+	ws.onopen = function(){
+		appendHtm("连接成功！");
+	}
+
+	// 从服务端接收到消息，将消息回显到聊天记录区
+	ws.onmessage = function(evt){
+		if(evt.data=="心跳检测"){
+			console.log("心跳");
+		}else{
+			var mydata = $.parseJSON(evt.data);
+			console.log(typeof(mydata))
+			toSendMes1(mydata.sendDoId,mydata.sendDoName,mydata.sendDoPrName);
+			addIcon(mydata);
+			var ele = "<li>"+mydata.sendDoName+":<br/><p class=\"mesInfo\">"+mydata.content+"</p></li>";
+			$(".mes[data-id="+mydata.sendDoId+"]").append(ele);
+			var box=document.getElementsByClassName("mes")[0];
+			box.scrollTop=box.scrollHeight;
+		}
+		appendHtm(evt.data);
+		heartCheck.start();
+	}
+
+	ws.onerror = function(){
+		appendHtm("连接失败！");
+	}
+
+	ws.onclose = function(){
+		appendHtm("连接关闭！");
+	}
+	//添加新消息ICON
+	function addIcon(data){
+		var newIcon = "<i class=\"myIcon\">新</i>";
+		var displayState = $(".mes[data-id="+data.sendDoId+"]").css("display");//信息界面
+		if(displayState!="block"){
+			//如果这个信息界面没有显示就添加
+			$("#user li[data-id="+data.sendDoId+"]").append(newIcon);
+		}
+		displayState = $("#liaoTianInfo div:eq(1)").css("display");//聊天界面
+		if(displayState!="block"){
+			$("#liaoTianInfo label:eq(1) i").remove();
+			$("#liaoTianInfo label:eq(1)").append("<i class=\"myIcon\"style='position: absolute;top: 35px;'>新</i>");
+		}
+		var rightNum = $("#showWS").css("right");
+
+		if(rightNum.slice(0,rightNum.length-2)<0){
+			$("#newIcon i").remove();
+			$("#newIcon").append(newIcon);
+		}
+	}
+	function appendHtm(htm){
+		console.log(htm);
+	}
+
+	// 注销登录
+	function doClose(){
+		ws.close();
+	}
+
+	// 发送消息
+	function doSend(htm){
+		// ($("#content")[0]).innerHTML += htm +"<br/>"
+		console.log("htm+"+htm);
+		var str = {sendToId:sendToId,sendToName:sendToName,sendToPrName:sendToPrName,sendDoId:${sessionScope.baseUser.id},sendDoName:"${sessionScope.baseUser.basePersonName}",
+			sendDoPrName:"${sessionScope.baseUser.baseRoleName}",content:htm};
+		$.post("chat/save",str,function (data) {
+			console.info(data);
+			console.info("发送成功");
+		});
+		str = JSON.stringify(str);
+		console.log(str);
+		ws.send(str);
+		var ele = "<li style='text-align: right'>我:<br/><p class=\"mesInfo\">"+htm+"</p></li>";
+		$(".mes[data-id="+sendToId+"]").append(ele);
+		var box=document.getElementsByClassName("mes")[0];
+		box.scrollTop=box.scrollHeight;
+		$("#mesText").val("")
+
+	}
+
+	function doClear(){
+		$("#content").empty();
+	}
+
+
+</script>
 <div id="mm" class="easyui-menu tabs-menu" style="width:120px;display:none;">
 	<div id="mm-tabclose">关闭</div>
 	<div id="mm-tabcloseall">关闭所有</div>
@@ -353,7 +892,6 @@
             topMenu .push(obj)
         }
     })
-	console.log(JSON.stringify(topMenu))
     var SystemMenu = topMenu
 </script>
 

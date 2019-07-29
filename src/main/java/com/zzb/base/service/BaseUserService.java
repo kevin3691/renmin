@@ -130,6 +130,7 @@ public class BaseUserService extends BaseService<BaseUser> {
 				.valueOf(request.getParameter("isActive")) : -1;
 		String baseRoleName = request.getParameter("baseRoleName") != null ? request
 				.getParameter("baseRoleName") : "";
+		boolean onLineState = request.getParameter("onLineState") != null ? Boolean.valueOf(request.getParameter("onLineState")) : false;
 		QueryPara qp = new QueryPara(request);
 		List<Object> args = new ArrayList<Object>();
 		String hql = "FROM BaseUser WHERE 1=1";
@@ -156,6 +157,10 @@ public class BaseUserService extends BaseService<BaseUser> {
 		}
 		if (isActive != -1) {
 			hql += " AND isActive=?";
+			args.add(isActive);
+		}
+		if(onLineState){
+			hql += " AND onLineState=?";
 			args.add(isActive);
 		}
 		qp.setArgs(args);
@@ -343,7 +348,13 @@ public class BaseUserService extends BaseService<BaseUser> {
 		}
 		return (int) ((long) baseUserDao.uniqueResult(hql, args));
 	}
-
+	public void onLineStateUp(int flag,int userId){
+		String hql = "update BaseUser set onLineState = ? where id = ?";
+		List<Object> args = new ArrayList<Object>();
+		args.add(flag);
+		args.add(userId);
+		baseUserDao.executeUpdate(hql,args);
+	}
 	/**
 	 * 设置用户菜单权限
 	 * 
