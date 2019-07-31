@@ -81,6 +81,11 @@
 			//连接成功时触发
 			ws.onopen = function(){
 				appendHtm("连接成功！");
+				$.post ("chat/list2", {sendToId:${sessionScope.baseUser.id},state:0}, function (data) {
+					$.each(data,function(i,t){
+						layim.getMessage(t);
+					});
+				});
 			}
 			ws.onerror = function(){
 				appendHtm("连接失败！");
@@ -100,14 +105,9 @@
 					,type: 'get' //默认get，一般可不填
 					,data: {} //额外参数
 				}
-				//获取群员接口
-				,members: {
-					url: '' //接口地址（返回的数据格式见下文）
-					,type: 'get' //默认get，一般可不填
-					,data: {} //额外参数
-				}
 
-				//上传图片接口（返回的数据格式见下文）
+
+				/*//上传图片接口（返回的数据格式见下文）
 				,uploadImage: {
 					url: '' //接口地址（返回的数据格式见下文）
 					,type: 'post' //默认post
@@ -117,7 +117,7 @@
 				,uploadFile: {
 					url: '' //接口地址（返回的数据格式见下文）
 					,type: 'post' //默认post
-				}
+				}*/
 
 				//增加皮肤选择，如果不想增加，可以剔除该项
 				,skin: [
@@ -185,7 +185,6 @@
 			});
 
 		});
-
 
 
 

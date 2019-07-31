@@ -20,6 +20,7 @@ import com.zzb.zo.entity.*;
 import com.zzb.zo.pojo.ChatInfo;
 import com.zzb.zo.pojo.EmpInfo;
 import com.zzb.zo.pojo.FriendInfo;
+import com.zzb.zo.pojo.LayChat;
 import com.zzb.zo.service.*;
 import org.apache.shiro.SecurityUtils;
 import org.kohsuke.rngom.parse.host.Base;
@@ -78,6 +79,33 @@ public class ChatController extends BaseController {
 		QueryResult<Chat> rslt = chatService.list(request);
 
 		return rslt;
+	}
+	/**
+	 * 获取列表数据 list
+	 *
+	 * @param
+	 * @param
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value = "/list2")
+	public List<LayChat> list2(HttpServletRequest request) {
+		List<LayChat> list = new ArrayList<>();
+		QueryResult<Chat> rslt = chatService.list(request);//未读的消息
+		for(Chat c : rslt.getRows()){
+			LayChat lc = new LayChat();
+			lc.setFromid(c.getSendDoId());//消息来源ID
+			lc.setId(c.getSendDoId());
+			lc.setType("friend");//窗口类型
+			lc.setMine(false);
+			lc.setUsername(c.getSendDoName());
+			lc.setFromid(c.getSendDoId());
+			lc.setTimestamp(c.getSendTime().toString());
+			lc.setContent(c.getContent());
+			lc.setAvatar("images/a.jpg");
+			list.add(lc);
+		}
+		return list;
 	}
 
 	/**
