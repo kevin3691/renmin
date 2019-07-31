@@ -322,7 +322,7 @@
 
 				</ul>
 				<div class="tab-content no-padding">
-					<iframe scrolling="no" id="ifrmOrg"
+					<iframe scrolling="auto" id="ifrmOrg"
 							style="width: 100%; height: 300px;" frameborder="0"
 							src="suptype/list4"></iframe>
 				</div>
