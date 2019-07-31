@@ -69,9 +69,8 @@ var mainPlatform = {
         		fn: function(r) {
 
         			if(r) {
-
+                        ws.onclose();
         				window.location.href = 'home/logout';
-
         			}
 
         		}

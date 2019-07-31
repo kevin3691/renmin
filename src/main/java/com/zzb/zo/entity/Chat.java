@@ -16,6 +16,15 @@ public class Chat extends BaseEntity<Chat> {
     private String sendToPrName;
     private String content;//发送的信息内容
     private Date sendTime;//时间
+    private int state;//已读未读
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
 
     public int getSendDoId() {
         return sendDoId;

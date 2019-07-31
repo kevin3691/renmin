@@ -55,7 +55,23 @@ public class BaseOrgService extends BaseService<BaseOrg> {
 		QueryResult<BaseOrg> qr = baseOrgDao.list(qp);
 		return qr;
 	}
-	
+	/**
+	 * 查询
+	 *
+	 * @param request
+	 * @return
+	 */
+	public QueryResult<BaseOrg> listAll(HttpServletRequest request) {
+
+		QueryPara qp = new QueryPara(request);
+		List<Object> args = new ArrayList<Object>();
+		String hql = "FROM BaseOrg WHERE 1=1 ";
+
+		qp.setHql(hql);
+		qp.setArgs(args);
+		QueryResult<BaseOrg> qr = baseOrgDao.list(qp);
+		return qr;
+	}
 	public QueryResult<BaseOrg> listByParentId(int parentId) {
 		
 		QueryPara qp = new QueryPara();

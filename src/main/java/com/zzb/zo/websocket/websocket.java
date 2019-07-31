@@ -4,8 +4,12 @@ import com.google.gson.Gson;
 import com.zzb.base.entity.BaseUser;
 import com.zzb.base.service.BaseUserService;
 import com.zzb.zo.entity.Chat;
+import com.zzb.zo.pojo.EmpInfo;
+import com.zzb.zo.pojo.LayChat;
+import com.zzb.zo.pojo.LayMes;
 import com.zzb.zo.service.ChatService;
 import netscape.javascript.JSObject;
+import org.activiti.engine.impl.util.json.JSONObject;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.kohsuke.rngom.parse.host.Base;
@@ -15,6 +19,7 @@ import org.springframework.web.context.ContextLoader;
 
 import javax.annotation.Resource;
 import javax.json.Json;
+import javax.json.JsonObject;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,6 +28,10 @@ import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -37,8 +46,8 @@ public class Websocket {
     private static CopyOnWriteArraySet<Websocket> arraySet = new CopyOnWriteArraySet<Websocket>(); //存放每一个客户的的WebScoketServer对象，线程安全
     private Session session;
     private int userId;
-    //private BaseUserService baseUserService = new BaseUserService();
     private BaseUserService baseUserService = (BaseUserService) ContextLoader.getCurrentWebApplicationContext().getBean("baseUserService");
+    private ChatService ChatService = (ChatService) ContextLoader.getCurrentWebApplicationContext().getBean("chatService");
     public Websocket() {
         System.out.println("构造方法。。。");
 
@@ -57,6 +66,19 @@ public class Websocket {
         arraySet.add(this);
         this.addOnlineNum();
         System.out.println("有一个新连接加入，当前在线 "+this.getOnLineNum()+" 人");
+        for (Websocket websocket : arraySet) {
+            try {
+                Gson gson = new Gson();
+                EmpInfo myMsg = new EmpInfo();
+                myMsg.setId(userId);
+                myMsg.setStatus("online");
+                myMsg.setType("Status");
+                websocket.session.getBasicRemote().sendText(gson.toJson(myMsg));
+            } catch (IOException e) {
+                e.printStackTrace();
+                continue;
+            }
+        }
     }
 
     /**
@@ -66,6 +88,19 @@ public class Websocket {
     public void onClose() {
         arraySet.remove(this);
         baseUserService.onLineStateUp(0,userId);//状态下线
+        for (Websocket websocket : arraySet) {
+            try {
+                Gson gson = new Gson();
+                EmpInfo myMsg = new EmpInfo();
+                myMsg.setId(userId);
+                myMsg.setStatus("offline");
+                myMsg.setType("Status");
+                websocket.session.getBasicRemote().sendText(gson.toJson(myMsg));
+            } catch (IOException e) {
+                e.printStackTrace();
+                continue;
+            }
+        }
         this.subOnlineNum();
         System.out.println("有一个连接断开，当前在线 "+this.getOnLineNum()+" 人");
     }
@@ -98,26 +133,68 @@ public class Websocket {
     @OnMessage
     public void onMessage(Session session, String msg) {
         System.out.println("消息监控："+msg);
-        Chat chat = new Chat();
+        LayChat sendChat = new LayChat();
         Gson gson = new Gson();
         String sendText = "";
+        int bUserId = 1;
         if(!msg.equals("心跳检测")){
-            chat = gson.fromJson(msg,Chat.class);
-            sendText = gson.toJson(chat);
+            LayMes layMes = gson.fromJson(msg, LayMes.class);
+            LayChat mineChat = layMes.getData().getMine();
+            LayChat toChat = layMes.getData().getTo();
+            bUserId = toChat.getId();
+            sendChat = mineChat;
+            sendChat.setFromid(mineChat.getId());//消息来源ID
+            sendChat.setType(toChat.getType());//窗口类型
+            sendChat.setMine(false);
+            sendChat.setAvatar("images/a.jpg");
+           /* var str = {sendToId:sendToId,sendToName:sendToName,sendToPrName:sendToPrName,sendDoId:${sessionScope.baseUser.id},sendDoName:"${sessionScope.baseUser.basePersonName}",
+                    sendDoPrName:"${sessionScope.baseUser.baseRoleName}",content:htm};
+            $.post("chat/save",str,function (data) {
+                console.info(data);
+                console.info("发送成功");
+            });*/
+            /*Chat chat = new Chat();
+            chat.setContent(sendChat.getContent());//消息
+            chat.setSendDoId(sendChat.getFromid());//来源ID
+            chat.setSendToId(toChat.getId());//接受ID
+            chat.setSendDoName(mineChat.getUsername());//来源名称
+            chat.setSendToName(toChat.getUsername());//接受名称
+            chat.setState(0);
+            DateFormat timeFormat = new SimpleDateFormat("yyMMddHHmm");
+            Date date = new Date();
+            try {
+                date = timeFormat.parse(toChat.getTimestamp());
+            }catch (ParseException e) {
+                 e.printStackTrace();
+                }
+            chat.setSendTime(date);
+            ChatService.save(chat);*/
+            sendText = gson.toJson(sendChat);
         }else{
-            sendText = msg;
+            sendText = msg.substring(1);
+            bUserId = Integer.valueOf(msg.substring(0,1));
         }
-        int bUserId = chat.getSendToId();
+        int i = 0;
         for (Websocket websocket : arraySet) {
             try {
                 if(bUserId == websocket.userId){
+                    i++;
                     websocket.session.getBasicRemote().sendText(sendText);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
                 continue;
             }
-        }
+        }/*
+        if(i==0){
+            String myMsg = "{system: true ,id: "+sendChat.getId()+" ,type: \"friend\" ,content: '对方已掉线'}";
+
+            try {
+                this.session.getBasicRemote().sendText(myMsg);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }*/
     }
 
 

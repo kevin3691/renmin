@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.zzb.base.entity.BaseMenu;
 import com.zzb.base.entity.Children;
-import com.zzb.base.entity.TopMenu;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.ExcessiveAttemptsException;
@@ -168,7 +167,25 @@ public class BaseUserService extends BaseService<BaseUser> {
 		QueryResult<BaseUser> qr = baseUserDao.list(qp);
 		return qr;
 	}
-	
+
+	/**
+	 * 好友列表
+	 * @param request
+	 * @return
+	 */
+	public QueryResult<BaseUser> listOrder(HttpServletRequest request) {
+		BaseUser user = (BaseUser) request.getSession().getAttribute("baseUser");
+
+		QueryPara qp = new QueryPara(request);
+		List<Object> args = new ArrayList<Object>();
+		String hql = "FROM BaseUser WHERE 1=1 and id <> ?";
+		args.add(user.getId());
+		qp.setArgs(args);
+		qp.setHql(hql);
+		qp.setOrderBy("onLineState");
+		QueryResult<BaseUser> qr = baseUserDao.list(qp);
+		return qr;
+	}
 	
 	public QueryResult<BaseUser> listByOrgId(int orgId) {
 		QueryPara qp = new QueryPara();
@@ -217,7 +234,12 @@ public class BaseUserService extends BaseService<BaseUser> {
 
 		return user;
 	}
-
+	public List<BaseUser> getOrg(){
+		String hql = " select * from BaseUser Group By baseOrgId ";
+		QueryPara qp = new QueryPara();
+		qp.setHql(hql);
+		return baseUserDao.list(qp).getRows();
+	}
 	/**
 	 * 根据id获取用户
 	 * 

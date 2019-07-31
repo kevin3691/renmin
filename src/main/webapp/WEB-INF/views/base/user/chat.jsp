@@ -20,12 +20,14 @@
 			$.each(rows,function (i,t) {
 				var time = jsonDateTimeFormatter (t.sendTime, 2);
 				if(t.sendDoId == sendToId){
-					var ele = "<li>"+t.sendDoName+"&nbsp;"+time+":<br/><p class=\"mesInfo\">"+t.content+"</p></li>";
+					var ele = "<li><p class=\"sendToName\">"+t.sendDoName+"</p><div style='background-color: #e2e2e2' class=\"send\"><p>"+t.content+"</p>" +
+							"<div class=\"arrow msgLeft\" STYLE='border-color: #e2e2e2;'></div></div></li>";
 					$("#list ul").append(ele);
 				}
 				if(t.sendDoId == sendDoId ) {
-					var eleMy = "<li style='text-align: right'>"+time+"&nbsp;我:<br/><p class=\"mesInfo\">"+t.content+"</p></li>";
-					$("#list ul").append(eleMy);
+					var ele = "<li style=\"text-align:right;\"><div class=\"send\" style='background-color: #5FB878'><p style=\"text-align:left\">"+t.content+"</p>" +
+							"<div class=\"arrow msgRight\" STYLE='border-color: #5FB878;'></div></div><p class=\"myName\">我</p></li>";
+					$("#list ul").append(ele);
 				}
 			})
 			var box=document.getElementsByClassName("mes")[0];
@@ -65,7 +67,7 @@
 </script>
 	<style>
 		.mes{
-			width: 55%;
+			width: 100%;
 			box-sizing: border-box;
 			padding: 10px 10px;
 			list-style: none;
@@ -73,23 +75,57 @@
 			min-height:420px;
 			max-height:420px;
 			overflow-y: scroll;
-			margin: auto;
 		}
 		.mes li{
 			width: 100%;
-			border-top: 1px solid #E9E9E9;
 			margin-bottom: 5px;
 			padding-top: 10px;
 		}
-		.mes li:first-child{
-			border: none;
+		.sendToName{
+			display:inline-block;
+			margin: 10px 0px;
+			float:left;
 		}
-		.mesInfo{
+		.myName{
+			display:inline-block;
+			margin: 10px 0px;
+			float:right;
+		}
+		.send {
+			clear:both;
+			margin:0px 20px;
+			position: relative;
 			word-break: break-all;
-			white-space: pre-wrap;
-			line-height: 30px;
-			margin-top: 5px;
-			text-indent: 2em;
+			word-wrap: break-word;
+			max-width: 300px;
+			vertical-align: middle;
+			background: #F8C301;
+			border-radius: 5px;
+			line-height: 32px;
+			min-height: 32px;
+			display: inline-block;
+		}
+		.send p{
+			padding:5px 10px;
+			display:inline-block;
+			margin:0px;
+		}
+		.send .arrow{
+			position:absolute;
+			top:10px;
+			font-size:0;
+			border:solid 8px;
+			transform:rotate(45deg);
+		}
+		.msgRight{
+			right:-8px; /* 圆角的位置需要细心调试哦 */
+			width:0;
+			height:0;
+		}
+		.msgLeft{
+			left:-8px; /* 圆角的位置需要细心调试哦 */
+			width:0;
+			height:0;
 		}
 	</style>
 </head>
@@ -105,7 +141,7 @@
 					type="text" />
 			</div>
 			<div class="form-group">
-				<label class="col-sm-3 control-label" for="sendTime">购买日期</label>
+				<label class="col-sm-3 control-label" for="sendTime">日期</label>
 				<div class="col-sm-9">
 					<div class="input-group">
 						<input class="form-control" id="sendTime" name="sendTime" value=""

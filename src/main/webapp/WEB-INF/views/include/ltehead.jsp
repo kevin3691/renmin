@@ -22,6 +22,7 @@
 <link href="easyui/css/platform.css" rel="stylesheet">
 <link rel="stylesheet" href="easyui/custom/orange/uimaker/easyui.css">
 <script type="text/javascript" charset="utf-8" src="<%=basePath%>JavaScriptServlet"></script>
+
 <%--<script type="text/javascript" charset="utf-8">--%>
 	<%--// layer.photo 由于该弹出层无法在parent中弹出，所以写入共用JS供调用--%>
     <%--function showAlbum (jdata) {--%>

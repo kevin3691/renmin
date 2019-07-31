@@ -46,6 +46,9 @@ public class ChatService extends BaseService<DuBan> {
 		int sendToId = request.getParameter("sendToId") != null
 				&& !request.getParameter("sendToId").equals("") ? Integer
 				.valueOf(request.getParameter("sendToId")) : -1;
+		int state = request.getParameter("state") != null
+				&& !request.getParameter("state").equals("") ? Integer
+				.valueOf(request.getParameter("state")) : -1;
 		String sendTime =  request.getParameter("sendTime") != null ? request
 				.getParameter("sendTime") : "";
 		String content =  request.getParameter("content") != null ? request
@@ -65,6 +68,10 @@ public class ChatService extends BaseService<DuBan> {
 			args.add(sendToId);
 			args.add(sendDoId);
 		}
+		if (state>=0) {
+			hql += " AND state = ?";
+			args.add(state);
+		}
 		if (!content.equals("")) {
 			hql += " AND content like ?";
 			args.add("%"+content+"%");
@@ -83,9 +90,15 @@ public class ChatService extends BaseService<DuBan> {
 
 
 	public Chat save(Chat chat) {
-		Date date = new Date();
-		chat.setSendTime(date);
 		chat = chatDao.save(chat);
 		return chat;
+	}
+
+	public void upState(Chat chat){
+		String sql = "update Chat set state = 1 where sendToId = ? and sendDoId = ?";
+		List<Object> args = new ArrayList<Object>();
+		args.add(chat.getSendToId());
+		args.add(chat.getSendDoId());
+		chatDao.executeUpdate(sql,args);
 	}
 }
