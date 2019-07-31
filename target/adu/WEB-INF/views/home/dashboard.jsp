@@ -106,7 +106,111 @@ function loadGrid_duban () {
             }
         });
     }
+//电子文件柜
+function loadGrid () {
+    $ ("#grid").jqGrid ({
+        title: '文档列表',
+        height: 371,
+//document.getElementById("calendar").clientHeight
+        rownumbers: true,
+        url: 'docfile/list',
+        postData:{
+        },
+        colModel : [
+            {
+                label : '分类',
+                name : 'docTypeName',
+                index : 'docTypeName',
+                align : 'center',
+                //width : 20
+            }, {
+                label : '名称',
+                name : 'title',
+                index : 'title',
+                align : 'center',
+                //width : 240
+            }, {
+                label : '创建时间',
+                name : 'recordInfo.createdAt',
+                index : 'recordInfo.createdAt',
+                sortable : false,
+                align : 'center',
+                //width : 130,
+                formatter : function (value, options, row) {
+                    return jsonDateTimeFormatter (row.recordInfo.createdAt, 2);
+                }
+            }, {
+                label : '创建者',
+                name : 'recordInfo.createdByName',
+                index : 'recordInfo.createdByName',
+                sortable : false,
+                align : 'center',
+               // width : 70,
+                formatter : function (value, options, row) {
+                    return row.recordInfo.createdByName;
+                }
+            },  {
+                label : '操作',
+                name : 'id',
+                index : 'id',
+                //width : 130,
+                align : 'center',
+                sortable : false,
+                formatter : function (value, options, row) {
 
+                    var btn = "";
+                    // if(row.isPi == 1){
+                    //     btn += '&nbsp;<a href="javascript:onPi(' + value + ')" title="">录入批转信息</a>'
+                    // }
+                    btn += '&nbsp;<a href="javascript:onShow(\''+ row.fileUrl +'\',\''+row.fileExt+'\','+value+')" title="">下载</a>'
+                    /*btn += '&nbsp;<a href="javascript:onView(' + value + ')" title="">查看</a>'
+                    btn += '&nbsp;<a href="javascript:onSave(' + value + ')" title="">编辑信息</a>'*/
+                    //btn += '&nbsp;<a href="javascript:onDel(' + value + ')" title="">删除</a>'
+                    //btn += '&nbsp;<a href="javascript:onKeySet(' + value + ')" title="">设置加密锁</a>'
+                    return btn;
+                }
+            }
+        ],
+        rowNum : 20,
+        rowList : [
+            20, 50, 100
+        ],
+        pager : '#pager',
+        sortname : 'lineNo',
+        sortorder : "asc"
+    });
+
+}
+
+//查看文件|下载
+function onShow(url,fileExt,id) {
+
+    url = _BasePath + "/" + url;
+    if (".jpg;.gif;.bmp;.png".indexOf (fileExt) >= 0) {
+        showPhoto(url)
+    }
+    // else if(".doc;.docx;".indexOf (fileExt) >= 0){
+    //    $.post('document/viewdoc',{'id':id},function(result,status){
+    //        var targeturl = result.url;
+    // 		if(targeturl != ""){
+    //            window.top.document.getElementById("ifrmDoc").src = "document/doc?url=" + targeturl;
+    //            window.top.$('#winDoc').dialog({
+    //                width:'90%',
+    //                height:'90%',
+    //                closed: false,
+    //                cache: false,
+    //                modal:true,
+    //                title:"文档内容"
+    //            });
+    //
+    //            window.top.$('#winDoc').dialog("open");
+    // 		}
+    // 	});
+    // }
+    else{
+        window.open (url, "att", "")
+    }
+}
 
 function loadGrid_chaoshi () {
     $ ("#grid_chaoshi").jqGrid ({
@@ -347,7 +451,8 @@ function onPi(id,insId){
             layer.closeAll ();
         });
     }
-    //排序
+
+    /*//排序
     function onSort (id, order) {
         $.post ("document/sort", {
             id : id,
@@ -355,7 +460,8 @@ function onPi(id,insId){
         }, function () {
             $ ("#grid").trigger ("reloadGrid");
         });
-    }
+    }*/
+
     //Iframe中点击ORG时获取ORGID，查询该机构下的人员
     function onOrgNodeClick (node) {
         onQ (node.id);
@@ -754,6 +860,7 @@ function onDel() {
         loadGrid_dbgw ();
         init()
         workplan()
+        loadGrid ()
         log();
     });
 
@@ -835,33 +942,56 @@ function onDel() {
             </div>
             <!-- ./col -->
         --%></div>
-        <div class="col-md-5 col-sm-5">
-            <div class="box box-default box-solid">
-                <div class="box-header with-border">
-                    <h3 class="box-title">领导工作计划</h3>
-                    <div class="box-tools pull-right">
-                        <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
+
+        <div class="row">
+
+            <div class="col-md-4 col-sm-4">
+                <div class="box box-default box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">领导工作计划</h3>
+                        <div class="box-tools pull-right">
+                            <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
+                        </div>
+                    </div>
+                    <div class="box-body" id="calendar">
+
                     </div>
                 </div>
-                <div class="box-body" id="calendar">
-
-                </div>
             </div>
-        </div>
 
-        <div class="col-md-5 col-sm-5">
-            <div class="box box-default box-solid">
-                <div class="box-header with-border">
-                    <h3 class="box-title">工作日志</h3>
-                    <div class="box-tools pull-right">
+            <div class="col-md-4 col-sm-4">
+                <div class="box box-default box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">工作日志</h3>
+                        <div class="box-tools pull-right">
 
-                        <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
+                            <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
+                        </div>
+                    </div>
+                    <div class="box-body" id="work">
+                        <%--<table id="grid"></table>--%>
                     </div>
                 </div>
-                <div class="box-body" id="work">
-                    <%--<table id="grid"></table>--%>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="box box-default box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">电子文件柜</h3>
+                        <div class="box-tools pull-right">
+
+                            <!-- <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
+                        </div>
+                    </div>
+                    <div class="box-body" id="table">
+                        <div class="col-sm-12">
+                            <table id="grid"></table>
+                            <div id="pager" style="height:35px;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
 
   <%--      <div class="col-md-6 col-sm-6">
