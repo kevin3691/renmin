@@ -140,7 +140,6 @@
 		});
 
 			ws.onmessage = function(res){
-			    console.log(res.data);
 				var data = JSON.parse(res.data);
 				if(data.type == "Status"){
 					layim.setFriendStatus(data.id, data.status); //在线状态
@@ -155,7 +154,6 @@
 				var str = {sendToId:res.to.id,sendToName:res.to.userName,sendDoId:${sessionScope.baseUser.id},sendDoName:"${sessionScope.baseUser.basePersonName}",
 					sendDoPrName:"${sessionScope.baseUser.baseRoleName}",content:res.mine.content,sendTime:res.to.timestamp};
 				$.post("chat/save",str,function (data) {
-					console.info(data);
 					console.info("发送成功");
 				});
 				ws.send(JSON.stringify({
