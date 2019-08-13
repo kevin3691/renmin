@@ -87,7 +87,7 @@
 						layim.getMessage(t);
 					});
 				});
-			}
+			} 
 			ws.onerror = function(){
 				appendHtm("连接失败！");
 			}

@@ -1,4 +1,5 @@
 /** layui-v2.5.4 MIT License By https://www.layui.com */
+
 ;layui.define(["layer", "laytpl", "upload"], function (i) {
     var a = "3.9.0", e = layui.$, t = layui.layer, n = layui.laytpl, l = layui.device(), s = "layui-show",
         o = "layim-this", d = 20, r = {}, c = function () {
