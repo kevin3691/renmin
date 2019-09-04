@@ -66,10 +66,10 @@
 	<script>
 		var ws;
 		layui.use('layim', function(layim){
+			var wsUrl = "ws://192.168.10.119:8000${pageContext.request.contextPath}/ws/chat?${sessionScope.baseUser.id}";
+			//var wsUrl = "ws://www.hdswzzb.com/hd/ws/chat?${sessionScope.baseUser.id}";
 
-			var wsUrl = "ws://www.hdswzzb.com/hd/ws/chat?${sessionScope.baseUser.id}";
-
-			function createWebSocket() {40183471
+			function createWebSocket() {
 
 				try {
 					ws = new WebSocket(wsUrl);
@@ -120,11 +120,6 @@
 					,type: 'post' //默认post
 				}*/
 
-				//增加皮肤选择，如果不想增加，可以剔除该项
-				,skin: [
-					'http://xxx.com/skin.jpg',
-
-		]
 
 		,brief: false //是否简约模式（默认false，如果只用到在线客服，且不想显示主面板，可以设置 true）
 					,title: '消息' //主面板最小化后显示的名称

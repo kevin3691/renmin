@@ -168,6 +168,25 @@ public class GoodsController extends BaseController {
 		model.addAttribute("o", goods);
 		return "/goods/print";
 	}
+	/**
+	 * View 打印页 print
+	 *
+	 * @param request
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/print2")
+	//@RequiresPermissions("BASE_PERSON:RW")
+	public String print2(HttpServletRequest request, ModelMap model) {
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		Goods goods = new Goods();
+		if (id > 0) {
+			goods = goodsService.dtl(id);
+		}
+		model.addAttribute("o", goods);
+		return "/goods/print2";
+	}
 
 	@RequestMapping(value = "/erWeiMa")
 	//@RequiresPermissions("BASE_PERSON:RW")
