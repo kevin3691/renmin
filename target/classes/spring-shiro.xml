@@ -165,6 +165,7 @@
 				/error/**=anon
 				/driver/**=anon
 				/JavaScriptServlet=anon
+                /ws/chat=anon
 				/**=authc,sysUser,user,forceLogout
 			</value>
 		</property>

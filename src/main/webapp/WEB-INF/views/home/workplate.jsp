@@ -75,7 +75,7 @@
 					ws = new WebSocket(wsUrl);
 				} catch(e) {
 					console.log('catch');
-					reconnect(wsUrl);
+                    createWebSocket();
 				}
 			}
 			createWebSocket();
@@ -90,6 +90,7 @@
 			} 
 			ws.onerror = function(){
 				appendHtm("连接失败！");
+                createWebSocket();
 			}
 			ws.onclose = function(){
 				appendHtm("连接关闭！");
@@ -122,7 +123,7 @@
 
 				//增加皮肤选择，如果不想增加，可以剔除该项
 				,skin: [
-					'http://xxx.com/skin.jpg',
+					/*'http://xxx.com/skin.jpg',*/
 
 		]
 

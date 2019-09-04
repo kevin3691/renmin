@@ -117,35 +117,19 @@ function loadGrid () {
         postData:{
         },
         colModel : [
-            {
-                label : '分类',
-                name : 'docTypeName',
-                index : 'docTypeName',
-                align : 'center',
-                //width : 20
-            }, {
+             {
                 label : '名称',
                 name : 'title',
                 index : 'title',
                 align : 'center',
-                //width : 240
-            }, {
-                label : '创建时间',
-                name : 'recordInfo.createdAt',
-                index : 'recordInfo.createdAt',
-                sortable : false,
-                align : 'center',
-                //width : 130,
-                formatter : function (value, options, row) {
-                    return jsonDateTimeFormatter (row.recordInfo.createdAt, 2);
-                }
+                width : 240
             }, {
                 label : '创建者',
                 name : 'recordInfo.createdByName',
                 index : 'recordInfo.createdByName',
                 sortable : false,
                 align : 'center',
-               // width : 70,
+                width : 70,
                 formatter : function (value, options, row) {
                     return row.recordInfo.createdByName;
                 }
@@ -153,7 +137,7 @@ function loadGrid () {
                 label : '操作',
                 name : 'id',
                 index : 'id',
-                //width : 130,
+                width : 40,
                 align : 'center',
                 sortable : false,
                 formatter : function (value, options, row) {

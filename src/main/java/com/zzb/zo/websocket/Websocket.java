@@ -41,7 +41,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 @ServerEndpoint(value = "/ws/chat")
 public class Websocket {
 
-
     private static Integer onlineNum = 0; //当前在线人数，线程必须设计成安全的
     private static CopyOnWriteArraySet<Websocket> arraySet = new CopyOnWriteArraySet<Websocket>(); //存放每一个客户的的WebScoketServer对象，线程安全
     private Session session;
@@ -50,7 +49,6 @@ public class Websocket {
     private ChatService ChatService = (ChatService) ContextLoader.getCurrentWebApplicationContext().getBean("chatService");
     public Websocket() {
         System.out.println("构造方法。。。");
-
     }
 
     /**
