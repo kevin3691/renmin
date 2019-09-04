@@ -66,8 +66,8 @@
 	<script>
 		var ws;
 		layui.use('layim', function(layim){
-			var wsUrl = "ws://192.168.10.119:8000${pageContext.request.contextPath}/ws/chat?${sessionScope.baseUser.id}";
-			//var wsUrl = "ws://www.hdswzzb.com/hd/ws/chat?${sessionScope.baseUser.id}";
+			//var wsUrl = "ws://192.168.10.119:8000${pageContext.request.contextPath}/ws/chat?${sessionScope.baseUser.id}";
+			var wsUrl = "ws://www.hdswzzb.com/hd/ws/chat?${sessionScope.baseUser.id}";
 
 			function createWebSocket() {
 
