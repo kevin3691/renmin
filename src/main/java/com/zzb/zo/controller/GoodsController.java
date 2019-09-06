@@ -200,7 +200,18 @@ public class GoodsController extends BaseController {
 		model.addAttribute("o", goods);
 		return "/goods/erWeiMa";
 	}
-
+	@RequestMapping(value = "/erWeiMa2")
+	//@RequiresPermissions("BASE_PERSON:RW")
+	public String erWeiMa2(HttpServletRequest request, ModelMap model) {
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		Goods goods = new Goods();
+		if (id > 0) {
+			goods = goodsService.dtl(id);
+		}
+		model.addAttribute("o", goods);
+		return "/goods/erWeiMa2";
+	}
 	@RequestMapping(value = "/edit4")
 	//@RequiresPermissions("BASE_PERSON:RW")
 	public String edit4(HttpServletRequest request, ModelMap model) {
