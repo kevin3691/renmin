@@ -129,7 +129,7 @@
 	</style>
 	<div class="box">
 		<div class="top">
-			<div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
+			<div class="logo">中共邯郸市委组织部<br />固定资产密级标签</div>
 			<div id="qrcode" style="display: none;"></div>
 			<div class="img_box"><img id="imgOne" src="images/erweima.png" /></div>
 		</div>
@@ -158,37 +158,6 @@
 			</ul>
 		</div>
 	</div>
-	<%--<div class="box">
-		<div class="top">
-			<div class="logo">中共邯郸市委组织部<br />固定资产标签</div>
-			&lt;%&ndash;<div class="img_box"><img id="qrcode" src="images/erweima.png" /></div>&ndash;%&gt;
-			<div class="img_box" id="qrcode" style="position: absolute;right: 18px;"></div>
-		</div>
-		<div class="test_box">
-			<ul>
-				<li class="test_box_tit">设备名称</li>
-				<li class="test_box_text">${o.name}</li>
-				<li class="test_box_tit">资产类别</li>
-				<li class="test_box_text">${o.type}</li>
-
-				<li class="test_box_tit">设备型号</li>
-				<li class="test_box_text">${o.spec}</li>
-				<li class="test_box_tit">设备编号</li>
-				<li class="test_box_text">${o.sn}</li>
-
-
-				<li class="test_box_tit">管&nbsp;理&nbsp;者</li>
-				<li class="test_box_text">${o.keeper}</li>
-
-				<li class="test_box_tit">购买时间</li>
-				<li class="test_box_text" id="date"></li>
-				<li class="test_box_text1">使用部门</li>
-				<li class="test_box_text">${o.org}</li>
-				<li class="test_box_text1">所在地点</li>
-				<li class="test_box_text">${o.location}</li>
-			</ul>
-		</div>
-	</div>--%>
 </div>
 
 <div style="height: 30px"></div>
@@ -230,7 +199,7 @@
 		width:100,
 		height:100,
 		//text:"http://192.168.10.119:8000${pageContext.request.contextPath}/goods/erWeiMa?id=${o.id}"
-		text:"http://www.hdswzzb.com/hd/goods/erWeiMa?id=${o.id}"
+		text:"http://www.hdswzzb.com/hd/goods/erWeiMa2?id=${o.id}"
 	}).hide();
 	var canvas=qrcode.find('canvas').get(0);
 	$('#imgOne').attr('src',canvas.toDataURL('image/jpg'))
