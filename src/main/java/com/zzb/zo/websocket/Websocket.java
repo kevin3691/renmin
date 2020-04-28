@@ -145,28 +145,6 @@ public class Websocket {
             sendChat.setType(toChat.getType());//窗口类型
             sendChat.setMine(false);
             sendChat.setAvatar("images/a.jpg");
-           /* var str = {sendToId:sendToId,sendToName:sendToName,sendToPrName:sendToPrName,sendDoId:${sessionScope.baseUser.id},sendDoName:"${sessionScope.baseUser.basePersonName}",
-                    sendDoPrName:"${sessionScope.baseUser.baseRoleName}",content:htm};
-            $.post("chat/save",str,function (data) {
-                console.info(data);
-                console.info("发送成功");
-            });*/
-            /*Chat chat = new Chat();
-            chat.setContent(sendChat.getContent());//消息
-            chat.setSendDoId(sendChat.getFromid());//来源ID
-            chat.setSendToId(toChat.getId());//接受ID
-            chat.setSendDoName(mineChat.getUsername());//来源名称
-            chat.setSendToName(toChat.getUsername());//接受名称
-            chat.setState(0);
-            DateFormat timeFormat = new SimpleDateFormat("yyMMddHHmm");
-            Date date = new Date();
-            try {
-                date = timeFormat.parse(toChat.getTimestamp());
-            }catch (ParseException e) {
-                 e.printStackTrace();
-                }
-            chat.setSendTime(date);
-            ChatService.save(chat);*/
             sendText = gson.toJson(sendChat);
         }else{
             sendText = msg.substring(1);
@@ -183,16 +161,7 @@ public class Websocket {
                 e.printStackTrace();
                 continue;
             }
-        }/*
-        if(i==0){
-            String myMsg = "{system: true ,id: "+sendChat.getId()+" ,type: \"friend\" ,content: '对方已掉线'}";
-
-            try {
-                this.session.getBasicRemote().sendText(myMsg);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }*/
+        }
     }
 
 

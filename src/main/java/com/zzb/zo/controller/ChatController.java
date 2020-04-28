@@ -120,14 +120,11 @@ public class ChatController extends BaseController {
 	public Map<String, Object> save(Chat chat,
 									String sendTime,
 									HttpServletRequest request) {
-		DateFormat timeFormat = new SimpleDateFormat("yyMMddHHmm");
-		Date date = new Date();
-		try {
-			date = timeFormat.parse(sendTime);
-		}catch (ParseException e) {
-			e.printStackTrace();
-		}
-		chat.setSendTime(date);
+		//毫秒转为日期
+		long sendTimeLong = new Long(System.currentTimeMillis());//将任意字符型的毫秒数转换成long型
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTimeInMillis(sendTimeLong);
+		chat.setSendTime(calendar.getTime());
 		Map<String, Object> map = new HashMap<String, Object>();
 		chat = chatService.save(chat);
 
