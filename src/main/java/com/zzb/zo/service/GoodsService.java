@@ -99,6 +99,78 @@ public class GoodsService extends BaseService<Goods> {
 		QueryResult<Goods> qr = goodsDao.list(qp);
 		return qr;
 	}
+
+
+	public QueryResult<Goods> list4(HttpServletRequest request) {
+		int typeId = request.getParameter("typeId") != null
+				&& !request.getParameter("typeId").equals("") ? Integer
+				.valueOf(request.getParameter("typeId")) : 0;
+		String category = request.getParameter("category") != null ? request
+				.getParameter("category") : "";
+		String name = request.getParameter("name") != null ? request
+				.getParameter("name") : "";
+		String qrcode = request.getParameter("qrcode") != null ? request
+				.getParameter("qrcode") : "";
+		String barcode = request.getParameter("barcode") != null ? request
+				.getParameter("barcode") : "";
+		String status = request.getParameter("status") != null ? request
+				.getParameter("status") : "";
+		String sn = request.getParameter("sn") != null ? request
+				.getParameter("sn") : "";
+		int keeperId = request.getParameter("keeperId") != null
+				&& !request.getParameter("keeperId").equals("") ? Integer
+				.valueOf(request.getParameter("keeperId")) : -1;
+		int isActive = request.getParameter("isActive") != null
+				&& !request.getParameter("isActive").equals("") ? Integer
+				.valueOf(request.getParameter("isActive")) : -1;
+
+		QueryPara qp = new QueryPara(request);
+		List<Object> args = new ArrayList<Object>();
+		String hql = "FROM Goods WHERE 1=1";
+		if (typeId > 0) {
+			hql += " AND typeId IN (SELECT id FROM SupType WHERE id=? OR baseTree.path LIKE ?)";
+			args.add(typeId);
+			args.add('%' + "." + String.valueOf(typeId) + "." + '%');
+		}
+		if (!category.equals("")) {
+			hql += " AND category = ?";
+			args.add(category);
+		}
+		if (!qrcode.equals("")) {
+			hql += " AND qrcode = ?";
+			args.add(qrcode);
+		}
+		if (!barcode.equals("")) {
+			hql += " AND barcode = ?";
+			args.add(barcode);
+		}
+		if (!status.equals("")) {
+			hql += " AND status = ?";
+			args.add( status );
+		}
+		if (!name.equals("")) {
+			hql += " AND name LIKE ?";
+			args.add('%' + name + '%');
+		}
+		if (!sn.equals("")) {
+			hql += " AND sn LIKE ?";
+			args.add('%' + sn + '%');
+		}
+
+		if (keeperId != -1) {
+			hql += " AND keeperId=?";
+			args.add(keeperId);
+		}
+
+		if (isActive != -1) {
+			hql += " AND isActive=?";
+			args.add(isActive);
+		}
+		qp.setArgs(args);
+		qp.setHql(hql);
+		QueryResult<Goods> qr = goodsDao.list(qp);
+		return qr;
+	}
 	
 public QueryResult<Goods> getTopPerson(int num, String sym) {
 		

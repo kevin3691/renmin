@@ -14,7 +14,7 @@
 	//装载表格
     function loadGrid () {
 	    $ ("#grid").jqGrid ({
-	        url : "goods/list",
+	        url : "goods/list4",
 			postData:{
 	          category:'BGYP'
 			},

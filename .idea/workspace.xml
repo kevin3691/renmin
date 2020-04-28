@@ -7,388 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="固定资产二维码网址更改">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseDictController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseDictController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseOrgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseOrgController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BasePowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BasePowerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/dao/BasePowerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/dao/BasePowerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/entity/BaseUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/entity/BaseUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseOrgService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseOrgService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/CmsWebStatisticService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/CmsWebStatisticService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/ZipDecompressing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/ZipDecompressing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAreaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommNotiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommNotiService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommUploaderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommUploaderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DataSourceInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DataSourceInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/GenericsUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/GenericsUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/PicWatermark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/PicWatermark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/workflow/controller/WfPrintTempController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/workflow/controller/WfPrintTempController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocFileTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocFileTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocumentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DubanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DubanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodProviderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodProviderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SupTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SupTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DocPrintService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DocPrintService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DuBanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DuBanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanListService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/MeetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/MeetService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/PlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/PlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanListService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/spring-shiro.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/easyui/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/easyui/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/docfile/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/docfile/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/document/dsel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/document/dsel.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/document/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/document/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/index4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/index4.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/suplist/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/suplist/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/suplist/index4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/suplist/index4.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/dashboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/dashboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/workplate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/workplate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/include/ltehead.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/include/ltehead.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BaseDictController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BaseLogController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BaseMenuController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BaseOrgController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BasePersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BasePowerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BaseRoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/BaseUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/ClickjackFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/ErrorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/ExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/controller/IncludeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BaseDictDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BaseLogDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BaseMenuDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BaseOrgDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BasePersonDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BasePowerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BaseRoleDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/dao/BaseUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BaseDict.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BaseLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BaseMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BaseOrg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BasePerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BasePower.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BaseRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/BaseUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/Children.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/entity/TopMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/CurrentUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/CurrentUserMethodArgumentResolver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/ForceLogoutFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/KickoutSessionControlFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/MainRealm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/RetryLimitHashedCredentialsMatcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/SpringCacheManagerWrapper$SpringCacheWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/SpringCacheManagerWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/SpringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/realm/SysUserFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseDictService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseLogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseMenuService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseOrgService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BasePersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BasePowerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseRoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/AnswerManController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CheckCodeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsBannerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsDownloadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsGustBookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsLinkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsNewsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsStaticController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsVideoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsWebStatisticController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/CmsWebUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/SurveyItemsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/controller/SurveyTopicsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/AnswerManDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/CmsGustBookDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/CmsLinkDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/CmsNewsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/CmsTemplateDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/CmsWebUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/SurveyItemsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/dao/SurveyTopicsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/AnswerMan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/CmsGustBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/CmsLink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/CmsNews.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/CmsTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/CmsWebUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/SurveyItems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/entity/SurveyTopics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/AnswerManService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/CmsGustBookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/CmsLinkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/CmsNewsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/CmsTemplateService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/CmsWebStatisticService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/CmsWebUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/ICmsStaticService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/SurveyItemsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/SurveyTopicsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/Coding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/DateTools.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/FreeMarkerUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/Freemark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/StrUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/ZipDecompressing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommActivityController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommAreaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommAttachmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommFormController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommFormFiledController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommNotiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommPickerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommTaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommUploaderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommActivityDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommAreaDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommAttachmentDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommFormDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommFormFiledDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommNotiDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/dao/CommTaskDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommAttachment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommFormFiled.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommNoti.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/entity/CommTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommActivityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommAreaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommAttachmentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommFormFiledService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommFormService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommNotiService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommTaskService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommUploaderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/ICommStaticService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/annotation/DataSourceKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/annotation/ReadOnlyKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/BaseTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/QueryPara.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/QueryResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/RecordInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelExportOfTemplateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelExportUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelImportUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelPublicUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExportExcel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/annotation/Excel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/annotation/ExcelCollection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/annotation/ExcelEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/annotation/ExcelIgnore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/annotation/ExcelTarget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/ComparatorExcelField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/ExcelCollectionParams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/ExcelExportEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/ExcelImportEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/ExcelTitle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/ImportParams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/entity/TemplateExportParams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/security/FilterUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/security/RequestWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/security/TokenUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/security/XssSqlFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/ConvertUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/DataSourceContextHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/DataSourceInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/DateUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/DynamicDataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/FreeMarkerUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/GenericsUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/HttpHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/IPUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/ImageRemarkUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/Object2Json.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/Object2Xml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/OfficeUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/OfficeUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/PicWatermark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/SecurityUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/SiteConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/VerifyCodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/controller/WfInstanceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/controller/WfPrintHistoryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/controller/WfPrintTempController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/controller/WfStepController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/controller/WfWorkDayController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/controller/WfWorkflowController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/dao/WfInstanceDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/dao/WfPrintHistoryDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/dao/WfPrintTempDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/dao/WfStepDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/dao/WfWorkDayDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/dao/WfWorkflowDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/entity/WfInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/entity/WfPrintHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/entity/WfPrintTemp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/entity/WfStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/entity/WfWorkDay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/entity/WfWorkflow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/service/WfInstanceService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/service/WfPrintHistoryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/service/WfPrintTempService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/service/WfStepService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/service/WfWorkDayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/workflow/service/WfWorkflowService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/DocFileController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/DocFileTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/DocPrintController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/DocTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/DocumentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/DubanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/FinanceCashController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/FinanceCashDetailsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/GoodProviderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/GoodTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/GoodsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/MeetController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/PlanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/ReceivePersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SealTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SupListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SupTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/TaskContronller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/WorkPlanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/WorkPlanListController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/CarCashDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/CarDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/CarInfoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/CarUseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/DocFileDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/DocFileTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/DocPrintDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/DocTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/DocumentDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/DuBanDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/FinanceCashDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/FinanceCashDetailsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/GPListDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/GoodPlanDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/GoodPlanListDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/GoodProviderDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/GoodTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/GoodsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/MeetDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/PlanDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/ReceivePersonDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/SealDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/SealTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/SupListDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/SupTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/WorkPlanDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/dao/WorkPlanListDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/CarCash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/CarInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/CarUse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/CashList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/DocFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/DocFileType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/DocPrint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/DocType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Document.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/DuBan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/DuInfoList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/FinanceCash.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/FinanceCashDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/GPL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/GPList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/GoodPlan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/GoodPlanList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/GoodProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/GoodType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Goods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Meet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/MeetType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Pishi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/PishiList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Plan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/PlanContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/PlanList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/ReceivePerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Seal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/SealType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/SupList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/SupType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/WorkPlan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/WorkPlanList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/CarCashService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/CarInfoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/CarService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/CarUseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/DocFileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/DocFileTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/DocPrintService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/DocTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/DocumentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/DuBanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/FinanceCashDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/FinanceCashService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/GPListService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/GoodPlanListService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/GoodPlanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/GoodProviderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/GoodTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/MeetService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/PlanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/ReceivePersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/SealService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/SealTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/SupListService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/SupTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/WorkPlanListService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/WorkPlanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -403,46 +27,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15532">
-              <caret line="706" column="13" selection-start-line="706" selection-start-column="7" selection-end-line="706" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/WebSocketController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="32" selection-start-line="11" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/RequestListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/HttpSessionConfigurator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1452">
+            <state relative-caret-position="1254">
               <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="273" column="50" selection-start-line="273" selection-start-column="50" selection-end-line="273" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-211">
+              <caret line="130" column="58" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -450,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="242" column="12" lean-forward="true" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
+            <state relative-caret-position="271">
+              <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
                 <element signature="e#0#6#0" expanded="true" />
@@ -463,10 +96,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+            <state relative-caret-position="236">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#50#56#0" expanded="true" />
+                <element signature="e#56#62#0" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="e#128#134#0" expanded="true" />
+                <element signature="e#134#140#0" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#51#57#0" expanded="true" />
+                <element signature="e#57#63#0" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#50#56#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -474,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/ChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="247">
               <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
             </state>
           </provider>
@@ -493,8 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>startdt</find>
-      <find>onseltype</find>
       <find>onsel</find>
       <find>orgId</find>
       <find>setPara</find>
@@ -523,6 +172,8 @@
       <find>168</find>
       <find>reconnect</find>
       <find>DoPrint</find>
+      <find>list</find>
+      <find>list4</find>
     </findStrings>
     <replaceStrings>
       <replace>receivePerson</replace>
@@ -571,10 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/comm/attachment/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head4.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/person/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/role/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/user/multiSel.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dsel.jsp" />
@@ -595,7 +242,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocumentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/base/service/BaseRoleService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goodstype/sel.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/HomeController.java" />
@@ -622,6 +268,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp" />
       </list>
     </option>
   </component>
@@ -678,6 +329,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -702,63 +354,54 @@
               <item name="adu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adu" type="b2602c69:ProjectViewProjectNode" />
               <item name="adu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zzb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adu" type="b2602c69:ProjectViewProjectNode" />
               <item name="adu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jslib" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zzb" type="462c0819:PsiDirectoryNode" />
+              <item name="zo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adu" type="b2602c69:ProjectViewProjectNode" />
               <item name="adu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jslib" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zzb" type="462c0819:PsiDirectoryNode" />
+              <item name="zo" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adu" type="b2602c69:ProjectViewProjectNode" />
               <item name="adu" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zzb" type="462c0819:PsiDirectoryNode" />
+              <item name="zo" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -767,14 +410,14 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../temp/jeecg-boot/ant-design-vue-jeecg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18978103" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1107,6 +750,8 @@
       <workItem from="1565915063622" duration="3636000" />
       <workItem from="1566001116074" duration="8004000" />
       <workItem from="1566177842832" duration="1471000" />
+      <workItem from="1567580131578" duration="801000" />
+      <workItem from="1580457115687" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -1136,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564026024411</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="固定资产二维码网址更改">
+      <created>1567580251199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567580251199</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="892161000" />
+    <option name="totallyTimeSpent" value="894547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1152,10 +804,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47435898" visible="true" weight="0.20354457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47435898" visible="true" weight="0.20911528" />
       <window_info id="Structure" order="1" sideWeight="0.525641" side_tool="true" weight="0.23927614" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1286,23 +938,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/liangtian.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15250">
-          <caret line="610" column="35" selection-start-line="610" selection-start-column="34" selection-end-line="610" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/duban.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12175">
-          <caret line="487" column="41" selection-start-line="487" selection-start-column="36" selection-end-line="487" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/duban/duban.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9700">
@@ -1355,32 +990,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
-          <folding>
-            <element signature="e#4269#4270#0" expanded="true" />
-            <element signature="e#4295#4296#0" expanded="true" />
-            <element signature="e#4360#4361#0" expanded="true" />
-            <element signature="e#4390#4391#0" expanded="true" />
-            <element signature="e#4722#4723#0" expanded="true" />
-            <element signature="e#4753#4754#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Goods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1565,13 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1595,50 +1201,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15532">
+        <state relative-caret-position="13414">
           <caret line="706" column="13" selection-start-line="706" selection-start-column="7" selection-end-line="706" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/WebSocketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="152">
           <caret line="11" column="32" selection-start-line="11" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/RequestListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="76">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/HttpSessionConfigurator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="209">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
+        <state relative-caret-position="1254">
           <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/ChatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="247">
           <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="242" column="12" lean-forward="true" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
+        <state relative-caret-position="271">
+          <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
             <element signature="e#0#6#0" expanded="true" />
@@ -1648,10 +1275,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+        <state relative-caret-position="379">
+          <caret line="273" column="50" selection-start-line="273" selection-start-column="50" selection-end-line="273" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/SupType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="130" column="58" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#50#56#0" expanded="true" />
+            <element signature="e#56#62#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#128#134#0" expanded="true" />
+            <element signature="e#134#140#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#51#57#0" expanded="true" />
+            <element signature="e#57#63#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#50#56#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

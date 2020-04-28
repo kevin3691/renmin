@@ -268,6 +268,13 @@ public class GoodsController extends BaseController {
 		return rslt;
 	}
 
+	@ResponseBody
+	@RequestMapping(value = "/list4")
+	public QueryResult<Goods> list4(HttpServletRequest request) {
+		QueryResult<Goods> rslt = goodsService.list(request);
+		return rslt;
+	}
+
 	/**
 	 * 获取领用记录列表数据 list
 	 *
