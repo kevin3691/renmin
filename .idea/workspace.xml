@@ -2,20 +2,204 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="adu:war exploded" />
+      <artifact name="stroke:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="固定资产二维码网址更改">
+    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/stroke.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/goods/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseDictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseDictController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docprint/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docprint/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseDictController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseDictController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseLogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseOrgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseOrgController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BasePowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BasePowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/dao/BasePowerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/dao/BasePowerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/CmsWebStatisticService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/CmsWebStatisticService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/ZipDecompressing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/ZipDecompressing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAreaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommNotiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommNotiService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommUploaderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommUploaderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelImportUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelImportUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DataSourceInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DataSourceInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/FreeMarkerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/FreeMarkerUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/GenericsUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/GenericsUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/HttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/HttpHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/OfficeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/OfficeUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/PicWatermark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/PicWatermark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/SiteConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/SiteConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/workflow/controller/WfPrintTempController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/workflow/controller/WfPrintTempController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocFileTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocFileTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocumentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DubanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DubanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodProviderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodProviderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SupTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SupTypeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DocPrintService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DocPrintService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DuBanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DuBanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanListService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/MeetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/MeetService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/PlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/PlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanListService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/jslib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/jslib/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/lib/ueditor-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/docprint/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/docprint/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/document/edit.jsp___jb_old___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/docfile/AccessibleHandler_20190719112134176.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/docfile/audiomute_20190719125714332.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623092637.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623093943.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094139.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094153.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094230.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094325.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094415.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094422.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623095125.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100407.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100448.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100502.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100639.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101014.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101027.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101039.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101301.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101332.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101616.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101646.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101731.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101816.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101858.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101918.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623102036.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623102429.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623102455.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103004.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103042.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103128.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103256.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103810.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623105247.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623105502.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110156.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110231.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110507.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110635.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110716.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/360base_20180618111307420.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/Telugu MN_20180905175721746.ttc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/Telugu MN_20180906151230443.ttc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/Z9PC资料_20180713145642876.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/aaa_20180905113027247.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/aiopms_20180905175611616.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/appmgr_webui_20180618111535292.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/appmgr_webui_20180618114257413.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/audiomute_20180618114458391.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg4_20180622092343105.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg4_20180701090017666.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg5_20180701090007386.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg_20180701111604063.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/basemenu_20180905175605211.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/bootstrap-fileupload.min_20180905175622024.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/bootstrap_20180905175618646.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ccc_20180905131213340.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/cccc_20180905131319009.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/cloudurls_20180618111541943.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/eeee_20180905131359987.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/errorpage_20180618111402714.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180905175717114.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180905175719460.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180906151222350.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180906151224996.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180906151227827.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/hbjy..zz123_hdlb_20180606145814889.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/jquery-ui-1.10.3_20180905175624437.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/jquery.stepy_20180905175627204.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/style-responsive_20180905175629910.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/table-responsive_20180905175636300.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_444444_256x240_20180905175641294.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_555555_256x240_20180905175643984.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_777620_256x240_20180905175647470.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_cc0000_256x240_20180905175649794.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_ffffff_256x240_20180905175652307.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/zo_20180905175602343.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/护士延续注册许可_20180817172529178.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/新建文本文档_20180620161713694.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/邯组通字〔2018〕39号_20180620171223625.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document20180623092408.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/document20180623092550.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/HiTiCS2xxSDK_20180713114641950.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg1_20180622113118510.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg1_20180622113138355.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg3_20180622094051060.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg4_20180622113346872.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622094003635.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622094251757.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622095940661.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622113451695.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg_20180622094042822.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/btnbg_20180622094230896.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/林木种子生产经营许可证_20180904093056203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/浅蓝反面_20180715171542041.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/浅蓝反面_20180715200832744.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hd.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,256 +208,21 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="273" column="50" selection-start-line="273" selection-start-column="50" selection-end-line="273" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-211">
-              <caret line="130" column="58" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#50#56#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#50#56#0" expanded="true" />
-                <element signature="e#56#62#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#51#57#0" expanded="true" />
-                <element signature="e#57#63#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#!!top" expanded="true" />
-                <element signature="e#128#134#0" expanded="true" />
-                <element signature="e#134#140#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#51#57#0" expanded="true" />
-                <element signature="e#57#63#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#50#56#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/ChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>onsel</find>
-      <find>orgId</find>
-      <find>setPara</find>
-      <find>onsave</find>
-      <find>docType</find>
-      <find>doctype</find>
-      <find>&quot;/docFile</find>
-      <find>文件</find>
-      <find>list(</find>
-      <find>doctypeser</find>
-      <find>DocType</find>
-      <find>orgnew</find>
-      <find>onOrgNew</find>
-      <find>edit</find>
-      <find>ifrmqdb</find>
-      <find>ifrm</find>
-      <find>ifrmQdb</find>
-      <find>onDel</find>
-      <find>document</find>
-      <find>login_box</find>
-      <find>.css</find>
-      <find>onPrint</find>
-      <find>购买日期</find>
-      <find>date</find>
-      <find>380</find>
-      <find>168</find>
-      <find>reconnect</find>
-      <find>DoPrint</find>
-      <find>list</find>
-      <find>list4</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>receivePerson</replace>
-      <replace>rp</replace>
-      <replace>goodTypeId</replace>
-      <replace>SupType</replace>
-      <replace>SupList</replace>
-      <replace>/goods/suplist/</replace>
-      <replace>/suptype/</replace>
-      <replace>class=&quot;dtable1&quot;</replace>
-      <replace>goodPlan</replace>
-      <replace>gpList</replace>
-      <replace>goodPlanList</replace>
-      <replace>WorkPlanList</replace>
-      <replace>workPlanList</replace>
-      <replace>/workplanlist</replace>
-      <replace>href=&quot;javascript:;&quot;</replace>
-      <replace>repeater</replace>
-      <replace>seal</replace>
-      <replace>Seal</replace>
-      <replace>SealType</replace>
-      <replace>sealType</replace>
-      <replace>sealtype</replace>
-      <replace>docPrint</replace>
-      <replace>docprint</replace>
-      <replace>文印费用</replace>
-      <replace>docFileType</replace>
-      <replace>docfiletype</replace>
-      <replace>docfile</replace>
-      <replace>文档</replace>
-      <replace>docFile</replace>
-      <replace>&quot;/docfile</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\IdeaProjects\adu\src\main\java\com\zzb\base\service</dir>
-      <dir>D:\IdeaProjects\adu\</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/user/multiSel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dsel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dindex.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dindex4.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dindex5.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/person/sel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/print.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dact.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/dview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocumentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/workflow/service/WfInstanceService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/duban/duban.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DubanController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/duban/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/duban/addDuInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/liangtian.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocumentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/base/service/BaseRoleService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goodstype/sel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Docfile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/DocFileType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/dao/DocFileTypeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/DocFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/dao/DocFileDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/list4.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/sel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/multiSel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocFileTypeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileTypeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocFileController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfile/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/erWeiMa.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/print.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/dashboard.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp" />
-      </list>
     </option>
   </component>
   <component name="JsFlowSettings">
@@ -292,115 +241,19 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="D:\java\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="userSettingsFile" value="C:\Users\Administrator\Desktop\maven.aliyun.com\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="adu Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="adu Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1920" />
-    <option name="height" value="1105" />
-  </component>
+  <component name="ProjectId" id="1b9QQDCTFE2Zb83fPSPmLnsm6xi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zzb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="zo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="zo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="zo" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -410,22 +263,20 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18978103" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspaces\IdeaProjects\adu\target\adu\WEB-INF\images" />
-      <recent name="E:\workspaces\IdeaProjects\adu\src\main\webapp\WEB-INF\images" />
-      <recent name="E:\workspaces\IdeaProjects\adu\db" />
-      <recent name="E:\workspaces\IdeaProjects\adu\target\adu\WEB-INF\views\docfiletype" />
-      <recent name="E:\workspaces\IdeaProjects\adu\src\main\webapp\WEB-INF\views\docfile" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\adu\src\main\webapp\WEB-INF\css" />
+      <recent name="D:\IdeaProjects\adu\src\main\form" />
+      <recent name="D:\IdeaProjects\adu\src\main\flow" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zzb.zo.controller" />
@@ -434,23 +285,13 @@
       <recent name="com.zzb.zo.entity" />
       <recent name="com.zzb.core.utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\adu\src\main\webapp\WEB-INF\css" />
-      <recent name="D:\IdeaProjects\adu\src\main\form" />
-      <recent name="D:\IdeaProjects\adu\src\main\flow" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\views\seal" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\jslib" />
+      <recent name="E:\workspaces\IdeaProjects\adu\target\adu\WEB-INF\images" />
+      <recent name="E:\workspaces\IdeaProjects\adu\src\main\webapp\WEB-INF\images" />
+      <recent name="E:\workspaces\IdeaProjects\adu\db" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -537,14 +378,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="adu" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.40" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="adu" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="adu:war exploded">
+        <artifact name="stroke:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/hd" />
+            <option name="CONTEXT_PATH" value="/stroke_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -610,6 +451,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="adu:war exploded" />
+          <artifact name="stroke:war exploded" />
         </option>
       </method>
     </configuration>
@@ -752,6 +594,11 @@
       <workItem from="1566177842832" duration="1471000" />
       <workItem from="1567580131578" duration="801000" />
       <workItem from="1580457115687" duration="1585000" />
+      <workItem from="1588041812073" duration="145000" />
+      <workItem from="1588041997009" duration="17935000" />
+      <workItem from="1588061889322" duration="9958000" />
+      <workItem from="1588071987331" duration="35000" />
+      <workItem from="1588120928043" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -791,86 +638,15 @@
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="894547000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47435898" visible="true" weight="0.20911528" />
-      <window_info id="Structure" order="1" sideWeight="0.525641" side_tool="true" weight="0.23927614" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49731904" weight="0.3070078" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49865952" weight="0.32763532" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32703003" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32369298" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32905984" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.243604" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50268096" side_tool="true" weight="0.3133903" />
-      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="1" weight="0.3297587" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3297587" />
-      <window_info anchor="right" id="Maven" order="10" />
-      <window_info anchor="right" id="JSF" order="11" />
-      <window_info anchor="right" id="CDI" order="12" />
-      <window_info anchor="right" id="Bean Validation" order="13" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -889,6 +665,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -898,31 +675,117 @@
     <MESSAGE value="固定资产二维码网址更改" />
     <option name="LAST_COMMIT_MESSAGE" value="固定资产二维码网址更改" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="182" key="#Inspections" timestamp="1588121278228">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="466" y="182" key="#Inspections/0.0.1680.1010@0.0.1680.1010" timestamp="1588121278228" />
+    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588058483005">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588058483005" />
+    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588066497067">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588066497067" />
+    <state x="620" y="259" key="FileChooserDialogImpl" timestamp="1588042989141">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1588042989141" />
+    <state width="1406" height="2" key="GridCell.Tab.0.bottom" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.0.center" timestamp="1588071882797">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882797" />
+    <state width="1406" height="2" key="GridCell.Tab.0.left" timestamp="1588071882797">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882797" />
+    <state width="1406" height="2" key="GridCell.Tab.0.right" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.1.bottom" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.1.center" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.1.left" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.1.right" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.2.bottom" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.2.center" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.2.left" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.2.right" timestamp="1588071882798">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="2" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="554" key="GridCell.Tab.3.bottom" timestamp="1588064648497">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="554" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588064648497" />
+    <state width="1406" height="554" key="GridCell.Tab.3.center" timestamp="1588064648497">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="554" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588064648497" />
+    <state width="1406" height="554" key="GridCell.Tab.3.left" timestamp="1588064648497">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="554" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588064648497" />
+    <state width="1406" height="554" key="GridCell.Tab.3.right" timestamp="1588064648497">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1406" height="554" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588064648497" />
+    <state x="341" y="136" key="SettingsEditor" timestamp="1588051774389">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1588051774389" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1588058324243">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1588058324243" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/ReceivePersonController.java</url>
           <line>133</line>
-          <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocumentController.java</url>
           <line>915</line>
-          <properties />
           <option name="timeStamp" value="354" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DubanController.java</url>
           <line>431</line>
-          <properties />
           <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DubanController.java</url>
           <line>441</line>
-          <properties />
           <option name="timeStamp" value="361" />
         </line-breakpoint>
       </breakpoints>
@@ -936,498 +799,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/duban/duban.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9700">
-          <caret line="388" column="24" selection-start-line="388" selection-start-column="24" selection-end-line="388" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/service/BaseRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4575">
-          <caret line="204" column="38" selection-start-line="204" selection-start-column="38" selection-end-line="204" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/role/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1775">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/service/BaseUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cms/col/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" column="55" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/DocFileType.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/DocFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/dao/DocFileDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/dao/DocFileTypeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="524" column="12" lean-forward="true" selection-start-line="524" selection-start-column="12" selection-end-line="524" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BasePersonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goodstype/sel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="96" column="28" selection-start-line="96" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/multiSel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/sel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/adu/WEB-INF/views/docfiletype/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="44" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7348">
-          <caret line="334" column="9" selection-start-line="334" selection-start-column="9" selection-end-line="334" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/zo.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/loginbox.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfile/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10934">
-          <caret line="497" column="51" selection-start-line="497" selection-start-column="51" selection-end-line="497" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="72" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3410">
-          <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/print.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5214">
-          <caret line="237" column="7" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/erWeiMa.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="115" column="71" selection-start-line="115" selection-start-column="71" selection-end-line="115" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5060">
-          <caret line="230" column="65" selection-start-line="230" selection-start-column="56" selection-end-line="230" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docfiletype/list4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/dashboard.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocFileTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/workplate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13414">
-          <caret line="706" column="13" selection-start-line="706" selection-start-column="7" selection-end-line="706" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/WebSocketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="32" selection-start-line="11" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/RequestListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/HttpSessionConfigurator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/Websocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/websocket/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="242" column="12" selection-start-line="242" selection-start-column="12" selection-end-line="242" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#50#56#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="273" column="50" selection-start-line="273" selection-start-column="50" selection-end-line="273" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/SupType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/GoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="130" column="58" selection-start-line="130" selection-start-column="58" selection-end-line="130" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/goods/index4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#50#56#0" expanded="true" />
-            <element signature="e#56#62#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#!!top" expanded="true" />
-            <element signature="e#128#134#0" expanded="true" />
-            <element signature="e#134#140#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#51#57#0" expanded="true" />
-            <element signature="e#57#63#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#50#56#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor>
-            <show-content>
-              <type id="artifact" />
-              <type id="library" />
-              <type id="javaee-facet-resources" />
-              <type id="jpa-descriptors" />
-            </show-content>
-          </artifact-editor>
-          <last-edited>adu:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Python 2.7 (Django-ERP) interpreter library</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>adu</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.18978103" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

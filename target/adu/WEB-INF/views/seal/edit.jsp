@@ -233,6 +233,33 @@
         }
         $ ("input[name='file']").click ();
     }
+	//拍照
+	function photograph(id) {
+		layer.open ({
+			type : 2,
+			shadeClose : true,
+			shade : 0.8,
+			area : [
+				'90%', '90%'
+			],
+			 content : 'seal/photo?id=' + id //iframe的url
+		});
+		//document.location.href = "seal/photo"
+
+
+	}
+	//签字
+	function sign(id) {
+		layer.open ({
+			type : 2,
+			shadeClose : true,
+			shade : 0.8,
+			area : [
+				'90%', '90%'
+			],
+			content : 'seal/autograph?id=' + id //iframe的url
+		});
+	}
     //上传完附件后执行
     function onUploadSucess () {
         onQ ();
@@ -404,7 +431,9 @@
 
 	<div>
                     附件列表&nbsp;&nbsp;
-                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>
+<%--                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>--%>
+                    <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
+                    <button type="button" class="btn btn-info"  onclick="sign()">签字</button>
                         </div>
                         <table id="grid" style="height:35px;"></table>
                         <div id="pager" style="height:35px;"></div>

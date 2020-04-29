@@ -401,6 +401,7 @@
         }
         $ ("input[name='file']").click ();
     }
+
     //上传完附件后执行
     function onUploadSucess () {
         onQ ();

@@ -334,6 +334,30 @@ public class SealController extends BaseController {
 		model.addAttribute("id",id);
 		return "/seal/flow";
 	}
+
+	/**
+	 * 拍照
+	 * @param
+	 * @param
+	 * @return
+	 */
+	@RequestMapping(value = "/photo")
+	public String photo() {
+
+		return "/seal/photo";
+	}
+
+	/**
+	 * 签字
+	 * @param
+	 * @param
+	 * @return
+	 */
+	@RequestMapping(value = "/autograph")
+	public String autograph() {
+
+		return "/seal/autograph";
+	}
 	
 
 

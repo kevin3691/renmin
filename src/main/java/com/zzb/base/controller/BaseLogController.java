@@ -95,6 +95,8 @@ public class BaseLogController extends BaseController {
 		return "/base/log/edit";
 	}
 
+
+
 	/**
 	 * Action 获取列表数据 list
 	 * 

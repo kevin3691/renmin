@@ -137,6 +137,7 @@ public class BaseDictController extends BaseController {
 		return "/base/dict/multiSel";
 	}
 
+
 	/**
 	 * 获取列表数据 list
 	 * 

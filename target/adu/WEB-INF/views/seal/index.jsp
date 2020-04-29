@@ -115,17 +115,20 @@
 	    if (id > 0){
 		    title = "编辑用章申请"
 	    }
-	    layer.open ({
-	        type : 2,
-	        title : title,
-	        shadeClose : true,
-	        shade : 0.8,
-	        area : [
-	                '90%', '90%'
-	        ],
-	        content : 'seal/edit?id=' + id //iframe的url
-	    });
-    }
+	    // layer.open ({
+	    //     type : 2,
+	    //     title : title,
+	    //     shadeClose : true,
+	    //     shade : 0.8,
+	    //     area : [
+	    //             '90%', '90%'
+	    //     ],
+	    //     // content : 'seal/edit?id=' + id //iframe的url
+	    // });
+		document.location.href = 'seal/edit?id='+id
+
+	}
+
     //添加完成后执行方法
     function onSaveOk (entity) {
 	    $ ("#grid").trigger ("reloadGrid");
