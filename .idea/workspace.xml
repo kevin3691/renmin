@@ -24,181 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/stroke.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]第一次修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseDictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseDictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docprint/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/docprint/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseDictController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseDictController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseMenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseOrgController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseOrgController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BasePowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BasePowerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/BaseUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/dao/BasePowerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/dao/BasePowerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/CmsWebStatisticService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/CmsWebStatisticService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/service/impl/CmsStaticServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/ZipDecompressing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/ZipDecompressing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAreaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommNotiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommNotiService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommUploaderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommUploaderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelImportUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelImportUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DataSourceInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DataSourceInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/FreeMarkerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/FreeMarkerUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/GenericsUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/GenericsUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/HttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/HttpHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/OfficeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/OfficeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/PicWatermark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/PicWatermark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/SiteConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/SiteConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/workflow/controller/WfPrintTempController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/workflow/controller/WfPrintTempController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocFileTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocFileTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DocumentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DubanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/DubanController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodProviderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodProviderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/GoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SupTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SupTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DocPrintService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DocPrintService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DuBanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/DuBanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanListService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/GoodPlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/MeetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/MeetService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/PlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/PlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanListService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanListService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/WorkPlanService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/jslib/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/jslib/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/lib/ueditor-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/docprint/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/docprint/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/document/edit.jsp___jb_old___" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/docfile/AccessibleHandler_20190719112134176.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/docfile/audiomute_20190719125714332.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623092637.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623093943.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094139.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094153.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094230.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094325.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094415.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623094422.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623095125.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100407.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100448.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100502.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623100639.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101014.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101027.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101039.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101301.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101332.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101616.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101646.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101731.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101816.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101858.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623101918.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623102036.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623102429.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623102455.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103004.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103042.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103128.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103256.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623103810.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623105247.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623105502.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110156.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110231.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110507.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110635.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/20180623110716.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/360base_20180618111307420.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/Telugu MN_20180905175721746.ttc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/Telugu MN_20180906151230443.ttc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/Z9PC资料_20180713145642876.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/aaa_20180905113027247.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/aiopms_20180905175611616.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/appmgr_webui_20180618111535292.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/appmgr_webui_20180618114257413.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/audiomute_20180618114458391.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg4_20180622092343105.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg4_20180701090017666.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg5_20180701090007386.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/banshibg_20180701111604063.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/basemenu_20180905175605211.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/bootstrap-fileupload.min_20180905175622024.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/bootstrap_20180905175618646.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ccc_20180905131213340.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/cccc_20180905131319009.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/cloudurls_20180618111541943.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/eeee_20180905131359987.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/errorpage_20180618111402714.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180905175717114.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180905175719460.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180906151222350.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180906151224996.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/glyphicons-halflings-regular_20180906151227827.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/hbjy..zz123_hdlb_20180606145814889.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/jquery-ui-1.10.3_20180905175624437.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/jquery.stepy_20180905175627204.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/style-responsive_20180905175629910.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/table-responsive_20180905175636300.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_444444_256x240_20180905175641294.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_555555_256x240_20180905175643984.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_777620_256x240_20180905175647470.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_cc0000_256x240_20180905175649794.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/ui-icons_ffffff_256x240_20180905175652307.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/zo_20180905175602343.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/护士延续注册许可_20180817172529178.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/新建文本文档_20180620161713694.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document/邯组通字〔2018〕39号_20180620171223625.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document20180623092408.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/document20180623092550.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/HiTiCS2xxSDK_20180713114641950.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg1_20180622113118510.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg1_20180622113138355.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg3_20180622094051060.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg4_20180622113346872.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622094003635.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622094251757.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622095940661.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg5_20180622113451695.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/banshibg_20180622094042822.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/btnbg_20180622094230896.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/林木种子生产经营许可证_20180904093056203.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/浅蓝反面_20180715171542041.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/upload/temp/浅蓝反面_20180715200832744.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hd.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -598,7 +425,7 @@
       <workItem from="1588041997009" duration="17935000" />
       <workItem from="1588061889322" duration="9958000" />
       <workItem from="1588071987331" duration="35000" />
-      <workItem from="1588120928043" duration="695000" />
+      <workItem from="1588120928043" duration="2386000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -635,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567580251199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[wang]第一次修改">
+      <created>1588121937764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588121937764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +507,8 @@
     <MESSAGE value="create" />
     <MESSAGE value="固定资产打印" />
     <MESSAGE value="固定资产二维码网址更改" />
-    <option name="LAST_COMMIT_MESSAGE" value="固定资产二维码网址更改" />
+    <MESSAGE value="[wang]第一次修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="[wang]第一次修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="182" key="#Inspections" timestamp="1588121278228">
@@ -692,54 +527,54 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1588042989141" />
-    <state width="1406" height="2" key="GridCell.Tab.0.bottom" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.0.bottom" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.0.center" timestamp="1588071882797">
+    <state width="1406" height="2" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.0.center" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882797" />
-    <state width="1406" height="2" key="GridCell.Tab.0.left" timestamp="1588071882797">
+    <state width="1406" height="2" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.0.left" timestamp="1588121941698">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882797" />
-    <state width="1406" height="2" key="GridCell.Tab.0.right" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941698" />
+    <state width="1406" height="2" key="GridCell.Tab.0.right" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.1.bottom" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.1.bottom" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.1.center" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.1.center" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.1.left" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.1.left" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.1.right" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.1.right" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.2.bottom" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.2.bottom" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.2.center" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.2.center" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.2.left" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.2.left" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
-    <state width="1406" height="2" key="GridCell.Tab.2.right" timestamp="1588071882798">
+    <state width="1406" height="2" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
+    <state width="1406" height="2" key="GridCell.Tab.2.right" timestamp="1588121941699">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588071882798" />
+    <state width="1406" height="2" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588121941699" />
     <state width="1406" height="554" key="GridCell.Tab.3.bottom" timestamp="1588064648497">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -760,6 +595,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1588051774389" />
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1588122089344">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1588122089344" />
     <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1588058324243">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
