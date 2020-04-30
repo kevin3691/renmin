@@ -24,12 +24,21 @@ public class Seal extends BaseEntity<Seal> {
 	private int status;
 	private int sealTypeId;
 	private String sealTypeName;
+	private String img;
 
 
 	private int isActive;
 	private String descr;// 备注
 	private int lineNo;// 排序号
 	private RecordInfo recordInfo;
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
 
 	public int getSealTypeId() {
 		return sealTypeId;

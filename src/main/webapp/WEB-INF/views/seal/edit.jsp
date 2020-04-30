@@ -95,7 +95,7 @@
 		$("#sealTypeName").val($("#sealTypeId").select2('data').text)
 	    var para = $ ("#mainForm").serialize ();
 	    $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
-			parent.onQ()
+			//parent.onQ()
 			document.location.href = "seal/edit/?id=" + result.entity.id
 	    });
     }

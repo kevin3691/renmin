@@ -21,6 +21,7 @@ import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -354,10 +355,35 @@ public class SealController extends BaseController {
 	 * @return
 	 */
 	@RequestMapping(value = "/autograph")
-	public String autograph() {
+	public String autograph(HttpServletRequest request, ModelMap model) {
 
 		return "/seal/autograph";
 	}
+
+	/**
+	 * 签字完成
+	 * @param
+	 * @param
+	 * @return
+	 */
+
+	@ResponseBody
+	@RequestMapping(value = "/autograph1", method = RequestMethod.POST)
+	public String autograph1(@RequestBody String img, HttpServletRequest request) {
+//		String img = request.getParameter("img") != null ? request
+//				.getParameter("img") : "";
+
+		Seal seal1 = sealService.addImg(img, request);
+		System.out.println("图片已加入数据库aaaa");
+
+		return img;
+	}
+
+	/*@RequestMapping(value = "/autograph1")
+	public String autograph1(String img) {
+		System.out.println("数据数据数据数据数据数据数据数据数据"+img);
+		return "redirect:/seal/edit";
+	}*/
 	
 
 

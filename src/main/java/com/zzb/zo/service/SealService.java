@@ -151,6 +151,22 @@ public class SealService extends BaseService<Seal> {
 		return doc;
 	}
 
+
+	/**
+	 * ÃÌº”Õº∆¨
+	 * @param img
+	 * @param request
+	 * @return
+	 */
+	public Seal   addImg(String img, HttpServletRequest request) {
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		Seal seal = sealDao.dtl(12);
+		System.out.println(seal.getId());
+		return seal;
+
+	}
+
 	public Seal dtl(int id) {
 		Seal doc = sealDao.dtl(id);
 		return doc;
@@ -363,4 +379,6 @@ public class SealService extends BaseService<Seal> {
 		WfInstance ins = wfInstanceDao.dtl(hql, args);
 		return ins;
 	}
+
+
 }

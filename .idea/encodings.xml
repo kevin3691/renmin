@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseMenuController.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileTypeService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
