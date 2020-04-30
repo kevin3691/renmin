@@ -24,34 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]第二次修改">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]第三次修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Seal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Seal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/autograph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/autograph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/jsjs/flashcanvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/jsjs/flashcanvas.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/jsjs/jSignature.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/jsjs/jSignature.min.noconflict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/jsjs/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/jsjs/modernizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/entity/Seal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/entity/Seal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/service/SealService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/autograph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/autograph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/jsjs/flashcanvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/jsjs/flashcanvas.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/jsjs/jSignature.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/jsjs/jSignature.min.noconflict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/jsjs/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/jsjs/modernizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Seal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Seal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/SealService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/zo/service/SealService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -453,7 +429,7 @@
       <workItem from="1588071987331" duration="35000" />
       <workItem from="1588120928043" duration="28940000" />
       <workItem from="1588206996982" duration="14657000" />
-      <workItem from="1588230025889" duration="4820000" />
+      <workItem from="1588230025889" duration="5960000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -504,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588123405548</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[wang]第三次修改">
+      <created>1588238446492</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588238446492</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +527,8 @@
     <MESSAGE value="固定资产二维码网址更改" />
     <MESSAGE value="[wang]第一次修改" />
     <MESSAGE value="[wang]第二次修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="[wang]第二次修改" />
+    <MESSAGE value="[wang]第三次修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="[wang]第三次修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="182" key="#Inspections" timestamp="1588140282139">
@@ -567,54 +551,54 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1588042989141" />
-    <state width="1406" height="560" key="GridCell.Tab.0.bottom" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.0.bottom" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.0.center" timestamp="1588229208819">
+    <state width="1406" height="104" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.0.center" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208819" />
-    <state width="1406" height="560" key="GridCell.Tab.0.left" timestamp="1588229208819">
+    <state width="1406" height="104" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.0.left" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208819" />
-    <state width="1406" height="560" key="GridCell.Tab.0.right" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.0.right" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.1.bottom" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.1.bottom" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.1.center" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.1.center" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.1.left" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.1.left" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.1.right" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.1.right" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.2.bottom" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.2.bottom" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.2.center" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.2.center" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.2.left" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.2.left" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
-    <state width="1406" height="560" key="GridCell.Tab.2.right" timestamp="1588229208820">
+    <state width="1406" height="104" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
+    <state width="1406" height="104" key="GridCell.Tab.2.right" timestamp="1588238507443">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="560" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588229208820" />
+    <state width="1406" height="104" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588238507443" />
     <state width="1406" height="560" key="GridCell.Tab.3.bottom" timestamp="1588215418030">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -635,10 +619,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1588144780531" />
-    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1588123410165">
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1588238459440">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1588123410165" />
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1588238459440" />
     <state x="570" y="277" key="extract.method.dialog" timestamp="1588146839416">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>

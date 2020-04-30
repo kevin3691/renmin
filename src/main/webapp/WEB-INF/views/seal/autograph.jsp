@@ -97,7 +97,7 @@
                 var currentTopic = topics[topic],
                     args = args || {};
 
-                for (var i = 0, j = currentTopic.length; i &lt; j; i++) {
+                for (var i = 0, j = currentTopic.length; i < j; i++) {
                     currentTopic[i].call($, args);
                 }
             }
@@ -117,7 +117,7 @@
             if (topics[topic]) {
                 var currentTopic = topics[topic];
 
-                for (var i = 0, j = currentTopic.length; i &lt; j; i++) {
+                for (var i = 0, j = currentTopic.length; i < j; i++) {
                     if (currentTopic[i] === handle.callback) {
                         currentTopic.splice(i, 1);
                     }
