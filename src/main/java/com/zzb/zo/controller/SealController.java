@@ -370,7 +370,14 @@ public class SealController extends BaseController {
 	 */
 	@RequestMapping(value = "/autograph")
 	public String autograph(HttpServletRequest request, ModelMap model) {
-
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		Seal seal = new Seal();
+		if(id>0)
+		{
+			seal = sealService.dtl(id);
+		}
+		model.addAttribute("o", seal);
 		return "/seal/autograph";
 	}
 
@@ -434,8 +441,23 @@ public class SealController extends BaseController {
 		return avataroath;
 	}
 
-
-
+	/*@ResponseBody
+	@RequestMapping(value = "/saveImg", method = RequestMethod.POST)
+	public Map<String, Object> saveImg(@RequestBody String body,HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		int id = request.getParameter("id") != null ? Integer.valueOf(request
+				.getParameter("id")) : 0;
+		if(id > 0){
+			Seal seal = sealService.dtl(id);
+			seal.setImg(body);
+			seal = sealService.save(seal,request);
+			map.put("result","success");
+		}else{
+			map.put("result","error");
+		}
+		return map;
+	}
+*/
 
 
 	

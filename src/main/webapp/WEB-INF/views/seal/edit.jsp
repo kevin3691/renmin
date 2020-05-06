@@ -11,6 +11,14 @@
 	<script type="text/javascript" src="jslib/webuploader/uploader.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="u000e/config.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="u000e/all.min.js"></script>
+	<script src="jslib/jsjs/modernizr.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="jslib/jsjs/flashcanvas.js"></script>
+	<![endif]-->
+
+
+
+	<script src="jslib/jsjs/jSignature.min.noconflict.js"></script>
 <title>会议-编辑</title>
 <script type="text/javascript">
 
@@ -117,8 +125,9 @@
 
     //返回
     function onCancel () {
-	    var index = parent.layer.getFrameIndex (window.name); //先得到当前iframe层的索引
-	    parent.layer.close (index); //再执行关闭   
+	    // var index = parent.layer.getFrameIndex (window.name); //先得到当前iframe层的索引
+	    // parent.layer.close (index); //再执行关闭
+		document.location.href = 'seal/index'
     }
 
     //数据字典回调函数,初始化后为其赋值
@@ -202,8 +211,11 @@
     function onUpload (flag) {
 
         if("${o.id}" == 0)
-            alert("先保存再上传附件！")
-        return
+		{
+			alert("先保存再上传附件！")
+			return
+		}
+
         flag = flag || "";
         var title = "上传附件";
         var url = 'comm/attachment/upload';
@@ -249,7 +261,12 @@
 
 	}
 	//签字
-	function sign(id) {
+	function sign() {
+		if("${o.id}" == 0)
+		{
+			alert("先保存再上传附件！")
+			return
+		}
 		layer.open ({
 			type : 2,
 			shadeClose : true,
@@ -257,7 +274,7 @@
 			area : [
 				'90%', '90%'
 			],
-			content : 'seal/autograph?id=' + id //iframe的url
+			content : 'seal/autograph?id=' + ${o.id} //iframe的url
 		});
 	}
     //上传完附件后执行
@@ -346,6 +363,20 @@
 		bindType()
 	    loadGrid()
 
+		if("${o.img}" != ""){
+
+			var $sigdiv = $("#signature").jSignature({'UndoButton': true})
+
+					// All the code below is just code driving the demo.
+					, $tools = $('#tools')
+					, $extraarea = $('#displayarea')
+					, pubsubprefix = 'jSignature.demo.'
+			var i = new Image()
+			i.src = 'data:${o.img}'
+
+			$(i).appendTo($extraarea)
+		}
+
     })
 </script>
 </head>
@@ -374,53 +405,66 @@
 			<input type="hidden" id="isActive" name="isActive" value="${o.isActive}" />
 			<input type="hidden" id="descr" name="descr" value="${o.descr}" />
 			<input type="hidden" id="lineNo" name="lineNo" value="${o.lineNo}" />
+			<input type="hidden" id="img" name="img" value="${o.img}" />
+
 
 			<jsp:include page="/WEB-INF/views/include/recordinfo.jsp" />
-			<div class="form-group">
-				<label class="col-sm-2 control-label" for="person">申请人</label>
-				<div class="col-sm-4">
-						<span class="input-group"> <input class="form-control"
-														  id="person" name="person"
-														  value="${o.person}" type="text" readonly required /><span
-								class="input-group-btn">
-							<button class="btn btn-info btn-flat" type="button" id="btnSel"
-									onclick="onSelPerson()">选择</button>
-					</span>
-					</span>
-				</div>
 
-			</div>
-			<div class="form-group">
-				<label class="col-sm-2 control-label" for="sealTypeId">公章类型</label>
-				<div class="col-sm-10">
-					<select id="sealTypeId" name="sealTypeId" class="select2" style="width: 180px">
-						<option value="">&nbsp;</option>
 
-					</select>
-				</div>
+			<div class="row">
+				<div class="col-lg-6 col-sm-6">
+					<div class="form-group">
 
-			</div>
-			<div class="form-group">
-				<label class="col-sm-2 control-label" for="sqrq">申请日期</label>
-				<div class="col-sm-4">
-					<div class="input-group">
-						<input class="form-control" id="sqrq" name="sqrq" value="${o.sqrq}"
-							   type="text" />
-						<div class="input-group-addon">
-							<i class="fa fa-calendar" id="btnDate"
-							   onclick="$('#sqrq').datetimepicker('show');"></i>
+						<label class="col-lg-2  col-sm-4 control-label" for="person">申请人</label>
+						<div class="col-lg-10 col-sm-8">
+							<span class="input-group"> <input class="form-control"
+															  id="person" name="person"
+															  value="${o.person}" type="text" readonly required /><span
+									class="input-group-btn">
+								<button class="btn btn-info btn-flat" type="button" id="btnSel"
+										onclick="onSelPerson()">选择</button>
+						</span>
+						</span>
 						</div>
 					</div>
-				</div>
+					<div class="form-group">
 
-			</div>
-			<div class="form-group">
-				<label class="col-sm-2 control-label" for="sqyy">用章事由</label>
-				<div class="col-sm-10">
-					<textarea class="form-control" id="sqyy" name="sqyy" rows=3>${o.sqyy}</textarea>
-				</div>
+						<label class="col-lg-2 col-sm-4 control-label" for="sealTypeId">公章类型</label>
+						<div class="col-lg-4 col-sm-2">
+							<select id="sealTypeId" name="sealTypeId" class="select2" style="width: 180px">
+								<option value="">&nbsp;</option>
 
+							</select>
+						</div>
+
+
+						<label class="col-lg-2 col-sm-4 control-label" for="sqrq"
+							   style="white-space:nowrap; ">申请日期</label>
+						<div class="col-lg-4 col-sm-2">
+							<div class="input-group">
+								<input class="form-control" id="sqrq" name="sqrq"
+									   value="${o.sqrq}" type="text" />
+								<div class="input-group-addon">
+									<i class="fa fa-calendar" id="btnDate"
+									   onclick="$('#sqrq').datetimepicker('show');"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-lg-2 col-sm-4 control-label" for="sqyy">用章事由</label>
+						<div class="col-lg-10 col-sm-8">
+							<textarea class="form-control" id="sqyy" name="sqyy" rows=3>${o.sqyy}</textarea>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6">
+					<div id="displayarea"></div>
+				</div>
 			</div>
+
+
 			<div class="form-group" id="ss" style="display: none;">
 				<label class="col-sm-2 control-label" for="content">审批意见</label>
 				<div class="col-sm-10">

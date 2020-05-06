@@ -146,7 +146,7 @@
             $("#btnTest").bind('click', function (e) {
                 // 取得所画的模板
                 var data = $sigdiv.jSignature('getData', 'image')
-                console.log("图画数据"+data)
+                // console.log("图画数据"+data)
 
                 // $.post("seal/autograph1",{"img": data});
 
@@ -175,19 +175,27 @@
 
                 $(i).appendTo($extraarea)
 
+                $("#img").val(data.join(','));
 
-                $.ajax({
-                    "url":"seal/addImg",
-                    //"data":{"img": data},
-                    "data":new FormData(),
-                    "type":"post",
-                    "contentType":"application/x-www-form-urlencoded",
-                    "dataType":"text",
-                    "success":function(json) {
 
-                    }
-
+                var para = $ ("#mainForm").serialize ();
+                $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
+                    //parent.onQ()
+                    //document.location.href = "seal/edit/?id=" + result.entity.id
                 });
+
+                // $.ajax({
+                //     "url":"seal/saveImg",
+                //     //"data":{"img": data},
+                //     "data":"",
+                //     "type":"post",
+                //     "contentType":"application/x-www-form-urlencoded",
+                //     "dataType":"text",
+                //     "success":function(json) {
+                //         console.log(json)
+                //     }
+                //
+                // });
 
 
 
@@ -212,6 +220,27 @@
 
     })(jQuery)
 </script>
+
+<form id="mainForm" class="form-horizontal">
+    <input type="hidden" id="id" name="id" value="${o.id}" />
+    <input type="hidden" id="orgId" name="orgId" value="${o.orgId}" />
+    <input type="hidden" id="personId" name="personId" value="${o.personId}" />
+    <input type="hidden" id="org" name="org" value="${o.org}" />
+    <input type="hidden" id="sprId" name="sprId" value="${o.sprId}" />
+    <input type="hidden" id="spr" name="spr" value="${o.spr}" />
+    <input type="hidden" id="actAt" name="actAt" value="${o.actAt}" />
+    <input type="hidden" id="status" name="status" value="${o.status}" />
+    <input type="hidden" id="sealTypeName" name="sealTypeName" value="${o.sealTypeName}" />
+    <input type="hidden" id="isActive" name="isActive" value="${o.isActive}" />
+    <input type="hidden" id="descr" name="descr" value="${o.descr}" />
+    <input type="hidden" id="lineNo" name="lineNo" value="${o.lineNo}" />
+    <input type="hidden" id="img" name="img" value="${o.img}" />
+    <input type="hidden" id="person" name="person" value="${o.person}" />
+    <input type="hidden" id="sqrq" name="sqrq" value="${o.sqrq}" />
+    <input type="hidden" id="sqyy" name="sqyy" value="${o.sqyy}" />
+    <input type="hidden" id="content" name="content" value="${o.content}" />
+    <jsp:include page="/WEB-INF/views/include/recordinfo.jsp" />
+</form>
 <%--<script>--%>
 <%--    //将base64转换为文件--%>
 <%--    dataURLtoFile: function(dataurl, filename) {--%>
