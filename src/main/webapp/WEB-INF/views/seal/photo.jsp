@@ -22,7 +22,7 @@
 <video height="120px" autoplay="autoplay"></video><hr />
 <input type="button" title="拍照" value="拍照" onclick="getPhoto();" /><br />
 <canvas id="canvas1" height="120px" ></canvas><hr />
-<input type="button" title="视频" value="视频" onclick="getVedio();" /><br />
+<%--<input type="button" title="视频" value="视频" onclick="getVedio();" /><br />--%>
 <canvas id="canvas2" height="120px"></canvas>
 
 <script type="text/javascript">

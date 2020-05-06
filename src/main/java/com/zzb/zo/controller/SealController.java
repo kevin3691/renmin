@@ -6,6 +6,7 @@ package com.zzb.zo.controller;
 
 import com.zzb.base.entity.BaseUser;
 import com.zzb.base.service.BaseUserService;
+import com.zzb.comm.entity.CommAttachment;
 import com.zzb.comm.service.CommAttachmentService;
 import com.zzb.core.baseclass.BaseController;
 import com.zzb.core.baseclass.QueryResult;
@@ -21,13 +22,14 @@ import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.util.*;
 
 /**
@@ -39,6 +41,18 @@ import java.util.*;
 @Controller
 @RequestMapping("/seal")
 public class SealController extends BaseController {
+
+	//照片支持的类型
+	private static final List<String> AVATAR_TYPES = new ArrayList<String>();
+	//照片的最大上载限制
+	private static final long AVATAR_MAX_SIZE = 750*1024;
+	static {
+		AVATAR_TYPES.add("image/jpg");
+		AVATAR_TYPES.add("image/png");
+		AVATAR_TYPES.add("image/gif");
+		AVATAR_TYPES.add("image/bmp");
+	}
+
 	@Resource
 	private SealService sealService;
 
@@ -360,30 +374,70 @@ public class SealController extends BaseController {
 		return "/seal/autograph";
 	}
 
+
 	/**
-	 * 签字完成
-	 * @param
-	 * @param
+	 * 签字完成,上传图片
+	 * @param file
+	 * @param session
 	 * @return
 	 */
+	@RequestMapping("addImg")
+	public  String change(
+			@RequestParam("file") MultipartFile file,
+			HttpSession session){
+		//检查上传的文件是否为空
+		if (file.isEmpty()) {
+		}
+		//检查文件的大小
+		if (file.getSize()>AVATAR_MAX_SIZE) {
+		}
+		//检查文件的格式
+		if (!AVATAR_TYPES.contains(file.getContentType())) {
+		}
+		//获取上载的文件名
+		String originalFilename = file.getOriginalFilename();
+		//文件夹
+		String realPath = session.getServletContext().getRealPath("upload");
+		File parent = new  File(realPath);
+		//判断文件是否存在
+		if (!parent.exists()) {
+			//不存在创建
+			parent.mkdirs();
+//			parent.mkdir();
+		}
 
-	@ResponseBody
-	@RequestMapping(value = "/autograph1", method = RequestMethod.POST)
-	public String autograph1(@RequestBody String img, HttpServletRequest request) {
-//		String img = request.getParameter("img") != null ? request
-//				.getParameter("img") : "";
+		//使用id和username的方法获取
+		Integer uid = Integer.valueOf(session.getId());
+		String substring = "";
+		//获取原文件名的后缀
+		if (originalFilename.lastIndexOf(".")>0) {
+			substring = originalFilename.substring(originalFilename.lastIndexOf("."));
+		}
+		//修改时间
+		String newdate =System.currentTimeMillis()+"";
+		//图片的命名id+用户名+原文件名后缀
+		String avatar = uid+"-"+newdate+substring;
+		System.out.println("avatar="+avatar);
+//		String avatar = uid+username+substring;
+		//创建一个file的对象保存文件对象
+		File dest = new File (realPath,avatar);
+		try {
+			file.transferTo(dest);
+		} catch (IllegalStateException e) {
+			System.out.println("上传错误,文件被移动");
+		} catch (Exception e) {
+			System.out.println("上传错误,文件上传中断,请重新上传");
+		}
 
-		Seal seal1 = sealService.addImg(img, request);
-		System.out.println("图片已加入数据库aaaa");
-
-		return img;
+		String avataroath= "/upload/"+avatar;
+		sealService.addImg(uid, avataroath);
+		return avataroath;
 	}
 
-	/*@RequestMapping(value = "/autograph1")
-	public String autograph1(String img) {
-		System.out.println("数据数据数据数据数据数据数据数据数据"+img);
-		return "redirect:/seal/edit";
-	}*/
+
+
+
+
 	
 
 

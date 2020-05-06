@@ -72,7 +72,8 @@
         </div>
         <div id="tools"></div>
         <input type="button" value="完成" id="btnTest">
-        手写的值为:<input type="text" name="" id="memo">
+<%--        手写的值为:<input type="text" name="" id="memo">--%>
+        <p><input type="file" name="files" multiple="multiple"></p>
         <div><p>显示所手写:</p>
             <div id="displayarea"></div>
         </div>
@@ -146,18 +147,7 @@
                 // 取得所画的模板
                 var data = $sigdiv.jSignature('getData', 'image')
                 console.log("图画数据"+data)
-                $.ajax({
-                    "url":"seal/autograph1?img=" + "123123",
-                    //"data":{"img": data},
-                    "data":"",
-                    "type":"post",
-                    "contentType":"application/x-www-form-urlencoded",
-                    "dataType":"text",
-                    "success":function(json) {
 
-                    }
-
-                });
                 // $.post("seal/autograph1",{"img": data});
 
                 // $.ajax({
@@ -173,16 +163,31 @@
 
 
 
+
+
+
                 // 将取得值设置到文本中
                 $("#memo").val(data.join(','))
                 // 将取得的值设置到显示区域
                 $.publish(pubsubprefix + data[0], data);
                 var i = new Image()
                i.src = 'data:' + data[0] + ',' + data[1]
+
                 $(i).appendTo($extraarea)
 
 
+                $.ajax({
+                    "url":"seal/addImg",
+                    //"data":{"img": data},
+                    "data":new FormData(),
+                    "type":"post",
+                    "contentType":"application/x-www-form-urlencoded",
+                    "dataType":"text",
+                    "success":function(json) {
 
+                    }
+
+                });
 
 
 
@@ -191,6 +196,9 @@
 
 
             }).appendTo($tools)
+
+
+
 
             $('<input type="button" value="修改">').bind('click', function (e) {
                 $sigdiv.jSignature('reset')
@@ -204,5 +212,23 @@
 
     })(jQuery)
 </script>
+<%--<script>--%>
+<%--    //将base64转换为文件--%>
+<%--    dataURLtoFile: function(dataurl, filename) {--%>
+<%--        var arr = dataurl.split(','),--%>
+<%--            mime = arr[0].match(/:(.*?);/)[1],--%>
+<%--            bstr = atob(arr[1]),--%>
+<%--            n = bstr.length,--%>
+<%--            u8arr = new Uint8Array(n);--%>
+<%--        while (n--) {--%>
+<%--            u8arr[n] = bstr.charCodeAt(n);--%>
+<%--        }--%>
+<%--        return new File([u8arr], filename, { type: mime });--%>
+<%--    }--%>
+
+<%--    //调用--%>
+<%--    var file = dataURLtoFile(data, imgName);--%>
+<%--    console.log("文件名"+file)--%>
+<%--</script>--%>
 </body>
 </html>

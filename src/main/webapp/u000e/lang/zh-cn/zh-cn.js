@@ -405,7 +405,7 @@ UE.I18N['zh-cn'] = {
 
         'uploadSelectFile':'点击选择文件',
         'uploadAddFile':'继续添加',
-        'uploadStart':'开始上传',
+        '"/docfiletart':'开始上传',
         'uploadPause':'暂停上传',
         'uploadContinue':'继续上传',
         'uploadRetry':'重试上传',
