@@ -68,15 +68,15 @@
 <div>
     <div id="content">
         <div id="signatureparent">
-            <div id="signature"></div>
+            <div style="width: 700px" id="signature"></div>
         </div>
         <div id="tools"></div>
-        <input type="button" value="完成" id="btnTest">
+        <input type="button" value="完成" id="btnTest" >
 <%--        手写的值为:<input type="text" name="" id="memo">--%>
-        <p><input type="file" name="files" multiple="multiple"></p>
-        <div><p>显示所手写:</p>
-            <div id="displayarea"></div>
-        </div>
+<%--        <p><input type="file" name="files" multiple="multiple"></p>--%>
+<%--        <div><p>显示所手写:</p>--%>
+<%--            <div id="displayarea"></div>--%>
+<%--        </div>--%>
     </div>
     <div id="scrollgrabber"></div>
 </div>
@@ -84,6 +84,7 @@
 <script type="text/javascript">
     jQuery.noConflict()
 </script>
+
 <script>
     /*  @preserve
     jQuery pub/sub plugin by Peter Higgins (dante@dojotoolkit.org)
@@ -128,6 +129,7 @@
     })(jQuery);
 
 </script>
+
 <script src="jslib/jsjs/jSignature.min.noconflict.js"></script>
 <script>
     (function ($) {
@@ -135,7 +137,7 @@
         $(document).ready(function () {
 
             // This is the part where jSignature is initialized.
-            var $sigdiv = $("#signature").jSignature({'UndoButton': true})
+            var $sigdiv = $("#signature").jSignature({'UndoButton': false})
 
                 // All the code below is just code driving the demo.
                 , $tools = $('#tools')
@@ -208,9 +210,9 @@
 
 
 
-            $('<input type="button" value="修改">').bind('click', function (e) {
-                $sigdiv.jSignature('reset')
-            }).appendTo($tools)
+            // $('<input type="button" value="修改">').bind('click', function (e) {
+            //     $sigdiv.jSignature('reset')
+            // }).appendTo($tools)
 
             if (Modernizr.touch) {
                 $('#scrollgrabber').height($('#content').height())

@@ -272,9 +272,14 @@
 			shadeClose : true,
 			shade : 0.8,
 			area : [
-				'90%', '90%'
+				'60%', '60%'
 			],
-			content : 'seal/autograph?id=' + ${o.id} //iframe的url
+			content : 'seal/autograph?id=' + ${o.id}, //iframe的url
+			cancel: function(){
+				// 右上角关闭事件的逻辑
+				document.location.href = 'seal/edit?id='+${o.id}
+			}
+
 		});
 	}
     //上传完附件后执行
@@ -460,6 +465,8 @@
 					</div>
 				</div>
 				<div class="col-lg-6 col-sm-6">
+					<button type="button" class="btn btn-info"  onclick="sign()">签字</button>
+
 					<div id="displayarea"></div>
 				</div>
 			</div>
@@ -477,7 +484,6 @@
                     附件列表&nbsp;&nbsp;
 <%--                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>--%>
                     <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
-                    <button type="button" class="btn btn-info"  onclick="sign()">签字</button>
                         </div>
                         <table id="grid" style="height:35px;"></table>
                         <div id="pager" style="height:35px;"></div>
