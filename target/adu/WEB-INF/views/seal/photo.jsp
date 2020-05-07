@@ -6,127 +6,85 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Title</title>
-</head>
-<body>
-<!DOCTYPE html>
-<head>
-    <title>HTML5 GetUserMedia Demo</title>
+    <title>GET VIDEO</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 </head>
-<body>
-<input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia();" /><br />
-<video height="120px" autoplay="autoplay"></video><hr />
-<input type="button" title="拍照" value="拍照" onclick="getPhoto();" /><br />
-<canvas id="canvas1" height="120px" ></canvas><hr />
-<%--<input type="button" title="视频" value="视频" onclick="getVedio();" /><br />--%>
-<canvas id="canvas2" height="120px"></canvas>
-
-<script type="text/javascript">
-    var video = document.querySelector('video');
-    var audio, audioType;
-
-    var canvas1 = document.getElementById('canvas1');
-    var context1 = canvas1.getContext('2d');
-
-    var canvas2 = document.getElementById('canvas2');
-    var context2 = canvas2.getContext('2d');
-
-    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-    window.URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
-
-    var exArray = []; //存储设备源ID
-    MediaStreamTrack.getSources(function (sourceInfos) {
-        for (var i = 0; i != sourceInfos.length; ++i) {
-            var sourceInfo = sourceInfos[i];
-            //这里会遍历audio,video，所以要加以区分
-            if (sourceInfo.kind === 'video') {
-                exArray.push(sourceInfo.id);
-            }
-        }
-    });
-
+<body onload="getMedia()">
+<%--<input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia()" />--%>
+<button id="snap" onclick="takePhoto()">拍照</button>
+<video id="video" width="500px" height="500px" autoplay="autoplay"></video>
+<canvas id="canvas" width="500px" height="500px"></canvas>
+<script>
+    //获得video摄像头区域
+    let video = document.getElementById("video");
     function getMedia() {
-        if (navigator.getUserMedia) {
-            navigator.getUserMedia({
-                'video': {
-                    'optional': [{
-                        'sourceId': exArray[1] //0为前置摄像头，1为后置
-                    }]
-                },
-                'audio':true
-            }, successFunc, errorFunc);    //success是获取成功的回调函数
-        }
-        else {
-            alert('Native device media streaming (getUserMedia) not supported in this browser.');
-        }
+        let constraints = {
+            video: {width: 500, height: 500},
+            audio: true
+        };
+        /*
+        这里介绍新的方法:H5新媒体接口 navigator.mediaDevices.getUserMedia()
+        这个方法会提示用户是否允许媒体输入,(媒体输入主要包括相机,视频采集设备,屏幕共享服务,麦克风,A/D转换器等)
+        返回的是一个Promise对象。
+        如果用户同意使用权限,则会将 MediaStream对象作为resolve()的参数传给then()
+        如果用户拒绝使用权限,或者请求的媒体资源不可用,则会将 PermissionDeniedError作为reject()的参数传给catch()
+        */
+        let promise = navigator.mediaDevices.getUserMedia(constraints);
+        promise.then(function (MediaStream) {
+            video.srcObject = MediaStream;
+            video.play();
+        }).catch(function (PermissionDeniedError) {
+            console.log(PermissionDeniedError);
+        })
+    }
+    function takePhoto() {
+        //获得Canvas对象
+        let canvas = document.getElementById("canvas");
+        // let ctx = canvas.getContext('2d');
+        // ctx.drawImage(video, 0, 0, 500, 500);
+
+        let that = this
+        that.canvas.getContext('2d').drawImage(this.video, 0, 0, 300, 220)
+
+        let dataurl = that.canvas.toDataURL('image/jpeg')
+        let blob = that.dataURLtoFile(dataurl, 'camera.jpg') // base64 转图片file
+        console.log("图片数据??"+blob)
+
+        $("#photo").val(blob);
+
+
+
     }
 
-    function successFunc(stream) {
-        //alert('Succeed to get media!');
-        if (video.mozSrcObject !== undefined) {
-            //Firefox中，video.mozSrcObject最初为null，而不是未定义的，我们可以靠这个来检测Firefox的支持
-            video.mozSrcObject = stream;
-        }
-        else {
-            video.src = window.URL && window.URL.createObjectURL(stream) || stream;
-        }
+    $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
 
-        //video.play();
-
-        // 音频
-        audio = new Audio();
-        audioType = getAudioType(audio);
-        if (audioType) {
-            audio.src = 'polaroid.' + audioType;
-            audio.play();
-        }
-    }
-    function errorFunc(e) {
-        alert('Error！'+e);
-    }
-
-
-    // 将视频帧绘制到Canvas对象上,Canvas每60ms切换帧，形成肉眼视频效果
-    function drawVideoAtCanvas(video,context) {
-        window.setInterval(function () {
-            context.drawImage(video, 0, 0,90,120);
-        }, 60);
-    }
-
-    //获取音频格式
-    function getAudioType(element) {
-        if (element.canPlayType) {
-            if (element.canPlayType('audio/mp4; codecs="mp4a.40.5"') !== '') {
-                return ('aac');
-            } else if (element.canPlayType('audio/ogg; codecs="vorbis"') !== '') {
-                return ("ogg");
-            }
-        }
-        return false;
-    }
-
-    // vedio播放时触发，绘制vedio帧图像到canvas
-    //        video.addEventListener('play', function () {
-    //            drawVideoAtCanvas(video, context2);
-    //        }, false);
-
-    //拍照
-    function getPhoto() {
-        context1.drawImage(video, 0, 0,90,120); //将video对象内指定的区域捕捉绘制到画布上指定的区域，实现拍照。
-    }
-
-    //视频
-    function getVedio() {
-        drawVideoAtCanvas(video, context2);
-    }
-
+    });
 </script>
-</body>
 
+<form id="mainForm" class="form-horizontal">
+    <input type="hidden" id="id" name="id" value="${o.id}" />
+    <input type="hidden" id="orgId" name="orgId" value="${o.orgId}" />
+    <input type="hidden" id="personId" name="personId" value="${o.personId}" />
+    <input type="hidden" id="org" name="org" value="${o.org}" />
+    <input type="hidden" id="sprId" name="sprId" value="${o.sprId}" />
+    <input type="hidden" id="spr" name="spr" value="${o.spr}" />
+    <input type="hidden" id="actAt" name="actAt" value="${o.actAt}" />
+    <input type="hidden" id="status" name="status" value="${o.status}" />
+    <input type="hidden" id="sealTypeName" name="sealTypeName" value="${o.sealTypeName}" />
+    <input type="hidden" id="isActive" name="isActive" value="${o.isActive}" />
+    <input type="hidden" id="descr" name="descr" value="${o.descr}" />
+    <input type="hidden" id="lineNo" name="lineNo" value="${o.lineNo}" />
+    <input type="hidden" id="img" name="img" value="${o.img}" />
+    <input type="hidden" id="person" name="person" value="${o.person}" />
+    <input type="hidden" id="sqrq" name="sqrq" value="${o.sqrq}" />
+    <input type="hidden" id="sqyy" name="sqyy" value="${o.sqyy}" />
+    <input type="hidden" id="content" name="content" value="${o.content}" />
+    <input type="hidden" id="photo" name="photo" value="${o.photo}" />
 
+    <jsp:include page="/WEB-INF/views/include/recordinfo.jsp" />
+</form>
 </body>
 </html>
