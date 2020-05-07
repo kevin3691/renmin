@@ -236,34 +236,39 @@
             content : url
             //iframe的url
         });
-    }
-    function onSelfUpload () {
-        if("${o.id}" == 0)
-        {
-            alert("请先保存再上传附件！");
-            return;
-        }
-        $ ("input[name='file']").click ();
-    }
+	}
+
+	function onSelfUpload() {
+		if ("${o.id}" == 0) {
+			alert("请先保存再上传附件！");
+			return;
+		}
+		$("input[name='file']").click();
+	}
+
 	//拍照
-	function photograph(id) {
-		layer.open ({
-			type : 2,
-			shadeClose : true,
-			shade : 0.8,
-			area : [
+	function photograph() {
+		if ("${o.id}" == 0) {
+			alert("先保存再上传附件！")
+			return
+		}
+		layer.open({
+			type: 2,
+			shadeClose: true,
+			shade: 0.8,
+			area: [
 				'90%', '90%'
 			],
-			 content : 'seal/photo?id=' + id //iframe的url
+			content: 'seal/photo?id=' + ${o.id}, //iframe的url
 		});
 		//document.location.href = "seal/photo"
 
 
 	}
+
 	//签字
 	function sign() {
-		if("${o.id}" == 0)
-		{
+		if ("${o.id}" == 0) {
 			alert("先保存再上传附件！")
 			return
 		}
@@ -401,19 +406,20 @@
 			<input type="hidden" id="id" name="id" value="${o.id}" />
 			<input type="hidden" id="orgId" name="orgId" value="${o.orgId}" />
 			<input type="hidden" id="personId" name="personId" value="${o.personId}" />
-			<input type="hidden" id="org" name="org" value="${o.org}" />
-			<input type="hidden" id="sprId" name="sprId" value="${o.sprId}" />
-			<input type="hidden" id="spr" name="spr" value="${o.spr}" />
-			<input type="hidden" id="actAt" name="actAt" value="${o.actAt}" />
-			<input type="hidden" id="status" name="status" value="${o.status}" />
-			<input type="hidden" id="sealTypeName" name="sealTypeName" value="${o.sealTypeName}" />
-			<input type="hidden" id="isActive" name="isActive" value="${o.isActive}" />
-			<input type="hidden" id="descr" name="descr" value="${o.descr}" />
-			<input type="hidden" id="lineNo" name="lineNo" value="${o.lineNo}" />
-			<input type="hidden" id="img" name="img" value="${o.img}" />
+			<input type="hidden" id="org" name="org" value="${o.org}"/>
+			<input type="hidden" id="sprId" name="sprId" value="${o.sprId}"/>
+			<input type="hidden" id="spr" name="spr" value="${o.spr}"/>
+			<input type="hidden" id="actAt" name="actAt" value="${o.actAt}"/>
+			<input type="hidden" id="status" name="status" value="${o.status}"/>
+			<input type="hidden" id="sealTypeName" name="sealTypeName" value="${o.sealTypeName}"/>
+			<input type="hidden" id="isActive" name="isActive" value="${o.isActive}"/>
+			<input type="hidden" id="descr" name="descr" value="${o.descr}"/>
+			<input type="hidden" id="lineNo" name="lineNo" value="${o.lineNo}"/>
+			<input type="hidden" id="img" name="img" value="${o.img}"/>
+			<input type="hidden" id="photo" name="photo" value="${o.photo}"/>
 
 
-			<jsp:include page="/WEB-INF/views/include/recordinfo.jsp" />
+			<jsp:include page="/WEB-INF/views/include/recordinfo.jsp"/>
 
 
 			<div class="row">

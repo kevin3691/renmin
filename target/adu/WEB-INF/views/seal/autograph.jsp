@@ -178,6 +178,7 @@
                 $(i).appendTo($extraarea)
 
                 $("#img").val(data.join(','));
+                console.log("图片显示" + data.join(','))
 
 
                 var para = $ ("#mainForm").serialize ();
