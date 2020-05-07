@@ -98,6 +98,10 @@
 			<li><input type="text" class="key" id="p" name="p"
 					   maxlength="20" autocomplete="off"
 					   placeholder="密码 "/></li>
+			<div>
+				  <input style="position: absolute;left: 10px;width: 20px;height: 20px;"  type="checkbox" name="jizhu" title="发呆" lay-skin="primary">
+				  <span style="position: absolute;left: 40px;">记录密码</span>
+			</div>
 
 			<li>
 				<input type="button" class="login_button" onclick="onLogin()" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>
