@@ -11,168 +11,177 @@ import java.util.Date;
 public class Seal extends BaseEntity<Seal> {
 
 
-	private int orgId;
-	private String org;
-	private int personId;
-	private String person;
-	private String sqyy;
-	private Date sqrq;
-	private String content;
-	private int sprId;
-	private String spr;
-	private Date actAt;
-	private int status;
-	private int sealTypeId;
-	private String sealTypeName;
-	private String img;
+    private int orgId;
+    private String org;
+    private int personId;
+    private String person;
+    private String sqyy;
+    private Date sqrq;
+    private String content;
+    private int sprId;
+    private String spr;
+    private Date actAt;
+    private int status;
+    private int sealTypeId;
+    private String sealTypeName;
+    private String img;
+    private String photo;
 
 
-	private int isActive;
-	private String descr;// 备注
-	private int lineNo;// 排序号
-	private RecordInfo recordInfo;
+    private int isActive;
+    private String descr;// 备注
+    private int lineNo;// 排序号
+    private RecordInfo recordInfo;
 
-	public String getImg() {
-		return img;
-	}
+    public String getPhoto() {
+        return photo;
+    }
 
-	public void setImg(String img) {
-		this.img = img;
-	}
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
 
-	public int getSealTypeId() {
-		return sealTypeId;
-	}
+    public String getImg() {
+        return img;
+    }
 
-	public void setSealTypeId(int sealTypeId) {
-		this.sealTypeId = sealTypeId;
-	}
+    public void setImg(String img) {
+        this.img = img;
+    }
 
-	public String getSealTypeName() {
-		return sealTypeName;
-	}
+    public int getSealTypeId() {
+        return sealTypeId;
+    }
 
-	public void setSealTypeName(String sealTypeName) {
-		this.sealTypeName = sealTypeName;
-	}
+    public void setSealTypeId(int sealTypeId) {
+        this.sealTypeId = sealTypeId;
+    }
 
-	public int getOrgId() {
-		return orgId;
-	}
+    public String getSealTypeName() {
+        return sealTypeName;
+    }
 
-	public void setOrgId(int orgId) {
-		this.orgId = orgId;
-	}
+    public void setSealTypeName(String sealTypeName) {
+        this.sealTypeName = sealTypeName;
+    }
 
-	public String getOrg() {
-		return org;
-	}
+    public int getOrgId() {
+        return orgId;
+    }
 
-	public void setOrg(String org) {
-		this.org = org;
-	}
+    public void setOrgId(int orgId) {
+        this.orgId = orgId;
+    }
 
-	public int getPersonId() {
-		return personId;
-	}
+    public String getOrg() {
+        return org;
+    }
 
-	public void setPersonId(int personId) {
-		this.personId = personId;
-	}
+    public void setOrg(String org) {
+        this.org = org;
+    }
 
-	public String getPerson() {
-		return person;
-	}
+    public int getPersonId() {
+        return personId;
+    }
 
-	public void setPerson(String person) {
-		this.person = person;
-	}
+    public void setPersonId(int personId) {
+        this.personId = personId;
+    }
 
-	public String getSqyy() {
-		return sqyy;
-	}
+    public String getPerson() {
+        return person;
+    }
 
-	public void setSqyy(String sqyy) {
-		this.sqyy = sqyy;
-	}
+    public void setPerson(String person) {
+        this.person = person;
+    }
 
-	public Date getSqrq() {
-		return sqrq;
-	}
+    public String getSqyy() {
+        return sqyy;
+    }
 
-	public void setSqrq(Date sqrq) {
-		this.sqrq = sqrq;
-	}
+    public void setSqyy(String sqyy) {
+        this.sqyy = sqyy;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public Date getSqrq() {
+        return sqrq;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public void setSqrq(Date sqrq) {
+        this.sqrq = sqrq;
+    }
 
-	public int getSprId() {
-		return sprId;
-	}
+    public String getContent() {
+        return content;
+    }
 
-	public void setSprId(int sprId) {
-		this.sprId = sprId;
-	}
+    public void setContent(String content) {
+        this.content = content;
+    }
 
-	public String getSpr() {
-		return spr;
-	}
+    public int getSprId() {
+        return sprId;
+    }
 
-	public void setSpr(String spr) {
-		this.spr = spr;
-	}
+    public void setSprId(int sprId) {
+        this.sprId = sprId;
+    }
 
-	public Date getActAt() {
-		return actAt;
-	}
+    public String getSpr() {
+        return spr;
+    }
 
-	public void setActAt(Date actAt) {
-		this.actAt = actAt;
-	}
+    public void setSpr(String spr) {
+        this.spr = spr;
+    }
 
-	public int getStatus() {
-		return status;
-	}
+    public Date getActAt() {
+        return actAt;
+    }
 
-	public void setStatus(int status) {
-		this.status = status;
-	}
+    public void setActAt(Date actAt) {
+        this.actAt = actAt;
+    }
 
-	public int getIsActive() {
-		return isActive;
-	}
+    public int getStatus() {
+        return status;
+    }
 
-	public void setIsActive(int isActive) {
-		this.isActive = isActive;
-	}
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
-	public String getDescr() {
-		return descr;
-	}
+    public int getIsActive() {
+        return isActive;
+    }
 
-	public void setDescr(String descr) {
-		this.descr = descr;
-	}
+    public void setIsActive(int isActive) {
+        this.isActive = isActive;
+    }
 
-	public int getLineNo() {
-		return lineNo;
-	}
+    public String getDescr() {
+        return descr;
+    }
 
-	public void setLineNo(int lineNo) {
-		this.lineNo = lineNo;
-	}
+    public void setDescr(String descr) {
+        this.descr = descr;
+    }
 
-	public RecordInfo getRecordInfo() {
-		return recordInfo;
-	}
+    public int getLineNo() {
+        return lineNo;
+    }
 
-	public void setRecordInfo(RecordInfo recordInfo) {
-		this.recordInfo = recordInfo;
-	}
+    public void setLineNo(int lineNo) {
+        this.lineNo = lineNo;
+    }
+
+    public RecordInfo getRecordInfo() {
+        return recordInfo;
+    }
+
+    public void setRecordInfo(RecordInfo recordInfo) {
+        this.recordInfo = recordInfo;
+    }
 }
