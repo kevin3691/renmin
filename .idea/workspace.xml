@@ -24,15 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]拍照测试(1)">
+    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]照片储存到数据库">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/entity/Seal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/entity/Seal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/photo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/photo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Seal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/zo/entity/Seal.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -450,6 +445,7 @@
       <workItem from="1588813889449" duration="223000" />
       <workItem from="1588814133533" duration="1336000" />
       <workItem from="1588815495063" duration="9490000" />
+      <workItem from="1588898473986" duration="2778000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -514,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588239443022</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[wang]照片储存到数据库">
+      <created>1588898596277</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588898596277</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +558,8 @@
     <MESSAGE value="[wang]第一次修改" />
     <MESSAGE value="[wang]第二次修改" />
     <MESSAGE value="[wang]第三次修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="[wang]第三次修改" />
+    <MESSAGE value="[wang]照片储存到数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="[wang]照片储存到数据库" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="182" key="#Inspections" timestamp="1588140282139">
@@ -587,6 +591,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588066497067" />
+    <state x="244" y="0" key="CommitChangelistDialog2" timestamp="1588898593057">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="244" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588898593057" />
     <state x="472" y="163" key="FileChooserDialogImpl" timestamp="1588815448138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -681,9 +689,10 @@
     </state>
     <state x="260" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588815453311" />
     <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1588144780531" />
-    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1588239446697">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="329" y="147" key="Vcs.Push.Dialog.v2" timestamp="1588898599963">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="329" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1588898599963" />
     <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1588239446697" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1588857430824">
       <screen x="0" y="0" width="1280" height="680" />
