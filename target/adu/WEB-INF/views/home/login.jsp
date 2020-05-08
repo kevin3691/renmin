@@ -10,7 +10,7 @@
 <jsp:include page="/WEB-INF/views/include/simplehead.jsp" />
 	<link href="css/login.css" rel="stylesheet">
 </head>
-<body class="bg">
+<body class="bg" onload="getMedia()">
 	<script type="text/javascript">
 		if (window.location.href != top.location.href){
 	        top.location.href = window.location.href;
@@ -88,23 +88,68 @@
 	        $ ("#p").val (p + pn);
 	        $ ("#pd").val ($ ("#pd").val ().replace (/./g, '*'));
         }
+
+
+
 	</script>
-	
+
+	<script>
+		function getMedia() {
+			var user = document.getElementById('u');
+			var password = document.getElementById('p');
+			var check = document.getElementById('check');
+			var btn = document.getElementById('btn');
+			// 获取设置的本地存储的用户名的值
+			var loUser = localStorage.getItem('user');
+			// 获取设置的本地存储的密码的值
+			var loPass = localStorage.getItem('pass');
+			// 将本地存储的值设置给用户名和密码
+			user.value= loUser;
+			password.value = loPass;
+		}
+
+
+
+
+
+
+			// 判断本地存储值不为空的时候将勾选的checked设置为空
+			if(loUser!==''&&loPass!=='') {
+				check.setAttribute('checked',true);
+			}
+
+			btn.onclick=function(){
+				if(check.checked){
+					console.log(check.checked);
+
+					// alert("选中");
+					// 勾选框勾选的时候设置本地的用户名和密码的val为输入的值
+					localStorage.setItem('user',user.value);
+					localStorage.setItem('pass',password.value);
+
+				}else{
+					// alert('未勾选');
+					// 勾选框未勾选的时候设置本地的用户名和密码为空
+					localStorage.setItem("user","");
+					localStorage.setItem("pass","");
+				}
+			}
+
+
+	</script>
+
 
 <form id="mainForm" class="form-horizontal">
 	<div class="login_box">
 		<ul>
 			<li><input type="text" class="user" id="u" name="u" maxlength="20" placeholder="用户名" /></li>
 			<li><input type="text" class="key" id="p" name="p"
-					   maxlength="20" autocomplete="off"
-					   placeholder="密码 "/></li>
-			<div>
-				  <input style="position: absolute;left: 10px;width: 20px;height: 20px;"  type="checkbox" name="jizhu" title="发呆" lay-skin="primary">
-				  <span style="position: absolute;left: 40px;">记录密码</span>
-			</div>
+					   maxlength="20" autocomplete="on"
+					   placeholder="密码 "/></li><br>
+			<input type="checkbox" style="margin-left:55px" id="check">是否记住密码
 
 			<li>
-				<input type="button" class="login_button" onclick="onLogin()" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>
+				<input type="button" class="login_button" onclick="onLogin()" id="btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>
 			</li>
 			<div class="alert alert-error"
 				 style="width:338px;display:none;">你输入的密码和账户名不匹配</div>

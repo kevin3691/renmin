@@ -73,7 +73,7 @@
     <input type="hidden" id="sprId" name="sprId" value="${o.sprId}" />
     <input type="hidden" id="spr" name="spr" value="${o.spr}" />
     <input type="hidden" id="actAt" name="actAt" value="${o.actAt}" />
-    <input type="hidden" id="status" name="status" value="${o.status}" />
+    <input type="hidden" id="status" name="status" value="${o.status}" />r
     <input type="hidden" id="sealTypeName" name="sealTypeName" value="${o.sealTypeName}" />
     <input type="hidden" id="isActive" name="isActive" value="${o.isActive}" />
     <input type="hidden" id="descr" name="descr" value="${o.descr}" />

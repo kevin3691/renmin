@@ -260,6 +260,10 @@
 				'90%', '90%'
 			],
 			content: 'seal/photo?id=' + ${o.id}, //iframe的url
+			cancel: function(){
+				// 右上角关闭事件的逻辑
+				document.location.href = 'seal/edit?id='+${o.id}
+			}
 		});
 		//document.location.href = "seal/photo"
 
@@ -384,7 +388,17 @@
 			var i = new Image()
 			i.src = 'data:${o.img}'
 
+
 			$(i).appendTo($extraarea)
+		}
+        if("${o.photo}"!=""){
+
+
+        	$photoo = $('#photoos')
+			var i = new Image()
+			i.src = 'data:${o.photo}'
+			$(i).appendTo($photoo)
+
 		}
 
     })
@@ -491,7 +505,9 @@
 <%--                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>--%>
                     <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
                         </div>
-                        <table id="grid" style="height:35px;"></table>
+<%--                        <table id="gFrid" style="height:35px;"></table>--%>
+
+			<div id="photoos"></div>
                         <div id="pager" style="height:35px;"></div>
 
 			<div class="form-group controls" style="text-align:center">
