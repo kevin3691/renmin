@@ -350,16 +350,56 @@ public class SealController extends BaseController {
 		return "/seal/flow";
 	}
 
+
+/*
+	*//**
+	 * liebiao
+	 * @param
+	 * @param
+	 * @return
+	 *//*
+	@RequestMapping(value = "/list")
+	public QueryResult<CommAttachment> list4(CommAttachment attachment,
+											 HttpServletRequest request) {
+		return attachmentService.list4(request);
+	}*/
 	/**
 	 * 拍照
 	 * @param
 	 * @param
 	 * @return
 	 */
-	@RequestMapping(value = "/photo")
-	public String photo() {
+		@RequestMapping(value = "/photo")
+		public String photo(HttpServletRequest request, ModelMap model) {
+			int id = request.getParameter("id") != null ? Integer.valueOf(request
+					.getParameter("id")) : 0;
+			Seal seal = new Seal();
+			if(id>0)
+			{
+				seal = sealService.dtl(id);
+			}
+			model.addAttribute("o", seal);
+			return "/seal/photo";
+		}
 
-		return "/seal/photo";
+
+	/**
+	 * 保存数据（添加、编辑）方法
+	 *
+	 * @param
+	 * @param
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	public Map<String, Object> save(Seal doc, CashList cashList,
+									HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		doc = sealService.save(doc, request);
+
+		map.put("entity", doc);
+		//map.put("ins", ins);
+		return map;
 	}
 
 	/**
@@ -503,24 +543,7 @@ public class SealController extends BaseController {
 		return rslt;
 	}
 
-	/**
-	 * 保存数据（添加、编辑）方法
-	 * 
-	 * @param
-	 * @param
-	 * @return
-	 */
-	@ResponseBody
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
-	public Map<String, Object> save(Seal doc, CashList cashList,
-									HttpServletRequest request) {
-		Map<String, Object> map = new HashMap<String, Object>();
-		doc = sealService.save(doc, request);
 
-		map.put("entity", doc);
-		//map.put("ins", ins);
-		return map;
-	}
 
 	@ResponseBody
 	@RequestMapping(value = "/submit", method = RequestMethod.POST)

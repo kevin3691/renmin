@@ -9,6 +9,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <jsp:include page="/WEB-INF/views/include/head4.jsp"/>
     <title>GET VIDEO</title>
     <meta charset="utf-8">
 </head>
@@ -17,6 +18,7 @@
 <button id="snap" onclick="takePhoto()">拍照</button>
 <video id="video" width="500px" height="500px" autoplay="autoplay"></video>
 <canvas id="canvas" width="500px" height="500px"></canvas>
+<script src="jslib/jsjs/jquery.js"></script>
 <script>
     //获得video摄像头区域
     let video = document.getElementById("video");
@@ -43,25 +45,24 @@
     function takePhoto() {
         //获得Canvas对象
         let canvas = document.getElementById("canvas");
-        // let ctx = canvas.getContext('2d');
-        // ctx.drawImage(video, 0, 0, 500, 500);
+        let ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0, 500, 500);
+        let dataURL=canvas.toDataURL("img/jpeg");
 
-        let that = this
-        that.canvas.getContext('2d').drawImage(this.video, 0, 0, 300, 220)
 
-        let dataurl = that.canvas.toDataURL('image/jpeg')
-        let blob = that.dataURLtoFile(dataurl, 'camera.jpg') // base64 转图片file
-        console.log("图片数据??"+blob)
+        console.log("图片数据??"+dataURL)
 
-        $("#photo").val(blob);
+        $("#photo").val(dataURL);
+
+        var para = $ ("#mainForm").serialize ();
+        $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
+
+        });
 
 
 
     }
 
-    $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
-
-    });
 </script>
 
 <form id="mainForm" class="form-horizontal">
