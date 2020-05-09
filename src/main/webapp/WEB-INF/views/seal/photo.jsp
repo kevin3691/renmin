@@ -49,7 +49,7 @@
         let ctx = canvas.getContext('2d');
         ctx.drawImage(video, 0, 0, 500, 500);
         let dataURL=canvas.toDataURL("img/jpeg");
-        photos+=dataURL;
+        photos+=dataURL+'%';
 
 
 

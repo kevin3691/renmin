@@ -392,12 +392,22 @@
 			$(i).appendTo($extraarea)
 		}
         if("${o.photo}"!=""){
+        	var data="${o.photo}".split("%");
+			console.log("photo1111111"+data[1])
+
+			for (var t=0;t<data.length;t++){
+				var photoo = $('#photoos')
+				var i = new Image()
+				<%--i.src = 'data:${o.photo}'--%>
+				i.src = 'data:' + data[t]
+				$(i).appendTo(photoo)
+			}
 
 
-        	$photoo = $('#photoos')
-			var i = new Image()
-			i.src = 'data:${o.photo}'
-			$(i).appendTo($photoo)
+
+
+
+
 
 		}
 
@@ -505,10 +515,12 @@
 <%--                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>--%>
                     <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
                         </div>
-<%--                        <table id="gFrid" style="height:35px;"></table>--%>
+                        <table id="gFrid" style="height:35px;"></table>
 
 			<div id="photoos"></div>
-                        <div id="pager" style="height:35px;"></div>
+<%--            <table id="grid" style="height:35px;"></table>--%>
+
+            <div id="pager" style="height:35px;"></div>
 
 			<div class="form-group controls" style="text-align:center">
 				<button type="button" id="btnSave" class="btn btn-info" onclick="onSave()">保存</button>

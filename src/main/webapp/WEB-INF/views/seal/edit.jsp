@@ -392,12 +392,22 @@
 			$(i).appendTo($extraarea)
 		}
         if("${o.photo}"!=""){
+        	var data="${o.photo}".split("%");
+			console.log("photo1111111"+data[1])
+
+			for (var t=0;t<data.length;t++){
+				var photoo = $('#photoos')
+				var i = new Image()
+				<%--i.src = 'data:${o.photo}'--%>
+				i.src = 'data:' + data[t]
+				$(i).appendTo(photoo)
+			}
 
 
-        	$photoo = $('#photoos')
-			var i = new Image()
-			i.src = 'data:${o.photo}'
-			$(i).appendTo($photoo)
+
+
+
+
 
 		}
 
