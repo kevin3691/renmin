@@ -42,17 +42,21 @@
             console.log(PermissionDeniedError);
         })
     }
+    let photos = "";
     function takePhoto() {
         //获得Canvas对象
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext('2d');
         ctx.drawImage(video, 0, 0, 500, 500);
         let dataURL=canvas.toDataURL("img/jpeg");
+        photos+=dataURL;
 
 
-        console.log("图片数据??"+dataURL)
 
-        $("#photo").val(dataURL);
+
+        console.log("图片数据??"+photos)
+
+        $("#photo").val(photos);
 
         var para = $ ("#mainForm").serialize ();
         $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {

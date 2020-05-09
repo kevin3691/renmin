@@ -9,6 +9,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <jsp:include page="/WEB-INF/views/include/simplehead.jsp" />
 	<link href="css/login.css" rel="stylesheet">
+	<style>
+		.li_h{height: 32px;}
+	</style>
 </head>
 <body class="bg" onload="getMedia()">
 	<script type="text/javascript">
@@ -143,10 +146,10 @@
 	<div class="login_box">
 		<ul>
 			<li><input type="text" class="user" id="u" name="u" maxlength="20" placeholder="用户名" /></li>
-			<li><input type="text" class="key" id="p" name="p"
+			<li style="height: 35px"><input type="text" class="key" id="p" name="p"
 					   maxlength="20" autocomplete="on"
 					   placeholder="密码 "/></li><br>
-			<input type="checkbox" style="margin-left:55px" id="check">是否记住密码
+			<li style="height: 35px; text-align: right; margin-right: 170px;"><input type="checkbox" id="check" style=" float:left; margin-left: 200px; margin-top: 5px;"><span style="font-size: 14px; color: #717171;">记住密码</span></li>
 
 			<li>
 				<input type="button" class="login_button" onclick="onLogin()" id="btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>
