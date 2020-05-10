@@ -395,7 +395,7 @@
         	var data="${o.photo}".split("%");
 			console.log("photo1111111"+data[1])
 
-			for (var t=0;t<data.length;t++){
+			for (var t=0;t<data.length-1;t++){
 				var photoo = $('#photoos')
 				var i = new Image()
 				<%--i.src = 'data:${o.photo}'--%>
@@ -403,6 +403,17 @@
 				$(i).appendTo(photoo)
 			}
 
+		<%--if(photoss!=""){--%>
+		<%--	var data=photoss.split("%");--%>
+		<%--	console.log("数据"+photoss)--%>
+
+		<%--	for (var t=0;t<data.length-1;t++){--%>
+		<%--		var photoo = $('#photoos')--%>
+		<%--		var i = new Image()--%>
+		<%--		&lt;%&ndash;i.src = 'data:${o.photo}'&ndash;%&gt;--%>
+		<%--		i.src = 'data:' + data[t]--%>
+		<%--		$(i).appendTo(photoo)--%>
+		<%--	}--%>
 
 
 
@@ -516,8 +527,13 @@
                     <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
                         </div>
                         <table id="gFrid" style="height:35px;"></table>
-
+	<style>
+		#photoos img{
+			display: block;
+		}
+	</style>
 			<div id="photoos"></div>
+<%--			照片显示--%>
 <%--            <table id="grid" style="height:35px;"></table>--%>
 
             <div id="pager" style="height:35px;"></div>

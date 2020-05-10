@@ -133,6 +133,7 @@
 <script src="jslib/jsjs/jSignature.min.noconflict.js"></script>
 <script>
     (function ($) {
+        var imgs ={};
 
         $(document).ready(function () {
 
@@ -148,20 +149,8 @@
             $("#btnTest").bind('click', function (e) {
                 // 取得所画的模板
                 var data = $sigdiv.jSignature('getData', 'image')
-                // console.log("图画数据"+data)
 
-                // $.post("seal/autograph1",{"img": data});
 
-                // $.ajax({
-                //     "url":"seal/autograph1",
-                //     "data":data,
-                //     "type":"post",
-                //     "dataType":"json",
-                //     "success":function(json) {
-                //
-                //     }
-                //
-                // });
 
 
 
@@ -206,6 +195,7 @@
 
 
 
+
             }).appendTo($tools)
 
 
@@ -242,6 +232,8 @@
     <input type="hidden" id="sqrq" name="sqrq" value="${o.sqrq}" />
     <input type="hidden" id="sqyy" name="sqyy" value="${o.sqyy}" />
     <input type="hidden" id="content" name="content" value="${o.content}" />
+    <input type="hidden" id="photo" name="photo" value="${o.photo}" />
+
     <jsp:include page="/WEB-INF/views/include/recordinfo.jsp" />
 </form>
 <%--<script>--%>

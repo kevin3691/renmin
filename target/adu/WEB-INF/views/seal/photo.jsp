@@ -42,7 +42,7 @@
             console.log(PermissionDeniedError);
         })
     }
-    let photos = "";
+    var photos = "";
     function takePhoto() {
         //获得Canvas对象
         let canvas = document.getElementById("canvas");
