@@ -39,7 +39,7 @@
     <![endif]-->
 <link href="css/master.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body oncontextmenu=self.event.returnValue=false>
 	<script type="text/javascript">
 		if (window.location.href != top.location.href){
 	        top.location.href = window.location.href;

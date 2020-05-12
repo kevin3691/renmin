@@ -13,7 +13,7 @@
     <title>GET VIDEO</title>
     <meta charset="utf-8">
 </head>
-<body onload="getMedia()">
+<body onload="getMedia()" oncontextmenu=self.event.returnValue=false>
 <%--<input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia()" />--%>
 <button id="snap" onclick="takePhoto()">拍照</button>
 <video id="video" width="500px" height="500px" autoplay="autoplay"></video>

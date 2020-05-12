@@ -191,7 +191,7 @@
 
 	</script>
 </head>
-<body>
+<body oncontextmenu=self.event.returnValue=false>
 <div class="">
 	<div id="pf-hd">
 		<div class="pf-logo">
@@ -830,7 +830,7 @@
 </script>
 </body>
 </html>
-<div id="winDtl" data-options="title:'待办信息',closed:true,modal:true" class="easyui-window">
+<div id="winDtl" data-options="title:'待办信息',closed:tr管理ue,modal:true" class="easyui-window">
 	<iframe id="ifrmDtl" style="width: 100%; height: 100%; border: 0;" frameborder="0" src=""></iframe>
 </div>
 

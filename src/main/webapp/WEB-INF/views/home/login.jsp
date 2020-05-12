@@ -13,7 +13,7 @@
         .li_h{height: 32px;}
     </style>
 </head>
-<body class="bg" onload="getMedia()">
+<body class="bg" onload="getMedia()" oncontextmenu=self.event.returnValue=false>
 <script type="text/javascript">
     if (window.location.href != top.location.href){
         top.location.href = window.location.href;
@@ -161,7 +161,7 @@
             <li style="height: 35px"><input type="text" class="key" id="p" name="p"
                                             maxlength="20" autocomplete="on"
                                             placeholder="密码 "/></li><br>
-            <li style="height: 35px; text-align: right; margin-right: 170px;"><input type="checkbox" checked ='checked' id="check" style=" float:left; margin-left: 200px; margin-top: 5px;"><span style="font-size: 14px; color: #717171;">记住密码</span></li>
+            <li style=" width:288px; height: 35px;" ><span style="font-size: 14px; color: #717171; display: block; float: right; margin-right: 12px; margin-left: 6px;">记住密码</span> <input type="checkbox" id="check" checked="checked" style="float: right; margin-top: 4px;"></li>
 
             <li>
                 <input type="button" class="login_button" onclick="onLogin()" id="btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>

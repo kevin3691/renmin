@@ -64,7 +64,7 @@
 
     </style>
 </head>
-<body>
+<body oncontextmenu=self.event.returnValue=false>
 <div>
     <div id="content">
         <div id="signatureparent">
@@ -72,11 +72,11 @@
         </div>
         <div id="tools"></div>
         <input type="button" value="完成" id="btnTest" >
-<%--        手写的值为:<input type="text" name="" id="memo">--%>
-<%--        <p><input type="file" name="files" multiple="multiple"></p>--%>
-<%--        <div><p>显示所手写:</p>--%>
-<%--            <div id="displayarea"></div>--%>
-<%--        </div>--%>
+        <%--        手写的值为:<input type="text" name="" id="memo">--%>
+        <%--        <p><input type="file" name="files" multiple="multiple"></p>--%>
+        <%--        <div><p>显示所手写:</p>--%>
+        <%--            <div id="displayarea"></div>--%>
+        <%--        </div>--%>
     </div>
     <div id="scrollgrabber"></div>
 </div>
@@ -162,7 +162,7 @@
                 // 将取得的值设置到显示区域
                 $.publish(pubsubprefix + data[0], data);
                 var i = new Image()
-               i.src = 'data:' + data[0] + ',' + data[1]
+                i.src = 'data:' + data[0] + ',' + data[1]
 
                 $(i).appendTo($extraarea)
 
