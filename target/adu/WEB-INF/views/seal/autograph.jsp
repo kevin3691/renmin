@@ -167,14 +167,14 @@
                 $(i).appendTo($extraarea)
 
                 $("#img").val(data.join(','));
-                console.log("图片显示" + data.join(','))
+                //console.log("图片显示" + data.join(','))
 
-
-                var para = $ ("#mainForm").serialize ();
+                parent.onSignOk($("#img").val());
+                /*var para = $ ("#mainForm").serialize ();
                 $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
                     //parent.onQ()
                     //document.location.href = "seal/edit/?id=" + result.entity.id
-                });
+                });*/
 
                 // $.ajax({
                 //     "url":"seal/saveImg",

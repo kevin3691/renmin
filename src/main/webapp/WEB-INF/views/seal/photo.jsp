@@ -15,16 +15,35 @@
 </head>
 <body onload="getMedia()" oncontextmenu=self.event.returnValue=false>
 <%--<input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia()" />--%>
+<video id="video" width="1000px" height="500px" autoplay="autoplay"></video>
 <button id="snap" onclick="takePhoto()">拍照</button>
-<video id="video" width="500px" height="500px" autoplay="autoplay"></video>
-<canvas id="canvas" width="500px" height="500px"></canvas>
+<button id="snap" onclick="onSave()">完成</button>
+<style>
+
+    #displayarea img{
+        display: block;
+        width: 200px;
+        height: 100px;
+        float:right
+    }
+    #canvas {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        left: -100px;
+        top: 0;
+    }
+</style>
+<canvas id="canvas" width="1000px" height="500px"></canvas>
+<div id="displayarea" style="CURSOR: hand" onclick=deletePhoto()></div>
 <script src="jslib/jsjs/jquery.js"></script>
 <script>
+
     //获得video摄像头区域
     let video = document.getElementById("video");
     function getMedia() {
         let constraints = {
-            video: {width: 500, height: 500},
+            video: {width: 1000, height: 500},
             audio: true
         };
         /*
@@ -42,26 +61,53 @@
             console.log(PermissionDeniedError);
         })
     }
-    var photos = "";
+    let photos = "";
     function takePhoto() {
+
+        $extraarea = $('#displayarea')
+
+
         //获得Canvas对象
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, 500, 500);
+        ctx.drawImage(video, 0, 0, 1000, 500);
         let dataURL=canvas.toDataURL("img/jpeg");
-        photos+=dataURL+'%';
+
+        var i = new Image()
+        <%--i.src = 'data:${o.photo}'--%>
+        i.src = 'data:' + dataURL
+        $(i).appendTo($extraarea)
+
+
+        photos+=dataURL+"|";
 
 
 
 
-        console.log("图片数据??"+photos)
+
+
+
+        //console.log("图片数据??"+photos)
 
         $("#photo").val(photos);
 
-        var para = $ ("#mainForm").serialize ();
-        $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
+        // var para = $ ("#mainForm").serialize ();
+       /* $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
 
-        });
+        });*/
+
+
+
+    }
+
+    function onSave() {
+        parent.onTakePhotoOk(photos);
+    }
+
+    function deletePhoto() {
+
+        var oldnode = document.getElementsByTagName('img')[0];
+          oldnode.parentNode.removeChild(oldnode)
 
 
 

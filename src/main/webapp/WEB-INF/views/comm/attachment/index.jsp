@@ -9,7 +9,7 @@
 	href="jslib/webuploader/webuploader.min.css">
 <script type="text/javascript"
 	src="jslib/webuploader/webuploader.min.js"></script>
-<script type="text/javascript" src="jslib/webuploader/uploader.min.js"></script>
+<script type="text/javascript" src="jslib/webuploader/uploader.src.js"></script>
 <script> 
 	function loadGrid () {
 	    $ ("#grid").jqGrid (

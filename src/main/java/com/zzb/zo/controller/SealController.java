@@ -215,6 +215,8 @@ public class SealController extends BaseController {
 		if (id > 0) {
 			seal = sealService.dtl(id);
 			seal.setContent(StringEscapeUtils.unescapeHtml(seal.getContent()));
+
+
 		}else{
 		}
 		setPara(request, model);
@@ -395,8 +397,16 @@ public class SealController extends BaseController {
 	public Map<String, Object> save(Seal doc, CashList cashList,
 									HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
+
+//		String[] photo = doc.getPhoto().split("%");
+//		String photo = doc.getPhoto();
+//		doc.setPhoto("");
 		doc = sealService.save(doc, request);
 
+
+		/*for (){
+
+		}*/
 		map.put("entity", doc);
 		//map.put("ins", ins);
 		return map;

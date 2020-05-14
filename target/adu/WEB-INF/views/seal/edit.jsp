@@ -248,35 +248,54 @@
 
 	//拍照
 	function photograph() {
-		if ("${o.id}" == 0) {
+		/*if ("${o.id}" == 0) {
 			alert("先保存再上传附件！")
 			return
-		}
-		layer.open({
+		}*/
+		var index = layer.open({
 			type: 2,
-			shadeClose: true,
-			shade: 0.8,
-			area: [
-				'90%', '90%'
-			],
+			// shadeClose: true,
+			// shade: 0.8,
+			area: ['320px', '195px'],
+			maxmin: true,
 			content: 'seal/photo?id=' + ${o.id}, //iframe的url
-			cancel: function(){
+			/*cancel: function(){
 				// 右上角关闭事件的逻辑
-				document.location.href = 'seal/edit?id='+${o.id}
-			}
+				document.location.href = 'comm/attachment/uploader?id='+${o.id}
+			}*/
 		});
+
+		layer.full(index);
 		//document.location.href = "seal/photo"
 
 
 	}
 
+	function onTakePhotoOk(photo) {
+
+		if(photo!=""){
+			$("#photo").val(photo);
+			var data=photo.split("|");
+			// console.log("photo1111111"+data[1])
+
+			for (var t=0;t<data.length-1;t++){
+				var photoo = $('#photoos')
+				var i = new Image()
+				<%--i.src = 'data:${o.photo}'--%>
+				i.src = 'data:' + data[t]
+				$(i).appendTo(photoo)
+			}
+		}
+		layer.closeAll();
+	}
+
 	//签字
 	function sign() {
-		if ("${o.id}" == 0) {
+		/*if ("${o.id}" == 0) {
 			alert("先保存再上传附件！")
 			return
-		}
-		layer.open ({
+		}*/
+		var index=layer.open ({
 			type : 2,
 			shadeClose : true,
 			shade : 0.8,
@@ -284,12 +303,35 @@
 				'60%', '60%'
 			],
 			content : 'seal/autograph?id=' + ${o.id}, //iframe的url
+			/*content : 'seal/autograph?id=' + ${o.id}, //iframe的url
 			cancel: function(){
 				// 右上角关闭事件的逻辑
 				document.location.href = 'seal/edit?id='+${o.id}
-			}
+			}*/
 
 		});
+		layer.full(index);
+	}
+
+	function onSignOk(img) {
+		$("#img").val(img);
+
+		if($("#img").val() != ""){
+
+			var $sigdiv = $("#signature").jSignature({'UndoButton': true})
+
+					// All the code below is just code driving the demo.
+					, $tools = $('#tools')
+					, $extraarea = $('#displayarea')
+					, pubsubprefix = 'jSignature.demo.'
+			var i = new Image()
+			i.src = 'data:' + $("#img").val();
+
+
+			$(i).appendTo($extraarea)
+		}
+		layer.closeAll();
+		//document.location.reload();
 	}
     //上传完附件后执行
     function onUploadSucess () {
@@ -392,10 +434,10 @@
 			$(i).appendTo($extraarea)
 		}
         if("${o.photo}"!=""){
-        	var data="${o.photo}".split("%");
+        	var data="${o.photo}".split("|");
 			console.log("photo1111111"+data[1])
 
-			for (var t=0;t<data.length;t++){
+			for (var t=0;t<data.length-1;t++){
 				var photoo = $('#photoos')
 				var i = new Image()
 				<%--i.src = 'data:${o.photo}'--%>
@@ -511,13 +553,19 @@
 			</div>
 
 	<div>
-                    附件列表&nbsp;&nbsp;
+<%--                    附件列表&nbsp;&nbsp;--%>
 <%--                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>--%>
                     <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
                         </div>
                         <table id="gFrid" style="height:35px;"></table>
 
+			<style>
+				#photoos img{
+                              display: block;
+				}
+			</style>
 			<div id="photoos"></div>
+<%--			附件--%>
 <%--            <table id="grid" style="height:35px;"></table>--%>
 
             <div id="pager" style="height:35px;"></div>
@@ -525,8 +573,8 @@
 			<div class="form-group controls" style="text-align:center">
 				<button type="button" id="btnSave" class="btn btn-info" onclick="onSave()">保存</button>
 				&nbsp;&nbsp;
-				<button type="button" id="btnSubmit" class="btn btn-info" onclick="onSubmit()">提交申请</button>
-				&nbsp;&nbsp;
+				<%--<button type="button" id="btnSubmit" class="btn btn-info" onclick="onSubmit()">提交申请</button>
+				&nbsp;&nbsp;--%>
 				<button type="button" class="btn btn-danger" onclick="onCancel()">返回</button>
 			</div>
 		</form>

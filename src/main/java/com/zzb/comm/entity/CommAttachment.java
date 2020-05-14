@@ -20,6 +20,15 @@ public class CommAttachment extends BaseEntity<CommAttachment> {
 	private String share;// 共享级别 view
 	private String descr;// 备注 view
 	private RecordInfo recordInfo;
+	private String photo;
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
 
 	public String getCategory() {
 		return category;
