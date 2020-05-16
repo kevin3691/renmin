@@ -35,7 +35,9 @@
     }
 </style>
 <canvas id="canvas" width="1000px" height="500px"></canvas>
-<div id="displayarea" style="CURSOR: hand" onclick=deletePhoto()></div>
+<div id="displayarea" style="CURSOR: hand" onclick=deletePhoto()>
+    <a href="../../images/11111.jpg"></a>
+</div>
 <script src="jslib/jsjs/jquery.js"></script>
 <script>
 
