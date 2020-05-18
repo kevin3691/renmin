@@ -10,12 +10,15 @@
 <html lang="en">
 <head>
     <jsp:include page="/WEB-INF/views/include/head4.jsp"/>
+    <link rel="stylesheet" href="css/viewimg.css">
+    <link rel="stylesheet" href="css/viewer.min.css">
+
     <title>GET VIDEO</title>
     <meta charset="utf-8">
 </head>
-<body onload="getMedia()" oncontextmenu=self.event.returnValue=false>
+<body onload="getMedia();" oncontextmenu=self.event.returnValue=false>
 <%--<input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia()" />--%>
-<video id="video" width="1000px" height="500px" autoplay="autoplay"></video>
+<video id="video" width="1920px" height="1080px" autoplay="autoplay"></video>
 <button id="snap" onclick="takePhoto()">拍照</button>
 <button id="snap" onclick="onSave()">完成</button>
 <style>
@@ -24,7 +27,6 @@
         display: block;
         width: 200px;
         height: 100px;
-        float:right
     }
     #canvas {
         position: fixed;
@@ -34,18 +36,34 @@
         top: 0;
     }
 </style>
-<canvas id="canvas" width="1000px" height="500px"></canvas>
-<div id="displayarea" style="CURSOR: hand" onclick=deletePhoto()>
-    <a href="../../images/11111.jpg"></a>
+<canvas id="canvas" width="1920px" height="1080px"></canvas>
+
+<div>
+    <ul id="displayarea">
+    </ul>
 </div>
 <script src="jslib/jsjs/jquery.js"></script>
+
+
+<script src="jslib/viewer.min.js"></script>
 <script>
+
+
+    function DeleteImage(imgdiv) {
+        var imgtitle = $("img", $(imgdiv).parent().parent())[0].title;
+        var mess = confirm("是否删除图片?");
+        if (mess == true) {//开始删除图片
+            $(imgdiv).parent().parent().remove();
+        }
+
+    }
 
     //获得video摄像头区域
     let video = document.getElementById("video");
     function getMedia() {
         let constraints = {
-            video: {width: 1000, height: 500},
+            video: {width: 1920, height: 1080},
+            // video: {width: 1000, height: 500},
             audio: true
         };
         /*
@@ -62,59 +80,94 @@
         }).catch(function (PermissionDeniedError) {
             console.log(PermissionDeniedError);
         })
+
+
     }
     let photos = "";
+    let index = 0;
     function takePhoto() {
 
-        $extraarea = $('#displayarea')
+        // $extraarea = $('#displayarea')
 
 
         //获得Canvas对象
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, 1000, 500);
+        ctx.drawImage(video, 0, 0, 1920, 1080);
         let dataURL=canvas.toDataURL("img/jpeg");
+        var src =  dataURL
 
-        var i = new Image()
-        <%--i.src = 'data:${o.photo}'--%>
-        i.src = 'data:' + dataURL
-        $(i).appendTo($extraarea)
+        parent.onTakePhotoOk(src);
 
+        // var str = genImgList(src)
+        // $extraarea.append(str)
 
-        photos+=dataURL+"|";
-
-
-
-
+        /*var i = new Image()
+        i.src = src*/
+        // $(i).appendTo($extraarea)
 
 
-
-        //console.log("图片数据??"+photos)
-
-        $("#photo").val(photos);
-
-        // var para = $ ("#mainForm").serialize ();
-       /* $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
-
+        /*viewer = new Viewer(document.getElementById('displayarea'), {
+            url: 'data-original'
         });*/
-
-
 
     }
 
+    function genImgList(src) {
+       /* var str = '';
+        str += '<li style="cursor: hand"><div class="imgbox">';
+        str += '<img data-original="' + src + '" width="200px";height="100px"; src="' + src + '" title="' + index + '" />';
+        str += '<div class="text"><div class="imgtext" onclick="DeleteImage(this)"> 删  除</div></div></div></li>';*/
+        var str = '';
+        str += '<li style="cursor: hand">';
+        str += '<img data-original="' + src + '" width="200px";height="100px"; src="' + src + '" title="' + index + '" />';
+        str += '<div class="text"><div class="imgtext" onclick="DeleteImage(this)"> 删  除</div></div></li>';
+        return str;
+    }
+
     function onSave() {
+
+        $('#displayarea').find("img").each(function(i,v){
+            photos+=v.src+"|";
+        });
         parent.onTakePhotoOk(photos);
     }
 
     function deletePhoto() {
-
         var oldnode = document.getElementsByTagName('img')[0];
           oldnode.parentNode.removeChild(oldnode)
+    }
+    var viewer;
+    function initImgList(){
+        if("${o.photo}" != "")
+        {
+            var data="${o.photo}".split("|");
+            for (var t=0;t<data.length-1;t++){
+                $('#displayarea').append(genImgList(data[t]))
+            }
 
-
-
+           /* viewer = new Viewer(document.getElementById('displayarea'), {
+                url: 'data-original'
+            });*/
+        }
     }
 
+
+    $ (function () {
+        //$(document.body).toggleClass("html-body-overflow");
+        // IFrameResize();
+
+        initImgList()
+    })
+
+</script>
+
+
+
+<script>
+    /*var viewer = new Viewer(document.getElementById('displayarea'), {
+        url: 'data-original'
+    });*/
 </script>
 
 <form id="mainForm" class="form-horizontal">
@@ -125,7 +178,7 @@
     <input type="hidden" id="sprId" name="sprId" value="${o.sprId}" />
     <input type="hidden" id="spr" name="spr" value="${o.spr}" />
     <input type="hidden" id="actAt" name="actAt" value="${o.actAt}" />
-    <input type="hidden" id="status" name="status" value="${o.status}" />r
+    <input type="hidden" id="status" name="status" value="${o.status}" />
     <input type="hidden" id="sealTypeName" name="sealTypeName" value="${o.sealTypeName}" />
     <input type="hidden" id="isActive" name="isActive" value="${o.isActive}" />
     <input type="hidden" id="descr" name="descr" value="${o.descr}" />

@@ -70,8 +70,8 @@ src="jslib/jquery-1.12.4.min.js"></script>
 <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css">
 <script type="text/javascript" charset="utf-8"
 		src="jslib/jquery-ui.custom.js"></script>
-<script type="text/javascript" charset="utf-8"
-	src="<%=basePath%>JavaScriptServlet"></script>
+<%--<script type="text/javascript" charset="utf-8"
+	src="<%=basePath%>JavaScriptServlet"></script>--%>
 
 <script type="text/javascript" charset="utf-8"
 		src="jslib/jquery.qrcode.min.js"></script>

@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="jslib/jsjs/flashcanvas.js"></script>
 	<![endif]-->
 
-
+	<link rel="stylesheet" href="css/viewimg.css">
 
 	<script src="jslib/jsjs/jSignature.min.noconflict.js"></script>
 <title>会议-编辑</title>
@@ -100,11 +100,17 @@
 	    if (!$ ('#mainForm').validate ().form ()){
 		    return false;
 	    }
+		var imgSrc = "";
+		$('#photoos').find("img").each(function(i,v){
+			imgSrc+=v.src+"|";
+		});
+		$("#photo").val(imgSrc);
 		$("#sealTypeName").val($("#sealTypeId").select2('data').text)
 	    var para = $ ("#mainForm").serialize ();
 	    $.post ('seal/save', $ ("#mainForm").serialize (), function (result, status) {
 			//parent.onQ()
-			document.location.href = "seal/edit/?id=" + result.entity.id
+			document.location.href = "seal/index";
+			// document.location.href = "seal/edit/?id=" + result.entity.id
 	    });
     }
 
@@ -256,37 +262,67 @@
 			type: 2,
 			// shadeClose: true,
 			// shade: 0.8,
-			area: ['320px', '195px'],
-			maxmin: true,
+			area: ['100%', '100%'],
+			// maxmin: true,
 			content: 'seal/photo?id=' + ${o.id}, //iframe的url
-			/*cancel: function(){
-				// 右上角关闭事件的逻辑
-				document.location.href = 'comm/attachment/uploader?id='+${o.id}
-			}*/
+			offset: ['0px', '0px'],
+			scrollbar: false
 		});
 
-		layer.full(index);
+		// layer.full(index);
+
 		//document.location.href = "seal/photo"
 
 
 	}
 
+	function DeleteImage(imgdiv) {
+		var imgtitle = $("img", $(imgdiv).parent().parent())[0].title;
+		var mess = confirm("是否删除图片?");
+		if (mess == true) {//开始删除图片
+			$(imgdiv).parent().parent().parent().remove();
+		}
+
+	}
+
+	function genImgList(src) {
+		 var str = '';
+         str += '<li style="cursor: hand"><div class="imgbox">';
+         str += '<img width="1920px";height="1080px"; src="' + src + '" title="" />';
+         str += '<div class="text"><div class="imgtext" onclick="DeleteImage(this)"> 删  除</div></div></div></li>';
+		return str;
+	}
+
+
 	function onTakePhotoOk(photo) {
 
+
 		if(photo!=""){
+
+			var photoo = $('#photoos')
+			var str = genImgList(photo)
+			photoo.append(str + "<br/>")
+		}
+		layer.closeAll();
+
+
+		/*if(photo!=""){
 			$("#photo").val(photo);
+
+
 			var data=photo.split("|");
 			// console.log("photo1111111"+data[1])
-
+			var photoo = $('#photoos')
+			photoo.empty();
 			for (var t=0;t<data.length-1;t++){
-				var photoo = $('#photoos')
 				var i = new Image()
 				<%--i.src = 'data:${o.photo}'--%>
 				i.src = 'data:' + data[t]
 				$(i).appendTo(photoo)
+				photoo.append("<br/>")
 			}
 		}
-		layer.closeAll();
+		layer.closeAll();*/
 	}
 
 	//签字
@@ -327,7 +363,7 @@
 			var i = new Image()
 			i.src = 'data:' + $("#img").val();
 
-
+			$extraarea.empty()
 			$(i).appendTo($extraarea)
 		}
 		layer.closeAll();
@@ -435,14 +471,17 @@
 		}
         if("${o.photo}"!=""){
         	var data="${o.photo}".split("|");
-			console.log("photo1111111"+data[1])
+
+			var photoo = $('#photoos')
 
 			for (var t=0;t<data.length-1;t++){
-				var photoo = $('#photoos')
-				var i = new Image()
+
+				/*var i = new Image()
 				<%--i.src = 'data:${o.photo}'--%>
 				i.src = 'data:' + data[t]
-				$(i).appendTo(photoo)
+				$(i).appendTo(photoo)*/
+				var str = genImgList(data[t])
+				photoo.append(str + "<br/>")
 			}
 
 
@@ -549,7 +588,6 @@
 				<div class="col-sm-10">
 					<textarea class="form-control" id="content" name="content" rows=3>${o.content}</textarea>
 				</div>
-
 			</div>
 
 	<div>

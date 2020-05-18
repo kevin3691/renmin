@@ -68,6 +68,7 @@
         if (!vali.form ()){
             return false;
         }
+
         //$ ("#btnLogin").button ('loading');
         $.post ('home/login', $ ("#mainForm").serialize (), function (result, status) {
             if (result.IsSuccess){

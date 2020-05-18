@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BaseMenuController.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileTypeService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/css/viewer.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/jslib/viewer-jquery.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/jslib/viewer.min.js" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

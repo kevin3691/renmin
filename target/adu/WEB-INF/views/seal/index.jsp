@@ -91,7 +91,7 @@
 	        ],
 	        pager : '#pager',
 	        sortname : 'lineNo',
-	        sortorder : "asc"
+	        sortorder : "desc"
 	    });
 	    jQuery ("#grid").jqGrid ('bindKeys', {
 	        "onEnter" : function (rowid) {
