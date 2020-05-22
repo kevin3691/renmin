@@ -5,6 +5,7 @@
 <head>
 <title>固定资产--列表</title>
 <jsp:include page="/WEB-INF/views/include/head4.jsp" />
+	<link href="css/master1.css" rel="stylesheet">
 <script>
 
     var _ORGID = 0;
@@ -39,36 +40,13 @@
 					formatter:function (value,options,row) {
 						return jsonDateTimeFormatter(value,3)
                     }
-                }, {
-                    label : '批准时间',
-                    name : 'actAt',
-                    sortable : false,
-                    align : 'actAt',
-                    width : 130,
-                    formatter : function (value, options, row) {
-                        return jsonDateTimeFormatter (value, 1);
-                    }
-                }
-                , {
-                    label: '状态',
-                    name: 'status',
+                },{
+                    label: '内容',
+                    name: 'sqyy',
                     width: 120,
                     formatter:function (value,options,row) {
-                        var btn = ""
-                        if(value == 0){
-                            btn = "未提交"
-                        }
-                        if(value == 1){
-                            btn = "<span>审批中</span>"
-                        }
-                        if(value == 2){
-                            btn = "<span style='color:red'>未通过</span>"
-                        }
-                        if(value == 3){
-                            btn = "<span style='color:green'>通过</span>"
-                        }
-                        return btn;
-                    }
+						return value;
+					}
                 },{
 	                    label : ' ',
 	                    name : 'id',
@@ -77,9 +55,9 @@
 	                    sortable : false,
 	                    formatter : function (value, options, row) {
 		                    var btn = "";
-		                    btn += '&nbsp;<a href="javascript:onSave(' + value + ')" title="">编辑</a>'
+		                    btn += '&nbsp;<a href="javascript:onSave(' + value + ')" title=""><img src="images/bianji.jpg"></a>'
 		                    if(row.status == 0){
-                                btn += '&nbsp;<a href="javascript:onDel(' + value + ')" title="">删除</a>&nbsp;'
+                                btn += '&nbsp;<a href="javascript:onDel(' + value + ')" title=""><img src="images/update.jpg"></a>&nbsp;'
 							}
 		                    return btn;
 	                    }
@@ -238,38 +216,64 @@
 </script>
 </head>
 
+
+
+
 <body>
 	<div class="container-fluid">
-		<div class="breadcrumb content-header form-inline"
-			style="padding:8px;">
-			<div class="form-group">
-				<label for="name">名称</label> <input class="form-control input-sm"
-					id="name" value="" type="text" />
-			</div>
-			<div class="form-group">
-				<button class="btn btn-info"  type="button"
-					onclick="onQ()">查询</button>
-			</div>
-			<div class="form-group">
-				<button class="btn btn-info" type="button"
-					onclick="showAll()">显示全部</button>
+<%--		<div class="breadcrumb content-header form-inline"--%>
+<%--			style="padding:8px;">--%>
+<%--			<div class="form-group">--%>
+<%--				<label for="name">名称</label> <input class="form-control input-sm"--%>
+<%--					id="name" value="" type="text" />--%>
+<%--			</div>--%>
+<%--			<div class="form-group">--%>
+<%--				<button class="btn btn-info"  type="button"--%>
+<%--					onclick="onQ()">查询</button>--%>
+<%--			</div>--%>
+<%--			<div class="form-group">--%>
+<%--				<button class="btn btn-info" type="button"--%>
+<%--					onclick="showAll()">显示全部</button>--%>
 
-				&nbsp;&nbsp;
-				<button class="btn btn-info"  type="button"
-						onclick="onSave()">添加</button>
+<%--				&nbsp;&nbsp;--%>
+<%--				<button class="btn btn-info"  type="button"--%>
+<%--						onclick="onSave()">添加</button>--%>
 
 
-			</div>
+<%--			</div>--%>
 
-		</div>
+<%--		</div>--%>
+
+	<div class="ser_box">
+		<ul>
+			<li><span>姓名</span><input style="width:150px; height:50px" type="text"  class="input_text"/></li>
+			<li><span>申请部门</span><input style="width:150px; height:50px" type="text" class="input_text1" /></li>
+			<li><span>内容</span><input style="width:150px; height:50px" type="text" class="input_text1" /></li>
+			<li><span>编号</span><input style="width:150px; height:50px" type="text" class="input_text1" /></li>
+			<li><button onclick="onQ()">查询</button></li>
+			<li><button onclick="showAll()">显示全部</button></li>
+			<li><button onclick="onSave()">添加</button></li>
+<%--			<div onclick="javascrtpt:window.location.href='seal/index5'"><img style="float: right"  src="images/update.jpg"/></div>--%>
+			<button type="button" class="btn btn-danger" onclick="javascrtpt:window.location.href='seal/index5'">返回</button>
+
+		</ul>
+	</div>
 		<div class="row">
-
-			<div class="col-sm-12">
+			<style>
+				#grid td{
+					width: 80px;
+					height: 60px;
+					font-size: 30px;
+				}
+			</style>
+			<div class="table_box">
 				<table id="grid"></table>
 				<div id="pager" style="height:35px;"></div>
 			</div>
 		</div>
 
 	</div>
+
+
 </body>
 </html>

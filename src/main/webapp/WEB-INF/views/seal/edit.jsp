@@ -593,7 +593,7 @@
 	<div>
 <%--                    附件列表&nbsp;&nbsp;--%>
 <%--                    <button type="button" class="btn btn-info" id="btnUp" onclick="onSelfUpload()">上传附件</button>--%>
-                    <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
+<%--                    <button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>--%>
                         </div>
                         <table id="gFrid" style="height:35px;"></table>
 
@@ -609,8 +609,8 @@
             <div id="pager" style="height:35px;"></div>
 
 			<div class="form-group controls" style="text-align:center">
-				<button type="button" id="btnSave" class="btn btn-info" onclick="onSave()">保存</button>
-				&nbsp;&nbsp;
+				<button type="button" class="btn btn-info"  onclick="photograph()">拍照</button>
+				<button type="button" id="btnSave" class="btn btn-info" onclick="onSave()">保存</button>&nbsp;&nbsp;
 				<%--<button type="button" id="btnSubmit" class="btn btn-info" onclick="onSubmit()">提交申请</button>
 				&nbsp;&nbsp;--%>
 				<button type="button" class="btn btn-danger" onclick="onCancel()">返回</button>

@@ -18,6 +18,7 @@ public class QueryResult<T> {
 	// 容器
 	private String container;
 
+
 	public long getTotal() {
 		return total;
 	}

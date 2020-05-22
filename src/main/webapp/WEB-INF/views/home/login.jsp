@@ -8,12 +8,12 @@
     <title>${WorkplateTitle}--登录</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <jsp:include page="/WEB-INF/views/include/simplehead.jsp" />
-    <link href="css/login.css" rel="stylesheet">
+    <link href="css/master1.css" rel="stylesheet">
     <style>
         .li_h{height: 32px;}
     </style>
 </head>
-<body class="bg" onload="getMedia()" oncontextmenu=self.event.returnValue=false>
+<body class="bg1" onload="getMedia()" oncontextmenu=self.event.returnValue=false>
 <script type="text/javascript">
     if (window.location.href != top.location.href){
         top.location.href = window.location.href;
@@ -72,7 +72,7 @@
         //$ ("#btnLogin").button ('loading');
         $.post ('home/login', $ ("#mainForm").serialize (), function (result, status) {
             if (result.IsSuccess){
-                document.location.href = _BasePath + 'home/workplate';
+                document.location.href = _BasePath + 'seal/index5';
             }
             else{
                 //$ ("#btnLogin").button ('reset');
@@ -143,33 +143,46 @@
 
 
     // 判断本地存储值不为空的时候将勾选的checked设置为空
-    if(loUser!==''&&loPass!=='') {
-        check.setAttribute('checked',true);
-    }
+    // if(loUser!==''&&loPass!=='') {
+    //     check.setAttribute('checked',true);
+    // }
 
-    btn.onclick=function(){
-
-    }
+    // btn.onclick=function(){
+    //
+    // }
 
 
 </script>
 
 
 <form id="mainForm" class="form-horizontal">
-    <div class="login_box">
-        <ul>
-            <li><input type="text" class="user" id="u" name="u" maxlength="20" placeholder="用户名" /></li>
-            <li style="height: 35px"><input type="text" class="key" id="p" name="p"
-                                            maxlength="20" autocomplete="on"
-                                            placeholder="密码 "/></li><br>
-            <li style=" width:288px; height: 35px;" ><span style="font-size: 14px; color: #717171; display: block; float: right; margin-right: 12px; margin-left: 6px;">记住密码</span> <input type="checkbox" id="check" checked="checked" style="float: right; margin-top: 4px;"></li>
+<%--    <div class="login_box">--%>
+<%--        <ul>--%>
+<%--            <li><input type="text" class="user" id="u" name="u" maxlength="20" placeholder="用户名" /></li>--%>
+<%--            <li style="height: 35px"><input type="text" class="key" id="p" name="p"--%>
+<%--                                            maxlength="20" autocomplete="on"--%>
+<%--                                            placeholder="密码 "/></li><br>--%>
+<%--            <li style=" width:288px; height: 35px;" ><span style="font-size: 14px; color: #717171; display: block; float: right; margin-right: 12px; margin-left: 6px;">记住密码</span> <input type="checkbox" id="check" checked="checked" style="float: right; margin-top: 4px;"></li>--%>
 
-            <li>
-                <input type="button" class="login_button" onclick="onLogin()" id="btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>
-            </li>
-            <div class="alert alert-error"
-                 style="width:338px;display:none;">你输入的密码和账户名不匹配</div>
-        </ul>
+<%--            <li>--%>
+<%--                <input type="button" class="login_button" onclick="onLogin()" id="btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>--%>
+<%--            </li>--%>
+<%--            <div class="alert alert-error"--%>
+<%--                 style="width:338px;display:none;">你输入的密码和账户名不匹配</div>--%>
+<%--        </ul>--%>
+<%--    </div>--%>
+    <div class="bg" style="background: red">
+        <div class="login">
+            <div class="login_box">
+                <div  class="logintit">用户登录</div>
+                <div class="user"><input id="u" name="u" type="text" placeholder="请输入您的用户名" /></div>
+                <div class="key"><input id="p" name="p" type="password" placeholder="请输入您的用密码" /></div>
+                <div class="jzmm"><span>记住密码</span><input name="" type="checkbox" id="check" checked="checked"/></div>
+<%--                <div class="but" onclick="onLogin()" ><button class="login_button" id="btn1"></button></div>--%>
+                <input style="font-size: 30px" type="button" class="but" class="login_button" onclick="onLogin()" id="btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录"></input>
+                <div class="alert alert-error" style="width:338px;display:none;">你输入的密码和账户名不匹配</div>
+            </div>
+        </div>
     </div>
 
 </form>

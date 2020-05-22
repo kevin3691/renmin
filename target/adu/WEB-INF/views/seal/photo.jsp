@@ -20,7 +20,7 @@
 <%--<input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia()" />--%>
 <video id="video" width="1920px" height="1080px" autoplay="autoplay"></video>
 <button id="snap" onclick="takePhoto()">拍照</button>
-<button id="snap" onclick="onSave()">完成</button>
+<%--<button id="snap" onclick="onSave()">完成</button>--%>
 <style>
 
     #displayarea img{
@@ -135,7 +135,10 @@
 
     function deletePhoto() {
         var oldnode = document.getElementsByTagName('img')[0];
-          oldnode.parentNode.removeChild(oldnode)
+        oldnode.parentNode.removeChild(oldnode)
+        var data = photos.split("|");
+
+
     }
     var viewer;
     function initImgList(){

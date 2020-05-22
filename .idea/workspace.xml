@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="stroke_zzb:war exploded" />
+      <artifact name="stroke:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -24,28 +24,64 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="手写签名存储img列">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewimg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js" afterDir="false" />
+    <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]页面屏蔽右击 新增公章用户 记住密码美化">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/core/baseclass/QueryResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/core/baseclass/QueryResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Seal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Seal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Owasp.CsrfGuard.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Owasp.CsrfGuard.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/stencilset.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/stencilset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/key.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/key.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/loginbut.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/loginbut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/logo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/select_xl.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/select_xl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/select_xl01.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/select_xl01.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head4.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/Owasp.CsrfGuard.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/Owasp.CsrfGuard.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/baseclass/QueryResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/baseclass/QueryResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/stencilset.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/stencilset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon10.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon11.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon4.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon5.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon6.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon7.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon8.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon9.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/icon9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/key.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/key.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/loginbut.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/loginbut.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/logo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/select_xl.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/select_xl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/images/select_xl01.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/images/select_xl01.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/include/head4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/include/head4.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/photo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/photo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Owasp.CsrfGuard.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Owasp.CsrfGuard.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/QueryResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/baseclass/QueryResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stencilset.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stencilset.json" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,185 +90,21 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#50#56#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="382" column="40" selection-start-line="382" selection-start-column="36" selection-end-line="382" selection-end-column="40" />
-              <folding>
-                <element signature="e#11487#11503#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="131" column="11" lean-forward="true" selection-start-line="129" selection-start-column="8" selection-end-line="131" selection-end-column="11" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="403" column="125" selection-start-line="403" selection-start-column="114" selection-end-line="403" selection-end-column="125" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewimg.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="235" column="15" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="15" />
-              <folding>
-                <element signature="e#958#2549#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="462" column="870" selection-start-line="462" selection-start-column="870" selection-end-line="462" selection-end-column="870" />
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Jsp File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>photos</find>
-      <find>onsave</find>
-      <find>mainForm</find>
-      <find>max_allowed_packet</find>
-      <find>&lt;br</find>
-      <find>layer.full</find>
-      <find>split</find>
-      <find>photo</find>
-      <find>i</find>
-      <find>o</find>
-      <find>4194304</find>
-      <find>dowebok</find>
-      <find>serv</find>
-      <find>Viewer</find>
-      <find>init</find>
-      <find>width</find>
-      <find>1:1</find>
-      <find>viewer-toolbar</find>
-      <find>viewer-one-to-one</find>
-      <find>viewer-flip-horizontal</find>
-      <find>x.css</find>
-      <find>viewer-transition</find>
-      <find>margin-left</find>
-      <find>viewer-list</find>
-      <find>viewer</find>
-      <find>1000</find>
-      <find>takepho</find>
-      <find>de</find>
-      <find>src</find>
-      <find>save</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/autograph.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head4.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewimg.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp" />
-      </list>
     </option>
   </component>
   <component name="JsFlowSettings">
@@ -251,140 +123,12 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="userSettingsFile" value="C:\Users\Administrator\Desktop\maven.aliyun.com\settings.xml" />
+        <option name="userSettingsFile" value="C:\Users\王彦彭\Desktop\maven.aliyun.com\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1b9QQDCTFE2Zb83fPSPmLnsm6xi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jslib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="seal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stroke_zzb" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="adu" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jslib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -393,6 +137,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -401,23 +147,28 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18978103" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspaces\IdeaProjects\stroke_zzb\src\main\webapp\WEB-INF\css" />
-      <recent name="D:\workspaces\IdeaProjects\stroke_zzb\target\adu\WEB-INF\css" />
-      <recent name="D:\workspaces\IdeaProjects\stroke_zzb\target\adu\WEB-INF\jslib" />
-      <recent name="D:\workspaces\IdeaProjects\stroke_zzb\src\main\webapp\WEB-INF\jslib" />
-      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\views\seal" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\images" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\css\images" />
+      <recent name="F:\kevin\news\stroke\stroke\target\adu\WEB-INF\images" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\images\im" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zzb.zo.controller" />
@@ -431,18 +182,6 @@
       <recent name="D:\IdeaProjects\adu\src\main\form" />
       <recent name="D:\IdeaProjects\adu\src\main\flow" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -529,12 +268,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="adu" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.40" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="adu" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="stroke_zzb:war exploded">
+        <artifact name="stroke:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/stroke" />
+            <option name="CONTEXT_PATH" value="/stroke_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -752,14 +493,26 @@
       <workItem from="1588206996982" duration="14657000" />
       <workItem from="1588230025889" duration="6045000" />
       <workItem from="1588726907977" duration="26352000" />
-      <workItem from="1588758050193" duration="5741000" />
-      <workItem from="1588990404085" duration="756000" />
-      <workItem from="1589178140471" duration="1327000" />
-      <workItem from="1589248856844" duration="599000" />
-      <workItem from="1589329884509" duration="1602000" />
-      <workItem from="1589459636731" duration="9000" />
-      <workItem from="1589765077581" duration="6684000" />
-      <workItem from="1589772454329" duration="11163000" />
+      <workItem from="1588758050193" duration="5649000" />
+      <workItem from="1588813294122" duration="562000" />
+      <workItem from="1588813889449" duration="223000" />
+      <workItem from="1588814133533" duration="1336000" />
+      <workItem from="1588815495063" duration="9490000" />
+      <workItem from="1589158887419" duration="17438000" />
+      <workItem from="1589249983519" duration="3080000" />
+      <workItem from="1589416360426" duration="16087000" />
+      <workItem from="1589875324901" duration="2706000" />
+      <workItem from="1589878092310" duration="3208000" />
+      <workItem from="1589935209315" duration="29736000" />
+      <workItem from="1590021647385" duration="1017000" />
+      <workItem from="1590022679785" duration="4536000" />
+      <workItem from="1590029198348" duration="3013000" />
+      <workItem from="1590032400722" duration="521000" />
+      <workItem from="1590032942254" duration="1722000" />
+      <workItem from="1590036599359" duration="28000" />
+      <workItem from="1590036640345" duration="219000" />
+      <workItem from="1590037127665" duration="12715000" />
+      <workItem from="1590108367258" duration="8770000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -824,85 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1588239443022</updated>
     </task>
-    <task id="LOCAL-00010" summary="手写签名存储img列">
-      <created>1588763783766</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1588763783766</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27881000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24307036" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.18980478" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.329718" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3275488" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="JSF" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="CDI" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -921,6 +607,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -931,8 +618,7 @@
     <MESSAGE value="[wang]第一次修改" />
     <MESSAGE value="[wang]第二次修改" />
     <MESSAGE value="[wang]第三次修改" />
-    <MESSAGE value="手写签名存储img列" />
-    <option name="LAST_COMMIT_MESSAGE" value="手写签名存储img列" />
+    <option name="LAST_COMMIT_MESSAGE" value="[wang]第三次修改" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="182" key="#Inspections" timestamp="1588140282139">
@@ -943,110 +629,163 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="336" y="337" key="#Template_Data_Languages/0.0.1680.1010@0.0.1680.1010" timestamp="1588734253666" />
-    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588754008146">
+    <state x="672" y="322" key="#Tomcat_Server" timestamp="1590021677128">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588754008146" />
-    <state x="645" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1588141733778">
+    <state x="512" y="217" key="#Tomcat_Server/0.0.1280.680@0.0.1280.680" timestamp="1588813596867" />
+    <state x="672" y="322" key="#Tomcat_Server/0.0.1680.1010@0.0.1680.1010" timestamp="1590021677128" />
+    <state x="427" y="0" width="645" height="680" key="#adu" timestamp="1590021682861">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="645" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1588141733778" />
-    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588066497067">
+    <state x="325" y="0" width="645" height="680" key="#adu/0.0.1280.680@0.0.1280.680" timestamp="1588813660987" />
+    <state x="427" y="0" key="#adu/0.0.1680.1010@0.0.1680.1010" timestamp="1590021682861" />
+    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590036734572">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588066497067" />
-    <state x="620" y="259" key="FileChooserDialogImpl" timestamp="1588042989141">
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589426519613" />
+    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590036734572" />
+    <state x="645" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1589956403508">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1588042989141" />
-    <state width="1406" height="2" key="GridCell.Tab.0.bottom" timestamp="1588754400725">
+    <state x="491" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1589362478728" />
+    <state x="645" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010@0.0.1680.1010" timestamp="1589956403508" />
+    <state x="428" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1589426518358">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="428" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.680@0.0.1280.680" timestamp="1589426518358" />
+    <state x="562" y="142" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1680.1010@0.0.1680.1010" timestamp="1589250245961" />
+    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590041163529">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400725" />
-    <state width="1406" height="2" key="GridCell.Tab.0.center" timestamp="1588754400725">
+    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590041163529" />
+    <state x="620" y="259" key="FileChooserDialogImpl" timestamp="1590021675930">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400725" />
-    <state width="1406" height="2" key="GridCell.Tab.0.left" timestamp="1588754400725">
+    <state x="472" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589426517637" />
+    <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590021675930" />
+    <state width="687" height="540" key="GridCell.Tab.0.bottom" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400725" />
-    <state width="1406" height="2" key="GridCell.Tab.0.right" timestamp="1588754400725">
+    <state width="1069" height="53" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
+    <state width="687" height="540" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.0.center" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400725" />
-    <state width="1406" height="597" key="GridCell.Tab.1.bottom" timestamp="1588754674372">
+    <state width="1069" height="53" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
+    <state width="687" height="540" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.0.left" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="597" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588754674372" />
-    <state width="1406" height="597" key="GridCell.Tab.1.center" timestamp="1588754674372">
+    <state width="1069" height="53" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
+    <state width="687" height="540" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.0.right" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="597" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588754674372" />
-    <state width="1406" height="597" key="GridCell.Tab.1.left" timestamp="1588754674372">
+    <state width="1069" height="53" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
+    <state width="687" height="540" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.1.bottom" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="597" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588754674372" />
-    <state width="1406" height="597" key="GridCell.Tab.1.right" timestamp="1588754674372">
+    <state width="1069" height="53" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.1.center" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="597" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588754674372" />
-    <state width="1406" height="2" key="GridCell.Tab.2.bottom" timestamp="1588754400525">
+    <state width="1069" height="53" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.1.left" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400525" />
-    <state width="1406" height="2" key="GridCell.Tab.2.center" timestamp="1588754400525">
+    <state width="1069" height="53" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.1.right" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400525" />
-    <state width="1406" height="2" key="GridCell.Tab.2.left" timestamp="1588754400525">
+    <state width="1069" height="53" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.2.bottom" timestamp="1590134165536">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400525" />
-    <state width="1406" height="2" key="GridCell.Tab.2.right" timestamp="1588754400525">
+    <state width="1069" height="53" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state width="687" height="540" key="GridCell.Tab.2.center" timestamp="1590134165536">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588754400525" />
-    <state width="1406" height="2" key="GridCell.Tab.3.bottom" timestamp="1588750754569">
+    <state width="1069" height="53" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state width="687" height="540" key="GridCell.Tab.2.left" timestamp="1590134165535">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1588750754569" />
-    <state width="1406" height="2" key="GridCell.Tab.3.center" timestamp="1588750754569">
+    <state width="1069" height="53" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165535" />
+    <state width="687" height="540" key="GridCell.Tab.2.right" timestamp="1590134165536">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1588750754569" />
-    <state width="1406" height="2" key="GridCell.Tab.3.left" timestamp="1588750754569">
+    <state width="1069" height="53" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
+    <state width="687" height="540" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state width="687" height="540" key="GridCell.Tab.3.bottom" timestamp="1590134165536">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1588750754569" />
-    <state width="1406" height="2" key="GridCell.Tab.3.right" timestamp="1588750754569">
+    <state width="1069" height="397" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
+    <state width="687" height="540" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state width="687" height="540" key="GridCell.Tab.3.center" timestamp="1590134165536">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state width="1406" height="2" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1588750754569" />
-    <state x="341" y="136" key="SettingsEditor" timestamp="1588144780531">
+    <state width="1069" height="397" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
+    <state width="687" height="540" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state width="687" height="540" key="GridCell.Tab.3.left" timestamp="1590134165536">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1588144780531" />
+    <state width="1069" height="397" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
+    <state width="687" height="540" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state width="687" height="540" key="GridCell.Tab.3.right" timestamp="1590134165536">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1069" height="397" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
+    <state width="687" height="540" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590134165536" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1588813953822">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1588813953822" />
+    <state x="341" y="136" key="SettingsEditor" timestamp="1590036625143">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="260" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588815453311" />
+    <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590036625143" />
+    <state width="498" height="468" key="SwitcherDM" timestamp="1590021944956">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="498" height="468" key="SwitcherDM/0.0.1680.1010@0.0.1680.1010" timestamp="1590021944956" />
     <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1588239446697">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1588239446697" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1588857430824">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1588857430824" />
+    <state x="633" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589163605127">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="633" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589163605127" />
     <state x="570" y="277" key="extract.method.dialog" timestamp="1588146839416">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="277" key="extract.method.dialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588146839416" />
-    <state x="542" y="67" width="596" height="876" key="find.popup" timestamp="1588750941257">
+    <state x="542" y="67" width="739" height="876" key="find.popup" timestamp="1590114820202">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="542" y="67" width="596" height="876" key="find.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1588750941257" />
+    <state x="413" y="45" width="573" height="590" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1589367282659" />
+    <state x="542" y="67" width="739" height="876" key="find.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1590114820202" />
     <state x="541" y="260" key="refactoring.ChangeSignatureDialog" timestamp="1588208684930">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="541" y="260" key="refactoring.ChangeSignatureDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588208684930" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1588136294694">
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1590045961896">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1588136294694" />
+    <state x="383" y="146" width="672" height="457" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589366902422" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1590045961896" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1054,267 +793,33 @@
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/ReceivePersonController.java</url>
           <line>133</line>
-          <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DocumentController.java</url>
           <line>915</line>
-          <properties />
           <option name="timeStamp" value="354" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DubanController.java</url>
           <line>431</line>
-          <properties />
           <option name="timeStamp" value="359" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/DubanController.java</url>
           <line>441</line>
-          <properties />
           <option name="timeStamp" value="361" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java</url>
           <line>318</line>
-          <properties />
           <option name="timeStamp" value="366" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="            else&#10;" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.webworker.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1435" column="4" selection-start-line="1435" selection-start-column="4" selection-end-line="1435" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/layui/lay/modules/layim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="543" column="319" selection-start-line="543" selection-start-column="319" selection-end-line="543" selection-end-column="319" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#video#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/json2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="490" column="20" selection-start-line="490" selection-start-column="20" selection-end-line="490" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/PerVmServerConfigCacheFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/person/multiSel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2565">
-          <folding>
-            <element signature="e#157#164#1" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/cms/entity/CmsNews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4807">
-          <caret line="297" column="20" selection-start-line="297" selection-start-column="16" selection-end-line="297" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/comm/news/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="195" column="18" selection-start-line="122" selection-start-column="12" selection-end-line="195" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/base/person/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/redirectUrl.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/entity/Seal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/autograph.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3249">
-          <caret line="171" column="25" selection-start-line="171" selection-start-column="25" selection-end-line="171" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/BasePersonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="123" column="14" selection-start-line="123" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/base/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="460" column="66" lean-forward="true" selection-start-line="460" selection-start-column="66" selection-end-line="460" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="382" column="40" selection-start-line="382" selection-start-column="36" selection-end-line="382" selection-end-column="40" />
-          <folding>
-            <element signature="e#11487#11503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/adu/WEB-INF/jslib/viewer.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/adu/WEB-INF/css/viewer.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/adu/WEB-INF/css/viewer.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/head4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="72" column="4" selection-start-line="72" selection-end-line="73" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#50#56#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="403" column="125" selection-start-line="403" selection-start-column="114" selection-end-line="403" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="235" column="15" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="15" />
-          <folding>
-            <element signature="e#958#2549#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="462" column="870" selection-start-line="462" selection-start-column="870" selection-end-line="462" selection-end-column="870" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewimg.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/photo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="131" column="11" lean-forward="true" selection-start-line="129" selection-start-column="8" selection-end-line="131" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

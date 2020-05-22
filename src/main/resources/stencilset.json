@@ -94,7 +94,7 @@
       "popular" : true
     } ]
   }, {
-    "name" : "executionlistenerspackage",
+    "name" : "executionimages/imenerspackage",
     "properties" : [ {
       "id" : "executionlisteners",
       "type" : "multiplecomplex",

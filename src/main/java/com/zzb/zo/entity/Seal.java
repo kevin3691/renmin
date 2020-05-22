@@ -15,13 +15,13 @@ public class Seal extends BaseEntity<Seal> {
     private String org;
     private int personId;
     private String person;
-    private String sqyy;
-    private Date sqrq;
+    private String sqyy;//内容
+    private Date sqrq;//时间
     private String content;
     private int sprId;
     private String spr;
     private Date actAt;
-    private int status;
+    private int status;//状态
     private int sealTypeId;
     private String sealTypeName;
     private String img;

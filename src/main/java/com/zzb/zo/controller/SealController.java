@@ -129,6 +129,46 @@ public class SealController extends BaseController {
 		return "/seal/index";
 	}
 
+	/**
+	 * View 列表页 index
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/index5")
+	//@RequiresPermissions("DOCUMENT:RO")
+	public String index5(ModelMap map) {
+		String colSym = request.getParameter("colSym") != null ? String.valueOf(request
+				.getParameter("colSym")) : "";
+		String colTitle = request.getParameter("colTitle") != null ? String.valueOf(request
+				.getParameter("colTitle")) : "";
+		map.addAttribute("category", colTitle);
+		map.addAttribute("colTitle", colTitle);
+		map.addAttribute("colSym", colSym);
+		setPara(request, map);
+
+		return "/seal/index5";
+	}
+
+	/**
+	 * 系统管理
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/sysadmin")
+	//@RequiresPermissions("DOCUMENT:RO")
+	public String sysadmin(ModelMap map) {
+		String colSym = request.getParameter("colSym") != null ? String.valueOf(request
+				.getParameter("colSym")) : "";
+		String colTitle = request.getParameter("colTitle") != null ? String.valueOf(request
+				.getParameter("colTitle")) : "";
+		map.addAttribute("category", colTitle);
+		map.addAttribute("colTitle", colTitle);
+		map.addAttribute("colSym", colSym);
+		setPara(request, map);
+
+		return "/seal/sysadmin";
+	}
+
 
 	@RequestMapping(value = "/type")
 	//@RequiresPermissions("DOCUMENT:RO")
@@ -524,7 +564,6 @@ public class SealController extends BaseController {
 	@RequestMapping(value = "/list")
 	public QueryResult<Seal> list(HttpServletRequest request) {
 		QueryResult<Seal> rslt = sealService.list(request);
-
 		return rslt;
 	}
 
