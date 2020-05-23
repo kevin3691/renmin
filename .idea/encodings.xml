@@ -53,25 +53,6 @@
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon7.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon8.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/icon9.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/bg.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/bg_btn.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/but.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/but1.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/butbg.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/icon1.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/icon2.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/icon3.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/key.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/leftbg.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/line_bg.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/login_box.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/loginbut.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/logo.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/logo1.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/select_xl.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/select_xl01.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/system.png" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/im/user.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/key.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/leftbg.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/line_bg.png" charset="GBK" />
@@ -86,12 +67,6 @@
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/user.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/css/viewer.min.css" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/images/bg.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/images/bianji.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/images/update.jpg" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/jslib/viewer-jquery.min.js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/target/adu/WEB-INF/jslib/viewer.min.js" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
