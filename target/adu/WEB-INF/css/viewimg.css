@@ -1,0 +1,11 @@
+@charset "utf-8";
+*{ margin:0; padding:0; }
+img { border:none; }
+ul,li{ list-style:none}
+ul li{ float:left;margin:0 10px}
+ul li img{ width:1920px; height:1080px;}
+.imgbox { width:1920px; height:1080px; margin:0 auto; position:relative; }
+.text { width:1920px; height:auto; background-color:#000; FILTER:alpha(opacity=60); opacity:0.7; -moz-opacity:0.7; position:absolute; left:0px; bottom:0px;cursor: hand }
+.imgbt { width:1900px; height:30px; padding:0px 10px; }
+.imgtext { width:1900px; height:auto; float:left; padding:10px; color:#fff; font-size:12px; line-height:200%;
+    text-align:center; cursor: hand }

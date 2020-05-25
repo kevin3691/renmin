@@ -180,6 +180,8 @@
 				<li><a href="home/dashboard"><i class="fa fa-dashboard"></i>
 						首页</a></li>
 				<li class="active">权限管理</li>
+				<button type="button" class="btn btn-danger" onclick="javascrtpt:window.location.href='seal/index5'">返回</button>
+
 			</ol>
 		</div>
 		<table id="grid"></table>

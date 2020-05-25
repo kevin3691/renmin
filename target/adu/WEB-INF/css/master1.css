@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ width:100%; height:100%; margin:0; padding:0;}
+.bg{ width:100%; height:100%; background:url(images/bg.jpg) no-repeat 100% 100%;}
+.login{ width:1089px; height:605px; background:url(images/login_box.png) no-repeat; position:absolute; left:50%; top:50%; margin-left:-545px; margin-top:-310px;}
+.login_box{ width:420px; height:550px; margin-left:566px; margin-top:35px;}
+.logintit{ width:420px; height:110px; font:25px/110px 微软雅黑; color:#FFF;}
+.user{ width:420px; height:110px;}
+.user input{ width:330px; height:72px; border:0; background:url(images/user.jpg) no-repeat; padding-left:87px; font-size:22px;}
+.key{ width:420px; height:110px;}
+.key input{ width:330px; height:72px; border:0; background:url(images/key.png) no-repeat; padding-left:87px; font-size:22px;}
+.jzmm{ width:420px; height:70px;}
+.jzmm input{ float:right; width:20px; height:20px; margin-top:8px; margin-right:10px;}
+.jzmm span{ float:right; display:block; font:24px 微软雅黑; color:#fff; margin-right:20px;}
+.but{ width:420px; height:72px;}
+.but button{ width:417px; height:72px; background:url(images/loginbut.png) no-repeat; border:none;}
+.index_box{ width:1052px; height:666px; position:absolute; left:50%; top:50%; margin-left:-545px; margin-top:-320px;}
+.logo{ width:1019px; height:116px; background:url(images/logo.png) no-repeat; margin:auto;}
+.but_box{ width:1052px; height:auto; margin:auto; }
+.but_box ul{ width:1052px; margin-top:40px; margin-left:75px;}
+.but_box ul li{ margin-top:68px; width:263px; height:190px; float:left;}
+.but_box ul li a{ display:block; float:left; width:263px; height:190px;}
+.but_box ul li a span{ display:block; width:105px; height:75px; font:24px/75px 微软雅黑; color:#ffffff; text-align:center;}
+
+
+
+
+.but_1{ width:322px; height:101px;  background:url(images/but.png) no-repeat; border:none; float:left;}
+
+
+
+.but_2{ width:322px; height:101px;  background:url(images/but1.png) no-repeat; border:none; float:right;}
+
+
+
+
+
+
+/*left*/
+.left_bg{ width:349px; height:100%; background:url(images/leftbg.jpg) no-repeat left top;}
+.logo1{ width:349px; height:115px; background:url(images/logo1.png) no-repeat;}
+
+
+ul,li{ margin:0; padding:0; list-style:none;}
+img{border:none;}
+*{font-family:'微软雅黑';}
+dl,dt,dd{display:block;margin:0;}
+a{text-decoration:none;}
+
+.container{width:100%;height:auto;margin:auto;}
+.leftsidebar_box{width:349px;height:auto !important;overflow:visible !important;position:fixed;height:auto !important;background-color:none; margin-top:50px;}
+
+.leftsidebar_box dt{color:#f5f5f5;font-size:30px;position:relative;line-height:90px;}
+.leftsidebar_box dd{ background:url(images/bg_btn.png); padding-left:100px;}
+.leftsidebar_box dd a{color:#e0e0e0;line-height:70px; font-size:24px;}
+.leftsidebar_box dt img{position:absolute;right:20px;top:40px;}
+/*.system_log dt{background-image:url(images/system.png);}
+.custom dt{background-image:url(images/icon1.png);}*/
+
+.systemIco,.customIco{
+	display: block;
+	padding-left:100px;padding-right:10px;background-repeat:no-repeat;background-position:33px center;
+	cursor:pointer;
+}
+.systemIco{background-image:url(images/system.png);}
+.customIco{background-image:url(images/icon1.png);}
+
+.leftsidebar_box dl dd:last-child{padding-bottom:10px;}
+
+
+/*top*/
+.top{ width:100%; height:115px; background:#fff; border-bottom:2px solid #c8c9cb;}
+.top_right{ float:right; width:auto; height:115px;}
+.top_right div{ height:115px; float:left; margin-right:50px;}
+.top_right div img{ float:left; margin-top:38px; margin-right:15px;}
+.top_right div span{ font:24px/115px 微软雅黑; color:#000;}
+
+
+
+/*test*/
+.test{ width:100%; height:100%; background:#e0eaf5;}
+.test_box{ position:absolute; top:25px; bottom:25px; left:25px; right:25px;}
+.ser_box{ width:100%; height:139px; background:#FFF; border:1px solid #d2d2d2; box-shadow: 3px 5px 2px #d5dee9; border-radius:15px;}
+.ser_box ul{ margin-left:49px; margin-top:35px; height:72px; width:auto;}
+.ser_box ul li{ float:left; margin-right:40px;}
+.ser_box ul li span{ font:28px/72px 微软雅黑; color:#000; margin-right:15px;}
+.input_text{ width:180px; height:50px; border:0; border:1px solid #a0a0a0; border-radius:15px; font:18px 微软雅黑;}
+.input_text1{ width:180px; height:50px; border:0; border:1px solid #a0a0a0; border-radius:15px; font:18px 微软雅黑;}
+.ser_box ul li button{ width:163px; height:74px; border:none; background:url(images/butbg.jpg) no-repeat; font:28px/72px 微软雅黑; color:#fff;}
+.table_box{ width:100%; height:740px; background:#FFF; border:1px solid #d2d2d2; box-shadow: 3px 5px 2px #d5dee9; border-radius:15px; margin-top:25px;}
+
+
+
