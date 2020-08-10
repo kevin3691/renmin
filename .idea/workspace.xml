@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="stroke:war exploded" />
+      <artifact name="adu:war exploded" />
     </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -25,13 +28,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d797f80c-d923-4a56-9e8f-fa8ea839ed9a" name="Default" comment="[wang]个页面增加返回按钮">
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/dict/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/dict/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/menu/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/menu/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/org/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/org/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/person/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/person/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/power/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/power/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/role/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/role/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/base/user/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/CA051070000414687680001.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113517848565234.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113518107839760.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113518293947059.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113518504234844.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113518713589950.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113518935881994.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113519129794085.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113519554581041.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113519770330156.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113519943650700.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113520136460153.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113522208616517.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113522553066647.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113523032148077.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200113523324951850.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/W020200320523541696409.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/icon_sjb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/index1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/jiucuo.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/new_xxgkindex.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/new_xxgkindex.js.下载" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/sx-blue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files/sx-ds.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_5_19_0019_08_21_[Default]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_5_19_0019_08_21__Default_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzb/zo/controller/SealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/seal/index5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseDictService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/base/service/BaseDictService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/DateTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/cms/utils/DateTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/controller/CommAttachmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommTaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/comm/service/CommTaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelExportOfTemplateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelExportOfTemplateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelImportUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelImportUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelPublicUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/excel/ExcelPublicUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/FreeMarkerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/FreeMarkerUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/HttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/HttpHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/ImageRemarkUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/OfficeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/OfficeUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/SiteConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/SiteConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/VerifyCodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/core/utils/VerifyCodeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/home/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/adu/WEB-INF/views/seal/index5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseDictService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/base/service/BaseDictService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/DateTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/cms/utils/DateTools.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommAttachmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/comm/controller/CommAttachmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommTaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/comm/service/CommTaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelExportOfTemplateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelExportOfTemplateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelImportUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelImportUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelPublicUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/excel/ExcelPublicUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/FreeMarkerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/FreeMarkerUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/HttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/HttpHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/ImageRemarkUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/ImageRemarkUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/OfficeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/OfficeUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/SiteConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/SiteConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/VerifyCodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/core/utils/VerifyCodeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzb/zo/controller/SealController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +113,16 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../stroke\exportToHTML" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,6 +149,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3" />
         <option name="userSettingsFile" value="C:\Users\王彦彭\Desktop\maven.aliyun.com\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -98,7 +174,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,35 +184,49 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18978103" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\images" />
-      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\css\images" />
-      <recent name="F:\kevin\news\stroke\stroke\target\adu\WEB-INF\images" />
-      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\images\im" />
-      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\css" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zzb.zo.controller" />
-      <recent name="com.zzb.zo.service" />
-      <recent name="com.zzb.zo.dao" />
-      <recent name="com.zzb.zo.entity" />
-      <recent name="com.zzb.core.utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\views\affairs" />
       <recent name="D:\IdeaProjects\adu\src\main\webapp\WEB-INF\css" />
       <recent name="D:\IdeaProjects\adu\src\main\form" />
       <recent name="D:\IdeaProjects\adu\src\main\flow" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zzb.zo.entity" />
+      <recent name="com.zzb.zo.controller" />
+      <recent name="com.zzb.zo.service" />
+      <recent name="com.zzb.zo.dao" />
+      <recent name="com.zzb.core.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\views\affairs" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\images" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\css" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\webapp\WEB-INF\views\seal" />
+      <recent name="F:\kevin\news\stroke\stroke\src\main\java\com\zzb\affairs" />
     </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -221,12 +311,10 @@
     </configuration>
     <configuration name="adu" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
-        <artifact name="stroke:war exploded">
+        <artifact name="adu:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/stroke_war_exploded" />
+            <option name="CONTEXT_PATH" value="/adu_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -298,8 +386,9 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -467,6 +556,26 @@
       <workItem from="1590194732813" duration="1735000" />
       <workItem from="1590202466966" duration="2786000" />
       <workItem from="1590224073216" duration="683000" />
+      <workItem from="1590367618097" duration="2936000" />
+      <workItem from="1591924313496" duration="1898000" />
+      <workItem from="1591943125781" duration="617000" />
+      <workItem from="1592184097337" duration="9159000" />
+      <workItem from="1592212302539" duration="12000" />
+      <workItem from="1592533215231" duration="8543000" />
+      <workItem from="1592787431405" duration="6101000" />
+      <workItem from="1592873224205" duration="2200000" />
+      <workItem from="1595899093771" duration="2562000" />
+      <workItem from="1596416991099" duration="17288000" />
+      <workItem from="1596501842654" duration="7867000" />
+      <workItem from="1596589090658" duration="1084000" />
+      <workItem from="1596590847500" duration="3134000" />
+      <workItem from="1596611215471" duration="293000" />
+      <workItem from="1596611645875" duration="285000" />
+      <workItem from="1596612032604" duration="105000" />
+      <workItem from="1596612154462" duration="3434000" />
+      <workItem from="1596675109863" duration="5277000" />
+      <workItem from="1596760683988" duration="9216000" />
+      <workItem from="1597020156870" duration="1203000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1563759275994</created>
@@ -545,11 +654,18 @@
       <option name="project" value="LOCAL" />
       <updated>1590224743346</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[wang]个页面增加返回按钮">
+      <created>1590367785852</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590367785852</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -591,10 +707,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="[wang]个页面增加返回按钮" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="182" key="#Inspections" timestamp="1588140282139">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="684" y="402" key="#Notifications" timestamp="1596677504723">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="466" y="182" key="#Inspections/0.0.1680.1010@0.0.1680.1010" timestamp="1588140282139" />
+    <state x="684" y="402" key="#Notifications/0.0.1920.1160@0.0.1920.1160" timestamp="1596677504723" />
     <state x="336" y="337" key="#Template_Data_Languages" timestamp="1588734253666">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -609,11 +725,12 @@
     </state>
     <state x="325" y="0" width="645" height="680" key="#adu/0.0.1280.680@0.0.1280.680" timestamp="1588813660987" />
     <state x="427" y="0" key="#adu/0.0.1680.1010@0.0.1680.1010" timestamp="1590021682861" />
-    <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590135224185">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="336" y="183" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596761418345">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589426519613" />
     <state x="294" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590135224185" />
+    <state x="336" y="183" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1596761418345" />
     <state x="645" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1589956403508">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -624,112 +741,155 @@
     </state>
     <state x="428" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.680@0.0.1280.680" timestamp="1589426518358" />
     <state x="562" y="142" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1680.1010@0.0.1680.1010" timestamp="1589250245961" />
-    <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590041163529">
+    <state x="667" y="272" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1592533544123">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
+    <state x="667" y="272" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1592533544123" />
+    <state x="640" y="314" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596591120090">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="640" y="314" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1596591120090" />
+    <state x="651" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596418335655">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
     <state x="570" y="250" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1590041163529" />
+    <state x="651" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1596418335655" />
+    <state x="591" y="316" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1592533933923">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="591" y="316" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1592533933923" />
+    <state x="753" y="474" key="#更新" timestamp="1596596322424">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="753" y="474" key="#更新/0.0.1920.1160@0.0.1920.1160" timestamp="1596596322424" />
+    <state x="845" y="441" key="#通知" timestamp="1596596286097">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="845" y="441" key="#通知/0.0.1920.1160@0.0.1920.1160" timestamp="1596596286097" />
+    <state x="440" y="153" key="#项目结构" timestamp="1596761194293">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="440" y="153" key="#项目结构/0.0.1920.1160@0.0.1920.1160" timestamp="1596761194293" />
     <state x="620" y="259" key="FileChooserDialogImpl" timestamp="1590021675930">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="472" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589426517637" />
     <state x="620" y="259" key="FileChooserDialogImpl/0.0.1680.1010@0.0.1680.1010" timestamp="1590021675930" />
-    <state width="1406" height="2" key="GridCell.Tab.0.bottom" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1616" height="2" key="GridCell.Tab.0.bottom" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
-    <state width="1406" height="2" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.0.center" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.0.center" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
-    <state width="1406" height="2" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.0.left" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.0.left" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
-    <state width="1406" height="2" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.0.right" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.0.right" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589438059652" />
-    <state width="1406" height="2" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.1.bottom" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.1.bottom" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.1.center" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.1.center" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.1.left" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.1.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.1.left" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.1.right" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.1.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.1.right" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.2.bottom" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.1.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.2.bottom" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.2.center" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.2.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.2.center" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.2.left" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.2.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.2.left" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.2.right" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.2.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.2.right" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="53" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1589438059494" />
-    <state width="1406" height="2" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.3.bottom" timestamp="1590224759128">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.2.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.3.bottom" timestamp="1596793173072">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="397" key="GridCell.Tab.3.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
-    <state width="1406" height="2" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759128" />
-    <state width="1406" height="2" key="GridCell.Tab.3.center" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732329" />
+    <state width="1616" height="2" key="GridCell.Tab.3.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173072" />
+    <state width="1616" height="2" key="GridCell.Tab.3.center" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="397" key="GridCell.Tab.3.center/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
-    <state width="1406" height="2" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.3.left" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.3.center/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.3.left" timestamp="1596793173071">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="397" key="GridCell.Tab.3.left/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
-    <state width="1406" height="2" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state width="1406" height="2" key="GridCell.Tab.3.right" timestamp="1590224759127">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1406" height="68" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.3.left/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173071" />
+    <state width="1616" height="2" key="GridCell.Tab.3.right" timestamp="1596793173072">
+      <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1069" height="397" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1589437747121" />
-    <state width="1406" height="2" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1590224759127" />
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1588813953822">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1588813953822" />
-    <state x="341" y="136" key="SettingsEditor" timestamp="1590036625143">
+    <state width="1406" height="68" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1592875732328" />
+    <state width="1616" height="2" key="GridCell.Tab.3.right/0.0.1920.1160@0.0.1920.1160" timestamp="1596793173072" />
+    <state x="224" y="0" key="Maven.ArtifactSearchDialog" timestamp="1592545440268">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1588813953822" />
+    <state x="224" y="0" key="Maven.ArtifactSearchDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1592545440268" />
+    <state x="390" y="156" key="SettingsEditor" timestamp="1597021367070">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
     <state x="260" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588815453311" />
-    <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1590036625143" />
+    <state x="341" y="136" key="SettingsEditor/0.0.1680.1010@0.0.1680.1010" timestamp="1592533936466" />
+    <state x="390" y="156" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1597021367070" />
     <state width="498" height="468" key="SwitcherDM" timestamp="1590021944956">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="498" height="468" key="SwitcherDM/0.0.1680.1010@0.0.1680.1010" timestamp="1590021944956" />
-    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1590224751562">
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1590367805688">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1590224751562" />
+    <state x="432" y="237" key="Vcs.Push.Dialog.v2/0.0.1680.1010@0.0.1680.1010" timestamp="1590367805688" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1588857430824">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -738,19 +898,11 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="633" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1010@0.0.1680.1010" timestamp="1589163605127" />
-    <state x="570" y="277" key="extract.method.dialog" timestamp="1588146839416">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="570" y="277" key="extract.method.dialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588146839416" />
     <state x="542" y="67" width="900" height="876" key="find.popup" timestamp="1590205244970">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="413" y="45" width="573" height="590" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1589367282659" />
     <state x="542" y="67" width="900" height="876" key="find.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1590205244970" />
-    <state x="541" y="260" key="refactoring.ChangeSignatureDialog" timestamp="1588208684930">
-      <screen x="0" y="0" width="1680" height="1010" />
-    </state>
-    <state x="541" y="260" key="refactoring.ChangeSignatureDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1588208684930" />
     <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1590195636043">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -780,13 +932,17 @@
           <line>441</line>
           <option name="timeStamp" value="361" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java</url>
-          <line>318</line>
-          <option name="timeStamp" value="366" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="adu" type="b2602c69:ProjectViewProjectNode" />
+        <item name="stroke" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/DocFileTypeService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/zzb/zo/service/SealService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/base.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/images/bg.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/images/bg_btn.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/images/but.png" charset="GBK" />
@@ -34,8 +35,26 @@
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/images/select_xl01.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/images/system.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/images/user.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/index1.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/master1.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/new_xxgkindex.css" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/css/viewer.min.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113517848565234.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113518107839760.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113518293947059.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113518504234844.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113518713589950.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113518935881994.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113519129794085.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113519554581041.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113519770330156.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113519943650700.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113520136460153.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113522208616517.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113522553066647.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113523032148077.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200113523324951850.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/W020200320523541696409.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/bg.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/bg_btn.png" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/bianji.jpg" charset="GBK" />
@@ -67,6 +86,8 @@
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/user.jpg" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer-jquery.min.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jslib/viewer.min.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/index.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/affairs/邯郸市政府信息公开_files" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

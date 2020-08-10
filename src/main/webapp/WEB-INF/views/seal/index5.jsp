@@ -38,7 +38,7 @@
                 <li><a href="base/dict/index"><img src="images/icon4.png" /><span>数据字典</span></a></li>
             </ul>
         </div>
-        <div onclick="javascrtpt:window.location.href='home/logout'"><img style="float: right"  src="images/icon2.jpg"/></div>--%>
+        <div onclick="javascrtpt:window.location.href='home/logout'"><img style="float: right"  src="images/icon2.jpg"/></div>
     </div>
 </div>
 </body>

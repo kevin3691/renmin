@@ -126,6 +126,7 @@ public class SealController extends BaseController {
 			break;
 		}*/
 
+
 		return "/seal/index";
 	}
 

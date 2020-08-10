@@ -39,6 +39,13 @@
             localStorage.setItem("pass","");
         }
 
+
+
+
+
+
+
+
         //表单验证
         var vali = $ ('#mainForm').validate ({
             rules : {
@@ -65,7 +72,7 @@
         //$ ("#btnLogin").button ('loading');
         $.post ('home/login', $ ("#mainForm").serialize (), function (result, status) {
             if (result.IsSuccess){
-                document.location.href = _BasePath + 'seal/index5';
+                document.location.href = _BasePath + 'affairs/index5';
             }
             else{
                 //$ ("#btnLogin").button ('reset');
@@ -164,7 +171,7 @@
 <%--                 style="width:338px;display:none;">你输入的密码和账户名不匹配</div>--%>
 <%--        </ul>--%>
 <%--    </div>--%>
-    <div class="bg" style="height: 1080px; width: 1920px">
+    <div class="bg" style="background: red">
         <div class="login">
             <div class="login_box">
                 <div  class="logintit">用户登录</div>

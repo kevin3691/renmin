@@ -1,0 +1,15 @@
+var title = document.querySelectorAll('.sx-c2r-title .s2r-as');
+var list1 = document.querySelectorAll('.list1');
+for(var i=0;i<title.length;i++){
+    title[i].index = i;
+    title[i].onmouseenter = function(){
+        for(var i1 = 0;i1<list1.length;i1++){
+            title[i1].style.background = '';
+            title[i1].style.color = '';
+            list1[i1].style.display = 'none';
+        }
+        list1[this.index].style.display = 'block';
+        title[this.index].style.color = '#fff';
+        title[this.index].style.background = '#2d66a5';
+    }
+}
