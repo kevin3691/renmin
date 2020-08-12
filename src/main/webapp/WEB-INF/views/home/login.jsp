@@ -72,7 +72,7 @@
         //$ ("#btnLogin").button ('loading');
         $.post ('home/login', $ ("#mainForm").serialize (), function (result, status) {
             if (result.IsSuccess){
-                document.location.href = _BasePath + 'affairs/index5';
+                document.location.href = _BasePath + 'seal/index5';
             }
             else{
                 //$ ("#btnLogin").button ('reset');

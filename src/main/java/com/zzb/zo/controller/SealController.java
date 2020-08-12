@@ -262,7 +262,7 @@ public class SealController extends BaseController {
 		}
 		setPara(request, model);
 		model.addAttribute("o", seal);
-		String url = "/seal/edit";
+		String url = "/affairs/details";
 		return url;
 	}
 
@@ -394,18 +394,19 @@ public class SealController extends BaseController {
 	}
 
 
-/*
-	*//**
+
+	/**
 	 * liebiao
 	 * @param
 	 * @param
 	 * @return
-	 *//*
-	@RequestMapping(value = "/list")
-	public QueryResult<CommAttachment> list4(CommAttachment attachment,
-											 HttpServletRequest request) {
-		return attachmentService.list4(request);
-	}*/
+	 */
+	@RequestMapping(value = "/list4")
+	public String list4() {
+
+		return "/affairs/list";
+
+	}
 	/**
 	 * 拍照
 	 * @param
@@ -759,4 +760,33 @@ public class SealController extends BaseController {
 		model.put("allowSize", String.valueOf(allowSize));
 		model.put("destDir", destDir);
 	}
+
+
+
+
+	/**
+	 * 详情页
+	 * @param id
+	 * @return
+	 */
+	@RequestMapping(value = "/details")
+	public String details(Integer id){
+
+
+
+		return "/affairs/details";
+	}
+
+	/**
+	 * 指南
+	 * @return
+	 */
+	@RequestMapping(value = "/zhinan")
+	public String zhinan(Integer id){
+
+
+
+		return "/affairs/gkzn";
+	}
+
 }

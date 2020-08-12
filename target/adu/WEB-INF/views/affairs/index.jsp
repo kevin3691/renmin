@@ -59,6 +59,48 @@
 <link href="css/index1.css" rel="stylesheet">
 
 
+<script src="jslib/jsjs/jquery.js"></script>
+
+<script>
+
+
+
+    function xq(id){
+
+		document.location.href = 'seal/details?id='+id
+	}
+
+
+	function zhinan(id){
+	    document.location.href='seal/zhinan?id='+id
+    }
+
+	//获取列表
+	function gain(){
+    	$.ajax({
+			url : "seal/list",
+			dataType : "json",
+			type:"GET",
+			success:function (reg){
+				console.log("请求成功")
+				console.log(reg)
+			}
+
+
+	})
+
+
+	}
+
+
+    //页面加载完成后执行
+    $ (function () {
+		gain ();
+    });
+
+</script>
+
+
 <div class="body_l_bg"></div>
 <div class="body_r_bg"></div>
 <div class="f_w clearfix" style="background: url(http://hd.gov.cn/images/body_bg.jpg) no-repeat;padding-bottom: 20px;">
@@ -103,51 +145,9 @@
 					<div class="su-l1">
 						<div class="sx-tp"></div>
 					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/zfxxgkzn/" target="_blank">政府信息公开指南</a></div>
-				</li>
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/zfwj/zdwj/" target="_blank">政府信息公开制度文件</a></div>
-				</li>
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/fdgknr/" target="_blank">法定主动公开内容</a></div>
-				</li>
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/zfxxgknb/" target="_blank">政府信息公开年报</a></div>
+					<div class="su-l2"><a onclick="zhinan(2)" target="_blank">政府信息公开指南</a></div>
 				</li>
 
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/zfgb/" target="_blank">政府公报</a></div>
-				</li>
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/zfxwfb/" target="_blank">政府新闻发布</a></div>
-				</li>
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/cycs/" target="_blank">行政机关办公地址/联系方式</a></div>
-				</li>
-				<li>
-					<div class="su-l1">
-						<div class="sx-tp"></div>
-					</div>
-					<div class="su-l2"><a href="http://hdzfxxgk.hd.gov.cn/gszbm/" target="_blank">市政府部门信息公开</a></div>
-				</li>
 			</ul>
 		</div>
 		<!-- 右边块 -->
@@ -155,60 +155,28 @@
 			<!-- 标题 -->
 			<div class="sx-c1-title clearFix"> <img src="images/sx-blue.jpg" alt=""> <a href="http://hdzfxxgk.hd.gov.cn/zfwj/jinqixxgk/">
 				<h1>近期信息公开</h1>
-				</a> <a href="http://hdzfxxgk.hd.gov.cn/zfwj/jinqixxgk/" class="sx-more1">更多&gt;&gt;</a> </div>
+				</a> <a href="" class="sx-more1">更多&gt;&gt;</a> </div>
 			<ul class="sx-c1-list">
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23716/202008/t20200802_1352104.html" target="_blank">
-					<p>邯郸市教育局关于印发《全市教育系统安全专项整治三年行动实施方案》的通知</p>
+				<li><img src="images/sx-ds.jpg" alt="">
+                    <p onclick="xq(1)">邯郸市教育局关于印发《全市教育系统安全专项整治三年行动实施方案》的通知</p>
 					</a><span>2020-08-02</span></li>
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23737/202007/t20200731_1351965.html" target="_blank">
-					<p>邯郸市行政审批局关于启用邯郸市行政审批局招投标管理专用章的通告</p>
-					</a><span>2020-07-31</span></li>
+<%--                <div class="row">--%>
+<%--                    <style>--%>
+<%--                        #grid td{--%>
+<%--                            width: 80px;--%>
+<%--                            height: 60px;--%>
+<%--                            font-size: 30px;--%>
+<%--                        }--%>
+<%--                    </style>--%>
+<%--                    <div class="table_box">--%>
+<%--                        <table id="grid"></table>--%>
+<%--                        <div id="pager" style="height:35px;"></div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23716/202007/t20200729_1351303.html" target="_blank">
-					<p>邯郸市教育局关于印发《邯郸市中小学生艺术素质测评实施办法（试行）》的通知</p>
-					</a><span>2020-07-29</span></li>
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200731_1351817.html" target="_blank">
-					<p>邯郸市人民政府关于岳芝国等同志任职的通知</p>
-					</a><span>2020-07-29</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200729_1351123.html" target="_blank">
-					<p>邯郸市人民政府办公室关于成立邯郸市农村产权流转交易监督管理委员会的通知</p>
-					</a><span>2020-07-27</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200729_1351128.html" target="_blank">
-					<p>邯郸市人民政府办公室关于促进建筑业持续健康发展的实施意见</p>
-					</a><span>2020-07-27</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zdly/gysyxxgk/jyjgxxgk/202007/t20200725_1350406.html" target="_blank">
-					<p>邯郸市教育局关于继续暂停校外培训机构线下培训活动和严禁社会人员无证办学的通知</p>
-					</a><span>2020-07-25</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200728_1351064.html" target="_blank">
-					<p>邯郸市人民政府关于邯郸市主城区东区部分街路巷命名的通告</p>
-					</a><span>2020-07-22</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23737/202007/t20200721_1349486.html" target="_blank">
-					<p>邯郸市行政审批局关于将市发展改革委招标投标职能划转至市行政审批局的通告</p>
-					</a><span>2020-07-21</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200728_1351065.html" target="_blank">
-					<p>邯郸市人民政府办公室关于健全完善促进就业体制机制和操作平台的实施意见</p>
-					</a><span>2020-07-21</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23741/202007/t20200731_1351952.html" target="_blank">
-					<p>关于进一步加强医疗美容综合监管执法工作的通知</p>
-					</a><span>2020-07-18</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200722_1349659.html" target="_blank">
-					<p>邯郸市人民政府办公室关于印发邯郸市支持重点行业和重点设施超低排放改造（深度治...</p>
-					</a><span>2020-07-16</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23716/202007/t20200715_1348165.html" target="_blank">
-					<p>邯郸市教育局关于在全市中小学开展爱国主义教育示范学校创建活动的通知</p>
-					</a><span>2020-07-15</span></li>
 
 			</ul>
 		</div>
@@ -227,127 +195,7 @@
 						<p>领导分工</p>
 					</div>
 				</li>
-				</a>
 
-				<a href="http://hdzfxxgk.hd.gov.cn/zfwj/jgze/" target="_blank">
-				<li>
-					<div><img src="images/W020200113518107839760.jpg">
-						<p>机构职责</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zfwj/szfwj/" target="_blank">
-				<li>
-					<div><img src="images/W020200113517848565234.jpg">
-						<p>政府文件</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zfwj/ghjh/" target="_blank">
-				<li>
-					<div><img src="images/W020200113518293947059.jpg">
-						<p>规划计划</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23694/" target="_blank">
-				<li>
-					<div><img src="images/W020200113518504234844.jpg">
-						<p>统计数据</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hd.gov.cn/ztzl/czyjs/" target="_blank">
-				<li>
-					<div><img src="images/W020200113518713589950.jpg">
-						<p>财政财务</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zfwj/yjgl/" target="_blank">
-				<li>
-					<div><img src="images/W020200113518935881994.jpg">
-						<p>应急管理</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hd.gov.cn/xxgk/zcjd/" target="_blank">
-				<li>
-					<div><img src="images/W020200113519129794085.jpg">
-						<p>政策解读</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://222.222.245.73:99/touch/qzqd/Index" target="_blank">
-				<li>
-					<div><img src="images/W020200113519554581041.jpg">
-						<p>权责清单</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hd.gov.cn/xxgk/cbjytagz/jytabljggk/" target="_blank">
-				<li>
-					<div><img src="images/W020200113519770330156.jpg">
-						<p>建议提案</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/cwhy/" target="_blank">
-				<li>
-					<div><img src="images/W020200113519943650700.jpg">
-						<p>常务会议</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zfwj/gggslb/" target="_blank">
-				<li>
-					<div><img src="images/W020200113520136460153.jpg">
-						<p>公告公示</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://www.ccgp-hebei.gov.cn/hd/hd/" target="_blank">
-				<li>
-					<div><img src="images/W020200113522208616517.jpg">
-						<p>政府采购</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zdly/zdjsxmxxgk/" target="_blank">
-				<li>
-					<div><img src="images/W020200113522553066647.jpg">
-						<p>重大建设项目</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zdly/gysyxxgk/jyjgxxgk/" target="_blank">
-				<li>
-					<div><img src="images/W020200113523032148077.jpg">
-						<p>社会公益事业</p>
-					</div>
-				</li>
-				</a>
-
-				<a href="http://hdzfxxgk.hd.gov.cn/zdly/ggzypzxxgk/gcjsxmzbtbly/" target="_blank">
-				<li>
-					<div><img src="images/W020200113523324951850.jpg">
-						<p>公共资源配置</p>
-					</div>
-				</li>
-				</a>
 
 			</ul>
 		</div>
@@ -361,49 +209,7 @@
 					<p>邯郸市人民政府关于岳芝国等同志任职的通知</p>
 					</a><span>2020-07-29</span></li>
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200728_1351064.html" target="_blank">
-					<p>邯郸市人民政府关于邯郸市主城区东区部分街路巷命名的通告</p>
-					</a><span>2020-07-22</span></li>
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348423.html" target="_blank">
-					<p>邯郸市人民政府关于王小生等同志职务任免的通知</p>
-					</a><span>2020-07-13</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200707_1346409.html" target="_blank">
-					<p>邯郸市人民政府关于曹建召等同志职务任免的通知</p>
-					</a><span>2020-07-01</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200701_1345119.html" target="_blank">
-					<p>邯郸市人民政府关于印发2020年政府规章工作计划的通知</p>
-					</a><span>2020-06-30</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200701_1345118.html" target="_blank">
-					<p>邯郸市人民政府关于成立邯郸市铁路建设投资有限公司的批复</p>
-					</a><span>2020-06-30</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200701_1345122.html" target="_blank">
-					<p>邯郸市人民政府关于印发邯郸市文化旅游产业发展规划（2020—2025年）的通知</p>
-					</a><span>2020-06-30</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202006/t20200629_1344338.html" target="_blank">
-					<p>邯郸市人民政府关于推进超低能耗建筑发展的实施意见</p>
-					</a><span>2020-06-26</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200701_1345115.html" target="_blank">
-					<p>邯郸市人民政府关于张平等同志任职的通知</p>
-					</a><span>2020-06-23</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202006/t20200630_1344871.html" target="_blank">
-					<p>邯郸市人民政府关于李鹏丽等同志职务任免的通知</p>
-					</a><span>2020-06-12</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202006/t20200617_1342246.html" target="_blank">
-					<p>邯郸市人民政府关于印发邯郸市优秀运动员教练员奖励办法的通知</p>
-					</a><span>2020-06-12</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202006/t20200617_1342244.html" target="_blank">
-					<p>邯郸市人民政府关于印发“邯郸·中国气谷”发展规划的通知</p>
-					</a><span>2020-06-12</span></li>
 
 			</ul>
 			<ul class="sx-c1-list list1" style="display: none;">
@@ -412,100 +218,12 @@
 					<p>邯郸市人民政府办公室关于促进建筑业持续健康发展的实施意见</p>
 					</a><span>2020-07-27</span></li>
 
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200729_1351123.html" target="_blank">
-					<p>邯郸市人民政府办公室关于成立邯郸市农村产权流转交易监督管理委员会的通知</p>
-					</a><span>2020-07-27</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200728_1351065.html" target="_blank">
-					<p>邯郸市人民政府办公室关于健全完善促进就业体制机制和操作平台的实施意见</p>
-					</a><span>2020-07-21</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200722_1349659.html" target="_blank">
-					<p>邯郸市人民政府办公室关于印发邯郸市支持重点行业和重点设施超低排放改造（深度治...</p>
-					</a><span>2020-07-16</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348434.html" target="_blank">
-					<p>邯郸市人民政府办公室关于更换原邯郸市人民政府外事办公室印章的通知</p>
-					</a><span>2020-07-14</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348427.html" target="_blank">
-					<p>邯郸市人民政府办公室关于进一步完善经济运行调度机制的通知</p>
-					</a><span>2020-07-14</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348429.html" target="_blank">
-					<p>邯郸市人民政府办公室关于印发2020年国务院《政府工作报告》部署重点任务分工方案...</p>
-					</a><span>2020-07-13</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348428.html" target="_blank">
-					<p>邯郸市人民政府办公室关于进一步做好防震减灾工作的通知</p>
-					</a><span>2020-07-10</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348425.html" target="_blank">
-					<p>邯郸市人民政府办公室关于印发邯郸市突发地质灾害应急预案的通知</p>
-					</a><span>2020-07-10</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348426.html" target="_blank">
-					<p>邯郸市人民政府办公室关于印发邯郸市“十四五”市级专项规划目录清单的通知</p>
-					</a><span>2020-07-10</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200716_1348432.html" target="_blank">
-					<p>邯郸市人民政府办公室关于更换原邯郸市防范化解医疗保障基金支付风险工作领导小组...</p>
-					</a><span>2020-07-07</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202007/t20200707_1346412.html" target="_blank">
-					<p>邯郸市人民政府办公室关于印发邯郸市政务服务“好差评”评价实施办法的通知</p>
-					</a><span>2020-07-02</span></li>
-
 			</ul>
 			<ul class="sx-c1-list list1" style="display: none;">
 
 				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202002/t20200205_1244988.html" target="_blank">
 					<p>邯郸市人民政府令第175号</p>
 					</a><span>2020-01-23</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201912/t20191227_1229658.html" target="_blank">
-					<p>邯郸市人民政府令第173号</p>
-					</a><span>2019-12-19</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201909/t20190902_1171966.html" target="_blank">
-					<p>邯郸市人民政府令第172号</p>
-					</a><span>2019-09-01</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201810/t20181011_879739.html" target="_blank">
-					<p>邯郸市人民政府令第171号邯郸市货运车辆超限运输非现场执法规定</p>
-					</a><span>2018-10-08</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201810/t20181011_879738.html" target="_blank">
-					<p>邯郸市人民政府令第170号关于废止邯郸市行政执法监督检查暂行办法等8件政府规章的决定</p>
-					</a><span>2018-10-08</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201809/t20180907_868732.html" target="_blank">
-					<p>邯郸市人民政府令第169号《邯郸市城市房屋安全管理办法修正案》</p>
-					</a><span>2018-08-31</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201809/t20180907_868729.html" target="_blank">
-					<p>邯郸市人民政府令第168号《邯郸市人民政府制定规章和拟定法规草案规定修正案》</p>
-					</a><span>2018-08-31</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201809/t20180907_868728.html" target="_blank">
-					<p>邯郸市人民政府令第167号《关于废止邯郸市城市环境噪声污染防治管理办法等两件政府...</p>
-					</a><span>2018-08-31</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201809/t20180907_868727.html" target="_blank">
-					<p>邯郸市人民政府令第166号《邯郸市物业管理办法修正案》</p>
-					</a><span>2018-08-31</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201808/t20180802_800256.html" target="_blank">
-					<p>邯郸市人民政府令第160号《邯郸市行政调解办法》</p>
-					</a><span>2017-07-01</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201808/t20180802_798076.html" target="_blank">
-					<p>邯郸市人民政府令第152号《邯郸市建设工程消防技术审查与行政许可分离实施办法》</p>
-					</a><span>2015-03-30</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201808/t20180802_796808.html" target="_blank">
-					<p>邯郸市人民政府令第145号邯郸市建设领域农民工工资保障办法</p>
-					</a><span>2013-10-30</span></li>
 
 			</ul>
 			<ul class="sx-c1-list list1" style="display: none;">
@@ -513,50 +231,6 @@
 				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202004/t20200430_1266530.html" target="_blank">
 					<p>邯郸市人民政府关于废止邯郸市军人抚恤优待实施办法等两件政府规章的决定</p>
 					</a><span>2020-04-24</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/202002/t20200205_1244988.html" target="_blank">
-					<p>邯郸市人民政府令第175号</p>
-					</a><span>2020-01-23</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zfwj/xdfz/201912/t20191210_1223412.html" target="_blank">
-					<p>邯郸市人民政府关于禁限燃放烟花爆竹的通告</p>
-					</a><span>2019-12-09</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201906/t20190618_1151247.html" target="_blank">
-					<p>邯郸市人民政府办公厅关于印发邯郸市新建商品房预售资金监管办法的通知</p>
-					</a><span>2019-06-01</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201905/t20190528_1142013.html" target="_blank">
-					<p>邯郸市人民政府关于印发邯郸市国有划拨土地上非住宅房屋办理不动产登记实施办法（...</p>
-					</a><span>2019-05-27</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201902/t20190222_1039244.html" target="_blank">
-					<p>邯郸市人民政府办公厅关于印发邯郸市违法违规用地行为监察问责暂行办法的通知</p>
-					</a><span>2019-02-01</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zfwj/xdfz/201902/t20190227_1041597.html" target="_blank">
-					<p>邯郸市人民政府关于禁限燃放烟花爆竹的通告</p>
-					</a><span>2019-01-17</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/gszbm/auto23692/201902/t20190222_1039233.html" target="_blank">
-					<p>邯郸市人民政府办公厅关于印发邯郸市城乡建设用地增减挂钩节余指标调剂使用管理暂...</p>
-					</a><span>2019-01-04</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zfwj/xdfz/201810/t20181011_879750.html" target="_blank">
-					<p>邯郸市人民政府关于公布市政府规章和规范性文件清理结果的通知</p>
-					</a><span>2018-10-08</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zfwj/xdfz/201810/t20181011_879738.html" target="_blank">
-					<p>邯郸市人民政府令第170号关于废止邯郸市行政执法监督检查暂行办法等8件政府规章的决定</p>
-					</a><span>2018-10-08</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zfwj/xdfz/201809/t20180907_868728.html" target="_blank">
-					<p>邯郸市人民政府令第167号《关于废止邯郸市城市环境噪声污染防治管理办法等两件政府...</p>
-					</a><span>2018-08-31</span></li>
-
-				<li><img src="images/sx-ds.jpg" alt=""><a href="http://hdzfxxgk.hd.gov.cn/zfwj/xdfz/201808/t20180814_847667.html" target="_blank">
-					<p>邯郸市人民政府令第163号《关于废止部分政府规章的决定》</p>
-					</a><span>2017-11-28</span></li>
 
 			</ul>
 		</div>
